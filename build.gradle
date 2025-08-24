@@ -14,3 +14,7 @@ allprojects {
         mavenCentral()
     }
 }
+tasks.register('wrapper', Wrapper) {
+    gradleVersion = '8.4'
+    distributionType = Wrapper.DistributionType.ALL
+}
