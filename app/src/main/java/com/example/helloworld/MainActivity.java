@@ -1,10 +1,18 @@
-public class MainActivity extends AppCompatActivity {
+package com.example.helloworld;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.TextView;
+
+public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         TextView tv = new TextView(this);
-        tv.setText("Hello World!");
+        tv.setText("Hello World");
         tv.setTextSize(30);
         setContentView(tv);
     }
 }
+
