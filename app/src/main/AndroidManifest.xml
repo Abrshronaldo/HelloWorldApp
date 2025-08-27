@@ -1,9 +1,10 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+   <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.helloworld">
 
     <application
-        android:label="HelloWorldApp"
-      
+        android:label="HelloWorldApp">
+
         <activity android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -14,4 +15,3 @@
 
     </application>
 </manifest>
-
