@@ -3,7 +3,7 @@
     package="com.example.helloworld">
 
     <application
-        android:label="HelloWorldApp"
+        android:label="Abrsh"
        android:icon="@mipmap/ic_launcher">
 
         <activity android:name=".MainActivity"
