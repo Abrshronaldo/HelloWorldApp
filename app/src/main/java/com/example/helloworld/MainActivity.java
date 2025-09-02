@@ -1,6 +1,9 @@
 package com.example.helloworld;
 
+
 import android.app.Activity;
+import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -9,10 +12,30 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+            LinearLayout layout = new LinearLayout(this);
+        layout.setOrientation(LinearLayout.VERTICAL);
+
+
+
+
         TextView tv = new TextView(this);
-        tv.setText("Hello World");
+
+        tv.setText("enter something");
         tv.setTextSize(30);
-        setContentView(tv);
+
+        EditText input = new EditText(this);
+        input.setHint("Type here...");
+        input.setTextSize(20);
+
+        // Add views to layout
+        layout.addView(tv);
+        layout.addView(input);
+
+        // Set layout as content view
+        setContentView(layout);
+
+
+        
     }
 }
 
