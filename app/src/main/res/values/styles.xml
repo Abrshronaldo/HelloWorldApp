@@ -1,0 +1,16 @@
+<resources>
+    <style name="CustomTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:colorBackground">#121212</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="colorPrimary">#FF5722</item>
+        <item name="colorPrimaryVariant">#E64A19</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="android:editTextStyle">@style/CustomEditText</item>
+    </style>
+
+    <style name="CustomEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">#FFEB3B</item>
+        <item name="android:background">#333333</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+</resources>
