@@ -6,6 +6,10 @@
 
     <TextView
         android:text="Hello World!"
-        android:textSize="30sp"/>
+
+        android:textSize="30sp"
+        android:background="@android:color/transparent"/>
+
 </LinearLayout>
+
 
