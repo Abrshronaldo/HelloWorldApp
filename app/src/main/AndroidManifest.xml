@@ -4,10 +4,7 @@
 
     <application
         android:label="Abrsh"
-       android:icon="@mipmap/ic_launcher"
- 
-      android:theme="@style/CustomTheme">
-      
+       android:icon="@mipmap/ic_launcher">      
         <activity android:name=".MainActivity" 
 
           android:windowSoftInputMode="adjustResize"
