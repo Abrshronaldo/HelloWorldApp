@@ -26,6 +26,9 @@ public class MainActivity extends Activity {
         EditText input = new EditText(this);
         input.setHint("Type here...");
         input.setTextSize(20);
+      input.setBackground(null); 
+  
+
 
         // Add views to layout
         layout.addView(tv);
