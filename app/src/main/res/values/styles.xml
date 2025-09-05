@@ -1,4 +1,4 @@
-<!-- res/values/styles.xml -->
-<style name="CustomEditText" parent="Widget.AppCompat.EditText">
+<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
     <item name="android:textCursorDrawable">@drawable/custom_cursor</item>
 </style>
+
