@@ -1,4 +1,0 @@
-<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-    <item name="android:textCursorDrawable">@drawable/custom_cursor</item>
-</style>
-
