@@ -26,7 +26,14 @@ public class MainActivity extends Activity {
         EditText input = new EditText(this);
         input.setHint("Type here...");
         input.setTextSize(20);
-        input.setTextCursorDrawable(R.drawable.custom_cursor);
+        
+       try {
+    Field f = TextView.class.getDeclaredField("mCursorDrawableRes");
+    f.setAccessible(true);
+    f.set(input, R.drawable.custom_cursor);
+} catch (Exception e) {
+    e.printStackTrace(); // Or log it
+}
 
 
       input.setBackground(null); 
