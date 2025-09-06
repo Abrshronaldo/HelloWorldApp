@@ -10,12 +10,28 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity {
     @Override
+
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
             LinearLayout layout = new LinearLayout(this);
         layout.setOrientation(LinearLayout.VERTICAL);
 
+
+
+           Button submitButton = new Button(this);
+submitButton.setText("Submit");
+submitButton.setTextSize(20);
+
+// Optional: Set an OnClickListener to define what happens when the button is clicked
+submitButton.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+              String userInput = input.getText().toString();
+  Toast.makeText(getApplicationContext(), "You typed: " + userInput, Toast.LENGTH_SHORT).show();
+    }
+});
 
 
 
