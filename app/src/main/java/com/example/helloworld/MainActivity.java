@@ -1,7 +1,8 @@
 package com.example.helloworld;
 
 import java.lang.reflect.Field;
-
+import android.widget.Button;
+import android.widget.Toast;
 import android.app.Activity;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -61,7 +62,7 @@ submitButton.setOnClickListener(new View.OnClickListener() {
         // Add views to layout
         layout.addView(tv);
         layout.addView(input);
-
+      layout.addView(submitButton);
         // Set layout as content view
         setContentView(layout);
 
