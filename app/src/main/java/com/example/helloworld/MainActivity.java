@@ -23,21 +23,7 @@ public class MainActivity extends Activity {
 
 
 
-           Button submitButton = new Button(this);
-submitButton.setText("Submit");
-submitButton.setTextSize(20);
-
-// Optional: Set an OnClickListener to define what happens when the button is clicked
-submitButton.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View v) {
-              String userInput = input.getText().toString();
-  Toast.makeText(getApplicationContext(), "You typed: " + userInput, Toast.LENGTH_SHORT).show();
-    }
-});
-
-
-
+          
         TextView tv = new TextView(this);
 
         tv.setText("enter something");
@@ -59,6 +45,20 @@ submitButton.setOnClickListener(new View.OnClickListener() {
       input.setBackground(null); 
 
   
+Button submitButton = new Button(this);
+submitButton.setText("Submit");
+submitButton.setTextSize(20);
+
+// Optional: Set an OnClickListener to define what happens when the button is clicked
+submitButton.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        String userInput = input.getText().toString();
+        Toast.makeText(getApplicationContext(), "You typed: " + userInput, 
+        Toast.LENGTH_SHORT).show();
+    }
+});
+    
 
 
         // Add views to layout
@@ -68,7 +68,7 @@ submitButton.setOnClickListener(new View.OnClickListener() {
         // Set layout as content view
         setContentView(layout);
 
-
+  
         
     }
 }
