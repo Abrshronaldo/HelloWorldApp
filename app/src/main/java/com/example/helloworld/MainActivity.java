@@ -45,20 +45,25 @@ public class MainActivity extends Activity {
 Button submitButton = new Button(this);
 submitButton.setText("Submit");
 submitButton.setTextSize(20);
-
-
-
+                                                                  
+   
+    layout.addView(submitButton);
 // Optional: Set an OnClickListener to define what happens when the button is clicked
-if(    submitButton.setOnClickListener(new View.OnClickListener() );    
-)  {    EditText input = new EditText(this);
+    submitButton.setOnClickListener(new View.OnClickListener() {
+                                
+    @Override
+    public void onClick(View v) {  
+     EditText input = new EditText(this);
         input.setHint("Type here...");
-        input.setTextSize(20);
+         input.setTextSize(20);
+    layout.addView(input);
 }
+});
 
-        // Add views to layout
+         // Add views to layout
         layout.addView(tv);
-        layout.addView(input);
-      layout.addView(submitButton);
+             
+                                 
         // Set layout as content view
         setContentView(layout);
 
