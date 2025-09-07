@@ -65,8 +65,8 @@ submitButton.setTextSize(20);
 
 
    layout.addView(input);
-    b=true:
-
+    b=true;
+           
 }
 });
 }
