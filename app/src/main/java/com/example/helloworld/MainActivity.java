@@ -65,13 +65,15 @@ submitButton.setTextSize(20);
 
 
    layout.addView(input);
-    b=true;
-           
+    
+                      
 }
 });
 }
          // Add views to layout
-        layout.addView(tv);
+     b=true;      
+
+    layout.addView(tv);
              
                                  
         // Set layout as content view
