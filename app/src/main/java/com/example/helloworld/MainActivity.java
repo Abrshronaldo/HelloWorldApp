@@ -50,10 +50,10 @@ submitButton.setTextSize(20);
     layout.addView(submitButton);
 // Optional: Set an OnClickListener to define what happens when the button is clicked
     submitButton.setOnClickListener(new View.OnClickListener() {
-                                
+                                                                       
     @Override
     public void onClick(View v) {  
-     EditText input = new EditText(this);
+     EditText input = new EditText(v.getContext());
         input.setHint("Type here...");
          input.setTextSize(20);
     layout.addView(input);
