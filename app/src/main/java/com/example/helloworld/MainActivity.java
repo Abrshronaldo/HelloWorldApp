@@ -30,13 +30,7 @@ public class MainActivity extends Activity {
         tv.setTextSize(30);
 
                
-       try {
-    Field f = TextView.class.getDeclaredField("mCursorDrawableRes");
-    f.setAccessible(true);
-    f.set(input, R.drawable.custom_cursor);
-} catch (Exception e) {
-    e.printStackTrace(); // Or log it
-}
+   
 
 
       input.setBackground(null); 
@@ -56,6 +50,18 @@ submitButton.setTextSize(20);
      EditText input = new EditText(v.getContext());
         input.setHint("Type here...");
          input.setTextSize(20);
+
+
+        
+       try {
+    Field f = TextView.class.getDeclaredField("mCursorDrawableRes");
+    f.setAccessible(true);
+    f.set(input, R.drawable.custom_cursor);
+} catch (Exception e) {
+    e.printStackTrace(); // Or log it
+}
+
+
     layout.addView(input);
 }
 });
