@@ -29,10 +29,7 @@ public class MainActivity extends Activity {
         tv.setText("enter something");
         tv.setTextSize(30);
 
-        EditText input = new EditText(this);
-        input.setHint("Type here...");
-        input.setTextSize(20);
-        
+               
        try {
     Field f = TextView.class.getDeclaredField("mCursorDrawableRes");
     f.setAccessible(true);
@@ -49,18 +46,14 @@ Button submitButton = new Button(this);
 submitButton.setText("Submit");
 submitButton.setTextSize(20);
 
-// Optional: Set an OnClickListener to define what happens when the button is clicked
-submitButton.setOnClickListener(new View.OnClickListener() {
-                  
-   // @Override
-    public void Click(View v) {
-        String userInput = input.getText().toString();
-        Toast.makeText(getApplicationContext(), "You typed: " + userInput, 
-        Toast.LENGTH_SHORT).show();
-    }
-});
-    
 
+
+// Optional: Set an OnClickListener to define what happens when the button is clicked
+if(    submitButton.setOnClickListener(new View.OnClickListener() );    
+)  {    EditText input = new EditText(this);
+        input.setHint("Type here...");
+        input.setTextSize(20);
+}
 
         // Add views to layout
         layout.addView(tv);
