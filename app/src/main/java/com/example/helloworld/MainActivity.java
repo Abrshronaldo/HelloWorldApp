@@ -33,7 +33,7 @@ public class MainActivity extends Activity {
    
 
 
-      input.setBackground(null); 
+      
 
   
 Button submitButton = new Button(this);
@@ -50,7 +50,7 @@ submitButton.setTextSize(20);
      EditText input = new EditText(v.getContext());
         input.setHint("Type here...");
          input.setTextSize(20);
-
+       input.setBackground(null);
 
         
        try {
