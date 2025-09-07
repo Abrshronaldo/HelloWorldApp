@@ -39,11 +39,13 @@ public class MainActivity extends Activity {
 Button submitButton = new Button(this);
 submitButton.setText("Submit");
 submitButton.setTextSize(20);
-                                                                  
-   
-    layout.addView(submitButton);
+                                                  
+   boolean b=false;   
+                   layout.addView(submitButton);
 // Optional: Set an OnClickListener to define what happens when the button is clicked
-    submitButton.setOnClickListener(new View.OnClickListener() {
+  if(b==false) {  
+
+ submitButton.setOnClickListener(new View.OnClickListener() {
                                                                        
     @Override
     public void onClick(View v) {  
@@ -62,10 +64,12 @@ submitButton.setTextSize(20);
 }
 
 
-    layout.addView(input);
+   layout.addView(input);
+    b=true:
+
 }
 });
-
+}
          // Add views to layout
         layout.addView(tv);
              
