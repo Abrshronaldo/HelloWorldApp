@@ -64,8 +64,8 @@ submitButton.setTextSize(20);
 }
 
 
-   layout.addView(input);
-//   submitButton.setOnClickListener(null);    
+   
+                         //   submitButton.setOnClickListener(null);    
                       
 }
 });
@@ -76,7 +76,7 @@ submitButton.setTextSize(20);
           
 
     layout.addView(tv);
-             
+             layout.addView(input);
                                      
         // Set layout as content view
         setContentView(layout);
