@@ -43,8 +43,8 @@ submitButton.setTextSize(20);
    boolean b=false;   
                    layout.addView(submitButton);
 // Optional: Set an OnClickListener to define what happens when the button is clicked
-  if(!b) {  
-
+    
+          
  submitButton.setOnClickListener(new View.OnClickListener() {
                                                                        
     @Override
@@ -72,7 +72,8 @@ submitButton.setTextSize(20);
 b=true;
 }
          // Add views to layout
-           
+    submitButton.setOnClickListener(null);
+         
 
     layout.addView(tv);
              
