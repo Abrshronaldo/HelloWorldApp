@@ -66,9 +66,14 @@ submitButton.setTextSize(20);
 
    
                           //   submitButton.setOnClickListener(null);    
-                      
-}
+                       
+   
+ 
    layout.addView(input);            
+ 
+setContentView(layout);
+}
+
 });
 
 }
