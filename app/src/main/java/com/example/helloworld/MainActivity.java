@@ -64,12 +64,12 @@ submitButton.setTextSize(20);
 }
 
 
-   
-                          //   submitButton.setOnClickListener(null);    
+        layout.addView(input);                        
+          submitButton.setOnClickListener(null);    
                                       
                 
  
-   layout.addView(input);            
+          
  
 
 }
