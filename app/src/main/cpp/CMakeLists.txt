@@ -1,6 +1,8 @@
 
 
 
+cmake_minimum_required(VERSION 3.18)
+project(HelloWorldApp)
 
 
 add_library(
