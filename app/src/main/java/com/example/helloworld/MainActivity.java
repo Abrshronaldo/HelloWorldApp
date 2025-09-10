@@ -11,7 +11,16 @@ import android.widget.LinearLayout;
 import android.os.Bundle;
 import android.widget.TextView;
 
+
 public class MainActivity extends Activity {
+
+   static {
+        System.loadLibrary("native-lib");
+    }
+
+    public native String stringFromJNI();
+
+
     @Override
 
 
@@ -26,7 +35,7 @@ public class MainActivity extends Activity {
           
         TextView tv = new TextView(this);
 
-        tv.setText("enter something");
+        tv.setText( stringFromJNI());
         tv.setTextSize(30);
 
                

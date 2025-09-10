@@ -16,11 +16,26 @@ android {
         targetSdk 34
         versionCode 1
         versionName "1.0"
+ 
+      externalNativeBuild {
+            cmake {
+                cppFlags ""
+            }
+        }
     }
 
+    
     buildTypes {
         release {
             minifyEnabled false
+        }
+    }
+
+  
+
+externalNativeBuild {
+        cmake {
+            path "src/main/cpp/CMakeLists.txt"
         }
     }
 }
