@@ -38,24 +38,13 @@ android {
 }
    
 
-    packagingOptions {
-    pickFirst '**/*.so'
-}
-    
-    buildTypes {
+        buildTypes {
         release {
             minifyEnabled false
         }
     }
 
   
-
-externalNativeBuild {
-        cmake {
-            path "src/main/cpp/CMakeLists.txt"
-        }
-    }
-}
 
 dependencies {
     implementation "androidx.appcompat:appcompat:1.6.1"
