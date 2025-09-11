@@ -29,6 +29,13 @@ android {
         }
     }
 
+  android {
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['src/main/jniLibs']
+        }
+    }
+}
    
 
     packagingOptions {
