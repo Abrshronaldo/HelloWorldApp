@@ -21,14 +21,8 @@ android {
     ndk {
     abiFilters 'armeabi-v7a'
 }
- 
-      externalNativeBuild {
-            cmake {
-                cppFlags ""
-            }
-        }
-    }
-
+ }
+     
   android {
     sourceSets {
         main {
@@ -37,7 +31,7 @@ android {
     }
 }
    
-
+}
         buildTypes {
         release {
             minifyEnabled false
