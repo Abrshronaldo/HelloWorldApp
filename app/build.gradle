@@ -1,9 +1,5 @@
 plugins {
     id 'com.android.application'
-
-
-
-
 }
 
 android {
@@ -16,31 +12,29 @@ android {
         targetSdk 34
         versionCode 1
         versionName "1.0"
-      
 
-    ndk {
-    abiFilters 'armeabi-v7a'
-}
- }
-     
-  android {
+        ndk {
+            abiFilters 'armeabi-v7a'
+        }
+    }
+
     sourceSets {
         main {
             jniLibs.srcDirs = ['src/main/jniLibs']
         }
     }
-}
-   
-}
-        buildTypes {
+
+    buildTypes {
         release {
             minifyEnabled false
         }
+        debug {
+            // Optional debug config
+        }
     }
-
-  
+}
 
 dependencies {
     implementation "androidx.appcompat:appcompat:1.6.1"
-   
 }
+
