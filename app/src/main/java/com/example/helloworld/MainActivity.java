@@ -30,7 +30,7 @@ public class MainActivity extends Activity {
             LinearLayout layout = new LinearLayout(this);
         layout.setOrientation(LinearLayout.VERTICAL);
 
-
+//yes
 
           
         TextView tv = new TextView(this);
