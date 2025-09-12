@@ -1,3 +1,5 @@
+
+
 plugins {
     id 'com.android.application'
 }
@@ -14,13 +16,19 @@ android {
         versionName "1.0"
 
         ndk {
-            abiFilters 'armeabi-v7a'
+            abiFilters 'armeabi-v7a' // Add more ABIs if needed
+        }
+
+        externalNativeBuild {
+            cmake {
+                cppFlags "-std=c++17"
+            }
         }
     }
 
     sourceSets {
         main {
-            jniLibs.srcDirs = ['src/main/jniLibs']
+            jniLibs.srcDirs = ['src/main/jniLibs'] // Optional if you're manually placing .so files
         }
     }
 
@@ -30,6 +38,12 @@ android {
         }
         debug {
             // Optional debug config
+        }
+    }
+
+    externalNativeBuild {
+        cmake {
+            path "src/main/cpp/CMakeLists.txt"
         }
     }
 }
