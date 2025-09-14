@@ -14,20 +14,22 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
-              
- 
+
+
+     String nativelib;              
+                                                            
     @Override
 
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+    nativelib=getApplicationInfo().nativeLibraryDir;
             LinearLayout layout = new LinearLayout(this);
 
          layout.setOrientation(LinearLayout.VERTICAL);
 
 
-      string nativelib=getApplicationInfo().nativeLibraryDir;
+     
 //yes
 
                                    
