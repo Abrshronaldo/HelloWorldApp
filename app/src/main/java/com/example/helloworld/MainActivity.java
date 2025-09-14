@@ -13,21 +13,24 @@ import android.widget.TextView;
 
 
 public class MainActivity extends Activity {
+  static {
+System.load(app/src/main/jniLibs/armeabi-v7a/libnative-lib.so);
+    }
 
+    public native String stringFromJNI();
+                                        
 
-
-     String nativelib;              
+                                                  
                                                             
     @Override
 
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-    nativelib=getApplicationInfo().nativeLibraryDir;
-            LinearLayout layout = new LinearLayout(this);
+               LinearLayout layout = new LinearLayout(this);
 
          layout.setOrientation(LinearLayout.VERTICAL);
-
+                       
 
      
 //yes
@@ -35,10 +38,10 @@ public class MainActivity extends Activity {
                                    
         TextView tv = new TextView(this);
 
-        tv.setText( nativelib);
+        tv.setText( stringFromJNI());
         tv.setTextSize(30);
 
-               
+                                  
    
 
 
