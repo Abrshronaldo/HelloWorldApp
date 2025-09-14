@@ -15,7 +15,7 @@ import android.widget.TextView;
 public class MainActivity extends Activity {
 
               
- string nativelib=getApplicationInfo().nativeLibraryDir;
+ 
     @Override
 
 
@@ -23,8 +23,11 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
 
             LinearLayout layout = new LinearLayout(this);
-        layout.setOrientation(LinearLayout.VERTICAL);
 
+         layout.setOrientation(LinearLayout.VERTICAL);
+
+
+      string nativelib=getApplicationInfo().nativeLibraryDir;
 //yes
 
                                    
