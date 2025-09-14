@@ -14,13 +14,8 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
-   static {
-        System.loadLibrary("native-lib");
-    }
-
-    public native String stringFromJNI();
-
-
+              
+ string nativelib=getApplicationInfo().nativeLibraryDir;
     @Override
 
 
@@ -32,10 +27,10 @@ public class MainActivity extends Activity {
 
 //yes
 
-          
+                                   
         TextView tv = new TextView(this);
 
-        tv.setText( stringFromJNI());
+        tv.setText( nativelib);
         tv.setTextSize(30);
 
                
