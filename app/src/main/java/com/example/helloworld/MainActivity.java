@@ -14,11 +14,11 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity {
   static {
-System.load(app/src/main/jniLibs/armeabi-v7a/libnative-lib.so);
+System.load("app/src/main/jniLibs/armeabi-v7a/libnative-lib.so");
     }
 
     public native String stringFromJNI();
-                                        
+                                                                                                       
 
                                                   
                                                             
