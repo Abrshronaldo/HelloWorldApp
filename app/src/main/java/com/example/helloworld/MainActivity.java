@@ -38,7 +38,7 @@ System.load("app/src/main/jniLibs/armeabi-v7a/libnative-lib.so");
                                    
         TextView tv = new TextView(this);
 
-        tv.setText( stringFromJNI());
+//        tv.setText( stringFromJNI());
         tv.setTextSize(30);
 
                                   
