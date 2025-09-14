@@ -19,13 +19,7 @@ android {
             abiFilters 'armeabi-v7a' // Add more ABIs if needed
         }
 
-        externalNativeBuild {
-            cmake {
-                cppFlags "-std=c++17"
-            }
         }
-    }
-
     sourceSets {
         main {
             jniLibs.srcDirs = ['src/main/jniLibs'] // Optional if you're manually placing .so files
@@ -35,19 +29,9 @@ android {
     buildTypes {
         release {
             minifyEnabled false
-        }
-        debug {
-            // Optional debug config
-        }
-    }
-
-    externalNativeBuild {
-        cmake {
-            path "src/main/cpp/CMakeLists.txt"
-        }
-    }
-}
-
+       }
+         }
+   }
 dependencies {
     implementation "androidx.appcompat:appcompat:1.6.1"
 }
