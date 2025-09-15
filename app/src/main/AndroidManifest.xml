@@ -5,8 +5,7 @@
     <application
         android:label="Abrsh"
        android:icon="@mipmap/ic_launcher"	      
-      android:extractNativeLibs="true">   
-
+      android:extractNativeLibs="false">
         <activity android:name=".MainActivity" 
 
           android:windowSoftInputMode="adjustResize"
