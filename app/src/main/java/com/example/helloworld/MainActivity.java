@@ -13,9 +13,8 @@ import android.widget.TextView;
 
 
 public class MainActivity extends Activity {
-  static {                                                                                                       
 
-                                                  
+                                                   
                                                             
     @Override
 
