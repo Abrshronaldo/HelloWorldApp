@@ -13,12 +13,7 @@ import android.widget.TextView;
 
 
 public class MainActivity extends Activity {
-  static {
-System.load("app/src/main/jniLibs/armeabi-v7a/libnative-lib.so");
-    }
-
-    public native String stringFromJNI();
-                                                                                                       
+  static {                                                                                                       
 
                                                   
                                                             
@@ -32,13 +27,13 @@ System.load("app/src/main/jniLibs/armeabi-v7a/libnative-lib.so");
          layout.setOrientation(LinearLayout.VERTICAL);
                        
 
-     
+      
 //yes
 
-                                   
+                                                                  
         TextView tv = new TextView(this);
 
-//        tv.setText( stringFromJNI());
+    tv.setText( "yes sir!");
         tv.setTextSize(30);
 
                                   
