@@ -10,11 +10,6 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.os.Bundle;
 import android.widget.TextView;
-import android.content.Context;
-import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.Paint;
-
 
 public class LineView extends View {
     private Paint paint;
