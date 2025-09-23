@@ -14,12 +14,13 @@ public class LineView extends View {
         super(context);
         paint = new Paint();
         paint.setColor(Color.RED);
-        paint.setStrokeWidth(8);
+        paint.setStrokeWidth(4);
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        canvas.drawLine(100, 200, 500, 200, paint);
+        canvas.drawLine(50, 200, 300, 200, paint);
     }
 }
+                               
