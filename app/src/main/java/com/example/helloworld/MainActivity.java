@@ -11,26 +11,6 @@ import android.widget.LinearLayout;
 import android.os.Bundle;
 import android.widget.TextView;
 
-public class LineView extends View {
-    private Paint paint;
-
-    public LineView(Context context) {
-        super(context);
-        paint = new Paint();
-        paint.setColor(Color.RED); // Set line color
-        paint.setStrokeWidth(8);   // Set line thickness
-    }
-
-    @Override
-    protected void onDraw(Canvas canvas) {
-        super.onDraw(canvas);
-        // Draw a line from (x1, y1) to (x2, y2)
-        canvas.drawLine(100, 200, 500, 200, paint);
-    }
-
-
-}
-
 
 public class MainActivity extends Activity {
 
