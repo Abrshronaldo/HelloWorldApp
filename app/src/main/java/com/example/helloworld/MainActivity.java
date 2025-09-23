@@ -93,8 +93,7 @@ submitButton.setTextSize(20);
 } catch (Exception e) {
     e.printStackTrace(); // Or log it
 }
-         layout.addView(lineView);
-
+         
         layout.addView(input);                        
           submitButton.setOnClickListener(null);    
                                       
@@ -110,7 +109,7 @@ submitButton.setTextSize(20);
 
          // Add views to layout
         
-          
+         layout.addView(lineView); 
 
     layout.addView(tv);
              
