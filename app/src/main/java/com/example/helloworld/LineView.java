@@ -20,7 +20,10 @@ public class LineView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        canvas.drawLine(100, 200, 300, 250, paint);
+
+        canvas.drawLine(100, 200, 250, 200, paint);
+      
+
     }
 }
-                                                                        
+                                                                                                                
