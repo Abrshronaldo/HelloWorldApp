@@ -22,7 +22,7 @@ public class LineView extends View {
         super.onDraw(canvas);
 
         canvas.drawLine(100, 200, 350, 200, paint);
-       
+       canvas.drawLine(100, 200 ,100 ,450, paint);       
 
     }
 }
