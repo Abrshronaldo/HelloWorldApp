@@ -23,7 +23,8 @@ public class LineView extends View {
 
         canvas.drawLine(100, 200, 350, 200, paint);
        canvas.drawLine(100, 200 ,100 ,450, paint);       
-      canvas.drawLine(350,200,350, 450);
+      canvas.drawLine(350, 200 ,350 ,450 ,paint);
+     canvas.drawLine(100 ,450, 350, 450 ,paint);
     }
 }
-                                                                                                                           
+                                                                                                                                                                    
