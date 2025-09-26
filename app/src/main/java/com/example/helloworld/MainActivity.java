@@ -59,6 +59,11 @@ submitButton.setTextSize(20);
         input.setHint("Type here...");
          input.setTextSize(20);
        input.setBackground(null);
+      LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
+    LinearLayout.LayoutParams.MATCH_PARENT,
+    LinearLayout.LayoutParams.WRAP_CONTENT
+);
+input.setLayoutParams(params);
 
         
        try {
