@@ -23,9 +23,9 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
                LinearLayout layout = new LinearLayout(this);
 
-         layout.setOrientation(LinearLayout.VERTICAL);
+       //  layout.setOrientation(LinearLayout.VERTICAL);
                        
-           LineView lineView = new LineView(this);
+         //  LineView lineView = new LineView(this);
       
 //yes
 
@@ -88,10 +88,10 @@ submitButton.setTextSize(20);
 
          // Add views to layout
         
-         layout.addView(lineView); 
+     //    layout.addView(lineView); 
 
     layout.addView(tv);
-             
+       
                                      
         // Set layout as content view
         setContentView(layout);
