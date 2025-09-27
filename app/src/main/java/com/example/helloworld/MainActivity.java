@@ -59,7 +59,16 @@ submitButton.setTextSize(20);
         input.setHint("Type here...");
          input.setTextSize(20);
        input.setBackground(null);
+       
+      LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
+    LinearLayout.LayoutParams.MATCH_PARENT,
+    LinearLayout.LayoutParams.WRAP_CONTENT
+);
+input.setLayoutParams(params);
+
       
+       ViewGroup root = (ViewGroup) ((Activity) context).findViewById(android.R.id.content);
+root.addView(input);
         
        try {
     Field f = TextView.class.getDeclaredField("mCursorDrawableRes");
