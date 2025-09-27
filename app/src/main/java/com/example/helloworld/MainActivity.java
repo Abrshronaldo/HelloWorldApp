@@ -75,6 +75,11 @@ input.setLayoutParams(params);
 }
          
         layout.addView(input);                        
+
+       
+
+
+setContentView(layout);
           submitButton.setOnClickListener(null);    
                                       
                 
