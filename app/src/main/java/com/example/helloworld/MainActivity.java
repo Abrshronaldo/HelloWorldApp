@@ -67,9 +67,12 @@ submitButton.setTextSize(20);
 input.setLayoutParams(params);
 
       
-       ViewGroup root = (ViewGroup) ((Activity) context).findViewById(android.R.id.content);
-root.addView(input);
-        
+       Context context = getContext();
+if (context instanceof Activity) {
+    ViewGroup root = (ViewGroup) ((Activity) context).findViewById(android.R.id.content);
+    root.addView(input);
+}
+                               
        try {
     Field f = TextView.class.getDeclaredField("mCursorDrawableRes");
     f.setAccessible(true);
