@@ -82,7 +82,7 @@ if (context instanceof Activity) {
     e.printStackTrace(); // Or log it
 }
          
-        layout.addView(input);                        
+//        layout.addView(input);                        
 
        
 
