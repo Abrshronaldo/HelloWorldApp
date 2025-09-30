@@ -24,10 +24,10 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
                LinearLayout layout = new LinearLayout(this);
 
-       //  layout.setOrientation(LinearLayout.VERTICAL);
+         layout.setOrientation(LinearLayout.VERTICAL);
                        
-         //  LineView lineView = new LineView(this);
-      
+          LineView lineView = new LineView(this);
+                  
 //yes
 
                                                                   
@@ -101,7 +101,7 @@ if (context instanceof Activity) {
 
          // Add views to layout
         
-     //    layout.addView(lineView); 
+         layout.addView(lineView); 
 
     layout.addView(tv);
        
