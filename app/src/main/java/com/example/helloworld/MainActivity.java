@@ -31,14 +31,38 @@ public class MainActivity extends Activity {
 //yes
 
                                                                   
-        TextView tv = new TextView(this);
+        ConstraintLayout layout = new ConstraintLayout(this);
+layout.setLayoutParams(new ConstraintLayout.LayoutParams(
+    ConstraintLayout.LayoutParams.MATCH_PARENT,
+    ConstraintLayout.LayoutParams.MATCH_PARENT
+));
 
-    tv.setText( "yes sir!");
-        tv.setTextSize(30);
+ConstraintLayout layout = new ConstraintLayout(this);
+layout.setLayoutParams(new ConstraintLayout.LayoutParams(
+    ConstraintLayout.LayoutParams.MATCH_PARENT,
+    ConstraintLayout.LayoutParams.MATCH_PARENT
+));
 
-                                  
-   
+TextView tv = new TextView(this);
+tv.setId(View.generateViewId());
+tv.setText("yes sir!");
+tv.setTextSize(30);
 
+ConstraintLayout.LayoutParams params = new ConstraintLayout.LayoutParams(
+    ConstraintLayout.LayoutParams.WRAP_CONTENT,
+    ConstraintLayout.LayoutParams.WRAP_CONTENT
+);
+
+// Constrain to top and left only
+params.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
+params.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
+
+// Now apply margins
+params.leftMargin = 100; // x position
+params.topMargin = 200;  // y position
+
+tv.setLayoutParams(params);
+layout.addView(tv);
 
       
 
