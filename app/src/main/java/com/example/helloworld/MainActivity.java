@@ -31,9 +31,9 @@ public class MainActivity extends Activity {
                   
 //yes
 
-                                                                  
+                                                                                   
         
-ConstraintLayout layout = new ConstraintLayout(this);
+ConstraintLayout Clayout = new ConstraintLayout(this);
 layout.setLayoutParams(new ConstraintLayout.LayoutParams(
     ConstraintLayout.LayoutParams.MATCH_PARENT,
     ConstraintLayout.LayoutParams.MATCH_PARENT
