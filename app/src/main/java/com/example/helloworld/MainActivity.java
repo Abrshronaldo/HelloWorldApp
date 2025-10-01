@@ -62,7 +62,6 @@ params.leftMargin = 100; // x position
 params.topMargin = 200;  // y position
 
 tv.setLayoutParams(params);
-layout.addView(tv);
 
       
 
