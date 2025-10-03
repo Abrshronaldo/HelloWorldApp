@@ -23,20 +23,17 @@ public class MainActivity extends Activity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-               LinearLayout layout = new LinearLayout(this);
-
-         layout.setOrientation(LinearLayout.VERTICAL);
-                       
+                                      
           LineView lineView = new LineView(this);
                   
 //yes
 
-                                                                                   
+                                                                                      
         
-ConstraintLayout Clayout = new ConstraintLayout(this);
+ConstraintLayout layout = new ConstraintLayout(this);
 layout.setLayoutParams(new ConstraintLayout.LayoutParams(
     ConstraintLayout.LayoutParams.MATCH_PARENT,
-    ConstraintLayout.LayoutParams.MATCH_PARENT
+    ConstraintLaylayout.addView(submitButton);layout.addView(submitButton);out.LayoutParams.MATCH_PARENT
 ));
 
 TextView tv = new TextView(this);
@@ -59,14 +56,13 @@ params.topMargin =  500; // y position
 
 tv.setLayoutParams(params);
 
-      
-
                           
 Button submitButton = new Button(this);
 submitButton.setText("Submit");
 submitButton.setTextSize(20);
                                                 
-                                      
+                   params.leftMargin=100;
+                 params.topMargin=200;                   
                    layout.addView(submitButton);
                        
                        
@@ -79,13 +75,10 @@ submitButton.setTextSize(20);
         input.setHint("Type here...");
          input.setTextSize(20);
        input.setBackground(null);
-       
-      LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
-    LinearLayout.LayoutParams.MATCH_PARENT,
-    LinearLayout.LayoutParams.WRAP_CONTENT
-);
-input.setLayoutParams(params);
-
+     params.leftMargin=100;
+     params.topMargin=300;
+layout.addView(input);       
+      
       
        Context context =v.getContext();
 if (context instanceof Activity) {

@@ -3,45 +3,61 @@ package com.example.helloworld;
 import java.lang.reflect.Field;
 import android.widget.Button;
 import android.view.View;
-
+import android.view.ViewGroup;
 import android.widget.Toast;
 import android.app.Activity;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.os.Bundle;
 import android.widget.TextView;
-public class NativeLoader {
-    static {
-        System.loadLibrary("native-lib");
-    }
-}
+import android.content.Context;
 
-
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.constraintlayout.widget.ConstraintLayout.LayoutParams;
 public class MainActivity extends Activity {
 
-   NativeLoader loader = new NativeLoader(); // triggers static block
-String result = stringFromJNI(); // safe to call now
-
+                                                   
+                                                            
     @Override
 
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+               LinearLayout layout = new LinearLayout(this);
 
-            LinearLayout layout = new LinearLayout(this);
-        layout.setOrientation(LinearLayout.VERTICAL);
-
+         layout.setOrientation(LinearLayout.VERTICAL);
+                       
+          LineView lineView = new LineView(this);
+                  
 //yes
 
-          
-        TextView tv = new TextView(this);
+                                                                  
+      
+ConstraintLayout layout = new ConstraintLayout(this);
+layout.setLayoutParams(new ConstraintLayout.LayoutParams(
+    ConstraintLayout.LayoutParams.MATCH_PARENT,
+    ConstraintLayout.LayoutParams.MATCH_PARENT
+));
 
-        tv.setText( stringFromJNI());
-        tv.setTextSize(30);
+TextView tv = new TextView(this);
+tv.setId(View.generateViewId());
+tv.setText("yes sir!");
+tv.setTextSize(30);
 
-               
-   
+ConstraintLayout.LayoutParams params = new ConstraintLayout.LayoutParams(
+    ConstraintLayout.LayoutParams.WRAP_CONTENT,
+    ConstraintLayout.LayoutParams.WRAP_CONTENT
+);
 
+// Constrain to top and left only
+params.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
+params.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
+
+// Now apply margins
+params.leftMargin = 100; // x position
+params.topMargin = 200;  // y position
+
+tv.setLayoutParams(params);
 
       
 
@@ -63,19 +79,34 @@ submitButton.setTextSize(20);
         input.setHint("Type here...");
          input.setTextSize(20);
        input.setBackground(null);
+       
+      LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
+    LinearLayout.LayoutParams.MATCH_PARENT,
+    LinearLayout.LayoutParams.WRAP_CONTENT
+);
+input.setLayoutParams(params);
 
-        
-       try {
+      
+       Context context =v.getContext();
+if (context instanceof Activity) {
+    ViewGroup root = (ViewGroup) ((Activity) context).findViewById(android.R.id.content);
+    root.addView(input);
+}
+                                                                                                                                                                                             
+        try {
     Field f = TextView.class.getDeclaredField("mCursorDrawableRes");
     f.setAccessible(true);
     f.set(input, R.drawable.custom_cursor);
 } catch (Exception e) {
     e.printStackTrace(); // Or log it
 }
+         
+//        layout.addView(input);                        
+
+       
 
 
-        layout.addView(input);                        
-          submitButton.setOnClickListener(null);    
+//          submitButton.setOnClickListener(null);    
                                       
                 
  
@@ -89,10 +120,10 @@ submitButton.setTextSize(20);
 
          // Add views to layout
         
-          
+         layout.addView(lineView); 
 
     layout.addView(tv);
-             
+       
                                      
         // Set layout as content view
         setContentView(layout);
