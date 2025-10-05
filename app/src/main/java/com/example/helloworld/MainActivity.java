@@ -94,9 +94,9 @@ ConstraintLayout.LayoutParams Cparams = new ConstraintLayout.LayoutParams(
 );
 Cparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 Cparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-     
+                             
      Cparams.leftMargin=100;
-     Cparams.topMargin=300;
+     Cparams.topMargin=700;
   input.setLayoutParams(Cparams);
                                             
 layout.addView(input);       
