@@ -31,11 +31,13 @@ public class MainActivity extends Activity {
                                                                                       
         
 ConstraintLayout layout = new ConstraintLayout(this);
-layout.setLayoutParams(new ConstraintLayout.LayoutParams(
+
+ConstraintLayout.LayoutParams params = new ConstraintLayout.LayoutParams(
     ConstraintLayout.LayoutParams.MATCH_PARENT,
-    ConstraintLayout.addView(submitButton);layout.addView(submitButton);out.LayoutParams.MATCH_PARENT
-));
-                  
+    ConstraintLayout.LayoutParams.WRAP_CONTENT
+);
+
+                                                             
 TextView tv = new TextView(this);
 tv.setId(View.generateViewId());
 tv.setText("yes sir!");
@@ -63,8 +65,11 @@ submitButton.setTextSize(20);
                                                 
                    params.leftMargin=100;
                  params.topMargin=200;                   
-                   layout.addView(submitButton);
-                       
+                   
+              submitButton.setLayoutParams(params);
+
+               layout.addView(submitButton);
+                                          
                        
                                                                 
  submitButton.setOnClickListener(new View.OnClickListener() {
@@ -77,6 +82,8 @@ submitButton.setTextSize(20);
        input.setBackground(null);
      params.leftMargin=100;
      params.topMargin=300;
+  input.setLayoutParams(params);
+
 layout.addView(input);       
       
       
