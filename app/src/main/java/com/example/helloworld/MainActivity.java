@@ -58,15 +58,25 @@ tv.setLayoutParams(params);
 Button submitButton = new Button(this);
 submitButton.setText("Submit");
 submitButton.setTextSize(20);
-                                                
-                   params.leftMargin=100;
-                 params.topMargin=200;                   
-                   
-              submitButton.setLayoutParams(params);
+        
+
+      
+ConstraintLayout.LayoutParams Bparams = new ConstraintLayout.LayoutParams(
+    ConstraintLayout.LayoutParams.MATCH_PARENT,
+    ConstraintLayout.LayoutParams.WRAP_CONTENT
+);
+         // Constrain to top and left only
+Bparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
+Bparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;      
+                                                                                               
+                   Bparams.leftMargin=100;
+                 Bparams.topMargin=200;                   
+
+              submitButton.setLayoutParams(Bparams);
 
                layout.addView(submitButton);
-                                          
-                       
+                                                                 
+                            
                                                                 
  submitButton.setOnClickListener(new View.OnClickListener() {
                                                                        
@@ -76,10 +86,19 @@ submitButton.setTextSize(20);
         input.setHint("Type here...");
          input.setTextSize(20);
        input.setBackground(null);
-     params.leftMargin=100;
-     params.topMargin=300;
-  input.setLayoutParams(params);
-                          
+
+
+ConstraintLayout.LayoutParams Cparams = new ConstraintLayout.LayoutParams(
+    ConstraintLayout.LayoutParams.MATCH_PARENT,
+    ConstraintLayout.LayoutParams.WRAP_CONTENT
+);
+Cparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
+Cparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
+     
+     Cparams.leftMargin=100;
+     Cparams.topMargin=300;
+  input.setLayoutParams(Cparams);
+                                            
 layout.addView(input);       
       
       
