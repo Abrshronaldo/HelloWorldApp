@@ -77,9 +77,9 @@ submitButton.setTextSize(20);
          input.setTextSize(20);
        input.setBackground(null);
      params.leftMargin=100;
-     params.topMargin=200;
+     params.topMargin=300;
   input.setLayoutParams(params);
-
+                          
 layout.addView(input);       
       
       
