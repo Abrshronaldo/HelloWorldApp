@@ -43,10 +43,6 @@ tv.setId(View.generateViewId());
 tv.setText("yes sir!");
 tv.setTextSize(30);
 
-ConstraintLayout.LayoutParams params = new ConstraintLayout.LayoutParams(
-    ConstraintLayout.LayoutParams.WRAP_CONTENT,
-    ConstraintLayout.LayoutParams.WRAP_CONTENT
-);
 
 // Constrain to top and left only
 params.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
