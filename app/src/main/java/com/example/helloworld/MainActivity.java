@@ -33,9 +33,9 @@ public class MainActivity extends Activity {
 ConstraintLayout layout = new ConstraintLayout(this);
 layout.setLayoutParams(new ConstraintLayout.LayoutParams(
     ConstraintLayout.LayoutParams.MATCH_PARENT,
-    ConstraintLaylayout.addView(submitButton);layout.addView(submitButton);out.LayoutParams.MATCH_PARENT
+    ConstraintLayout.addView(submitButton);layout.addView(submitButton);out.LayoutParams.MATCH_PARENT
 ));
-
+                  
 TextView tv = new TextView(this);
 tv.setId(View.generateViewId());
 tv.setText("yes sir!");
