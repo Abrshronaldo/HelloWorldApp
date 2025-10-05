@@ -50,8 +50,8 @@ params.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
 
 // Now apply margins
 params.leftMargin = 100; // x position
-params.topMargin =  500; // y position
-
+params.topMargin =  100; // y position
+                       
 tv.setLayoutParams(params);
 
                           
@@ -77,7 +77,7 @@ submitButton.setTextSize(20);
          input.setTextSize(20);
        input.setBackground(null);
      params.leftMargin=100;
-     params.topMargin=300;
+     params.topMargin=200;
   input.setLayoutParams(params);
 
 layout.addView(input);       
