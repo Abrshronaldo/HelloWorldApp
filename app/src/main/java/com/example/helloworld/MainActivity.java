@@ -47,10 +47,10 @@ tv.setTextSize(30);
 // Constrain to top and left only
 params.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 params.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-
+                       
 // Now apply margins
 params.leftMargin = 100; // x position
-params.topMargin =  100; // y position
+params.topMargin =  0; // y position
                        
 tv.setLayoutParams(params);
 
