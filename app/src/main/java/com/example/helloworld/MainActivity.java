@@ -25,6 +25,8 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
                                       
           LineView lineView = new LineView(this);
+         Window window = getWindow();
+window.setStatusBarColor(ContextCompat.getColor(this, android.R.color.white));
                   
 //yes
 
