@@ -67,7 +67,7 @@ submitButton.setTextSize(15);
 
       
 ConstraintLayout.LayoutParams Bparams = new ConstraintLayout.LayoutParams(
-    ConstraintLayout.LayoutParams.WRAP_CONTENT
+    ConstraintLayout.LayoutParams.WRAP_CONTENT,
     ConstraintLayout.LayoutParams.WRAP_CONTENT
 );
          // Constrain to top and left only
