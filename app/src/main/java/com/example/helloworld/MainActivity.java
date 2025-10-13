@@ -43,27 +43,27 @@ ConstraintLayout.LayoutParams params = new ConstraintLayout.LayoutParams(
     ConstraintLayout.LayoutParams.WRAP_CONTENT
 );
 
-                                                             
+                                                                         
 TextView tv = new TextView(this);
 tv.setId(View.generateViewId());
-tv.setText("yes sir!");
+tv.setText("enter");
 tv.setTextSize(15);
 
 // Constrain to top and left only
 params.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 params.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-                       
+                            
 // Now apply margins
-params.leftMargin = 0; // x position
-params.topMargin =  450; // y position
-                                                  
+params.leftMargin = 50; // x position
+params.topMargin =  700; // y position
+                                                                         
 tv.setLayoutParams(params);
 
-                          
+                                  
 Button submitButton = new Button(this);
-submitButton.setText("Submit");
-submitButton.setTextSize(20);
-        
+submitButton.setText("X");
+submitButton.setTextSize(15);
+                                   
 
       
 ConstraintLayout.LayoutParams Bparams = new ConstraintLayout.LayoutParams(
@@ -75,8 +75,7 @@ Bparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 Bparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;      
                                                                                                
                    Bparams.leftMargin=100;
-                 Bparams.topMargin=200;                   
-
+                 Bparams.topMargin=700;
               submitButton.setLayoutParams(Bparams);
 
                layout.addView(submitButton);
@@ -87,10 +86,14 @@ Bparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
                                                                        
     @Override
     public void onClick(View v) {  
-     EditText input = new EditText(v.getContext());
-        input.setHint("Type here...");
-         input.setTextSize(20);
-       input.setBackground(null);
+                       
+
+  
+
+TextView input = new TextView(this);
+input.setId(View.generateViewId());
+input.setText("X");
+input.setTextSize(15);
 
 
 ConstraintLayout.LayoutParams Cparams = new ConstraintLayout.LayoutParams(
@@ -100,22 +103,15 @@ ConstraintLayout.LayoutParams Cparams = new ConstraintLayout.LayoutParams(
 Cparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 Cparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
                              
-     Cparams.leftMargin=100;
-     Cparams.topMargin=700;
+     Cparams.leftMargin=150;
+     Cparams.topMargin=250;
   input.setLayoutParams(Cparams);
                                             
 layout.addView(input);       
       
       
                                                                                                                                                                                                     
-        try {
-    Field f = TextView.class.getDeclaredField("mCursorDrawableRes");
-    f.setAccessible(true);
-    f.set(input, R.drawable.custom_cursor);
-} catch (Exception e) {
-    e.printStackTrace(); // Or log it
-}
-         
+                 
 //        layout.addView(input);                        
 
        
