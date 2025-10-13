@@ -58,12 +58,12 @@ params.leftMargin = 50; // x position
 params.topMargin =  700; // y position
                                                                          
 tv.setLayoutParams(params);
+  
 
-                                  
-Button submitButton = new Button(this);
-submitButton.setText("X");
-submitButton.setTextSize(15);
-                                   
+TextView submitButton = new TextView(this);
+submitButton.setId(View.generateViewId());
+submitButton.setText("enter");
+submitButton.setTextSize(15);                                   
 
       
 ConstraintLayout.LayoutParams Bparams = new ConstraintLayout.LayoutParams(
