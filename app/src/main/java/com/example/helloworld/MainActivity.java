@@ -46,7 +46,7 @@ ConstraintLayout.LayoutParams params = new ConstraintLayout.LayoutParams(
                                                                          
 TextView tv = new TextView(this);
 tv.setId(View.generateViewId());
-tv.setText("enter");
+tv.setText("enter   ");
 tv.setTextSize(15);
 
 // Constrain to top and left only
@@ -62,7 +62,7 @@ tv.setLayoutParams(params);
 
 TextView submitButton = new TextView(this);
 submitButton.setId(View.generateViewId());
-submitButton.setText("enter");
+submitButton.setText("X");
 submitButton.setTextSize(15);                                   
 
       
