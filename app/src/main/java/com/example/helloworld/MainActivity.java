@@ -90,7 +90,9 @@ Bparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
 
   
 
-TextView input = new TextView(this);
+TextView input = new TextView(v.getContext());
+
+
 input.setId(View.generateViewId());
 input.setText("X");
 input.setTextSize(15);
