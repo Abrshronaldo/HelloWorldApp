@@ -47,17 +47,16 @@ ConstraintLayout.LayoutParams params = new ConstraintLayout.LayoutParams(
 TextView tv = new TextView(this);
 tv.setId(View.generateViewId());
 tv.setText("yes sir!");
-tv.setTextSize(30);
-
+tv.setTextSize(15);
 
 // Constrain to top and left only
 params.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 params.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
                        
 // Now apply margins
-params.leftMargin = 100; // x position
+params.leftMargin = 450; // x position
 params.topMargin =  0; // y position
-                       
+                           
 tv.setLayoutParams(params);
 
                           
