@@ -64,7 +64,6 @@ t.setLayoutParams(Dparams);
 
                                                                                                          
        
-ConstraintLayout layout = new ConstraintLayout(this);
 
 ConstraintLayout.LayoutParams params = new ConstraintLayout.LayoutParams(
     ConstraintLayout.LayoutParams.MATCH_PARENT,
