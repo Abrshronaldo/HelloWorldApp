@@ -35,7 +35,7 @@ window.setStatusBarColor(ContextCompat.getColor(this, android.R.color.white));
 //yes
   
                                                                       
-                                                                           >
+                                                                           
 
 ConstraintLayout layout = new ConstraintLayout(this);
 
@@ -103,7 +103,7 @@ ConstraintLayout.LayoutParams Eparams = new ConstraintLayout.LayoutParams(
          // Constrain to top and left only
 Eparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 Eparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-                                                                             >
+                                                                             
                    Eparams.leftMargin=250;
                  Eparams.topMargin=700;
               ubmitButton.setLayoutParams(Eparams);
@@ -141,8 +141,7 @@ Cparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
 layout.addView(input);
 
 
-                                                                             >
-
+                                                                            
 //        layout.addView(input);
 
 
