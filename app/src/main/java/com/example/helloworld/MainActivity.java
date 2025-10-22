@@ -27,7 +27,8 @@ public class MainActivity extends Activity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-                                      
+         int X=0;
+        int Y=0;                                      
           LineView lineView = new LineView(this);
          Window window = getWindow();
 window.setStatusBarColor(ContextCompat.getColor(this, android.R.color.white));
@@ -88,11 +89,11 @@ tv.setLayoutParams(params);
 
 
                       
-                                                      
+                                                                 
  
 TextView ubmitButton = new TextView(this);
 ubmitButton.setId(View.generateViewId());
-ubmitButton.setText("O");
+ubmitButton.setText(" O ");
 ubmitButton.setTextSize(15);
 
 
@@ -133,21 +134,33 @@ ConstraintLayout.LayoutParams Cparams = new ConstraintLayout.LayoutParams(
 );
 Cparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 Cparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-
-     Cparams.leftMargin=250;
-     Cparams.topMargin=250;
+    if(X==0){
+     Cparams.leftMargin=225;
+     Cparams.topMargin=242;
   input.setLayoutParams(Cparams);
 
 layout.addView(input);
+}
+    
+     if(X==1){
+     Cparams.leftMargin=225;
+     Cparams.topMargin=325;
+  input.setLayoutParams(Cparams);
 
-
+layout.addView(input);
+}
                                                                             
-//        layout.addView(input);
+if(X==2){
+     Cparams.leftMargin=225;
+     Cparams.topMargin=408;
+  input.setLayoutParams(Cparams);
 
+layout.addView(input);
+}
+  X++;
 
-
-
-//          submitButton.setOnClickListener(null);
+if(X==3)  
+          submitButton.setOnClickListener(null);
 
 
 
@@ -162,7 +175,7 @@ layout.addView(input);
 
 TextView submitButton = new TextView(this);
 submitButton.setId(View.generateViewId());
-submitButton.setText("X");
+submitButton.setText(" X ");
 submitButton.setTextSize(15);                                   
 
                                                
@@ -204,22 +217,74 @@ ConstraintLayout.LayoutParams Cparams = new ConstraintLayout.LayoutParams(
 );
 Cparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 Cparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-                             
-     Cparams.leftMargin=150;
-     Cparams.topMargin=250;
+    if(Y=0){                             
+     Cparams.leftMargin=142;
+     Cparams.topMargin=242;
   input.setLayoutParams(Cparams);
                                             
 layout.addView(input);       
       
-      
-                                                                                                                                                                                                    
-                 
-//        layout.addView(input);                        
-
+      }
        
+     if (Y==1){                                                                                                                                                                                             
+      Cparams.leftMargin=308;
+     Cparams.topMargin=242;
+  input.setLayoutParams(Cparams);
+
+layout.addView(input);
+
+      }             
 
 
-//          submitButton.setOnClickListener(null);    
+     if (Y==2){                                                               >
+      Cparams.leftMargin=142;
+     Cparams.topMargin=325;
+  input.setLayoutParams(Cparams);
+
+layout.addView(input);
+
+      }       
+
+   if (Y==3){                                                               >
+      Cparams.leftMargin=308;
+     Cparams.topMargin=325;
+  input.setLayoutParams(Cparams);
+
+layout.addView(input);
+
+      }
+
+    if (Y==4){                                                               >
+      Cparams.leftMargin=142;
+     Cparams.topMargin=408;
+  input.setLayoutParams(Cparams);
+
+layout.addView(input);
+
+      }       
+    
+      if (Y==4){                                                               >
+      Cparams.leftMargin=142;
+     Cparams.topMargin=408;
+  input.setLayoutParams(Cparams);
+
+layout.addView(input);
+
+      }
+
+     if (Y==5){                                                               >
+      Cparams.leftMargin=308;
+     Cparams.topMargin=408;
+  input.setLayoutParams(Cparams);
+
+layout.addView(input);
+
+      }
+
+       Y++;
+
+if(Y==6)
+    submitButton.setOnClickListener(null);    
                                       
                 
  
