@@ -217,7 +217,7 @@ ConstraintLayout.LayoutParams Cparams = new ConstraintLayout.LayoutParams(
 );
 Cparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 Cparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-    if(Y=0){                             
+    if(Y==0){                             
      Cparams.leftMargin=142;
      Cparams.topMargin=242;
   input.setLayoutParams(Cparams);
