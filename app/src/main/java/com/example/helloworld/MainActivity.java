@@ -254,15 +254,7 @@ layout.addView(input);
 
       }
 
-    if (Y==4){                                                               >
-      Cparams.leftMargin=142;
-     Cparams.topMargin=408;
-  input.setLayoutParams(Cparams);
-
-layout.addView(input);
-
-      }       
-    
+        
       if (Y==4){                                                               >
       Cparams.leftMargin=142;
      Cparams.topMargin=408;
