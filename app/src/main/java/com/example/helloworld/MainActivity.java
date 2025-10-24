@@ -236,7 +236,7 @@ layout.addView(input);
       }             
 
 
-     if (Y==2){                                                               >
+     if (Y==2){      
       Cparams.leftMargin=142;
      Cparams.topMargin=325;
   input.setLayoutParams(Cparams);
@@ -245,8 +245,9 @@ layout.addView(input);
 
       }       
 
-   if (Y==3){                                                               >
-      Cparams.leftMargin=308;
+   if (Y==3){           
+
+     Cparams.leftMargin=308;
      Cparams.topMargin=325;
   input.setLayoutParams(Cparams);
 
@@ -255,8 +256,8 @@ layout.addView(input);
       }
 
         
-      if (Y==4){                                                               >
-      Cparams.leftMargin=142;
+      if (Y==4){                                     
+     Cparams.leftMargin=142;
      Cparams.topMargin=408;
   input.setLayoutParams(Cparams);
 
@@ -264,7 +265,7 @@ layout.addView(input);
 
       }
 
-     if (Y==5){                                                               >
+     if (Y==5){                          
       Cparams.leftMargin=308;
      Cparams.topMargin=408;
   input.setLayoutParams(Cparams);
