@@ -160,7 +160,7 @@ layout.addView(input);
   X++;
 
 if(X==3)  
-          submitButton.setOnClickListener(null);
+          ubmitButton.setOnClickListener(null);
 
 
 
