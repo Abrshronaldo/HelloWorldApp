@@ -19,7 +19,8 @@ import android.content.Context;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.ConstraintLayout.LayoutParams;
 public class MainActivity extends Activity {
-
+         int X=0;
+        int Y=0;
                                                    
                                                             
     @Override
@@ -27,8 +28,7 @@ public class MainActivity extends Activity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-         int X=0;
-        int Y=0;                                      
+                                              
           LineView lineView = new LineView(this);
          Window window = getWindow();
 window.setStatusBarColor(ContextCompat.getColor(this, android.R.color.white));
