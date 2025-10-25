@@ -20,9 +20,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.ConstraintLayout.LayoutParams;
 public class MainActivity extends Activity {
          int X=0;
-        int Y=0;
-                                                   
-                                                            
+                                                                    
     @Override
 
 
@@ -46,21 +44,6 @@ ConstraintLayout.LayoutParams Dparams = new ConstraintLayout.LayoutParams(
 );
 
 
-TextView t = new TextView(this);
-t.setId(View.generateViewId());
-t.setText("or");
-t.setTextSize(15);
-
-// Constrain to top and left only
-Dparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
-Dparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-
-// Now apply margins
-Dparams.leftMargin = 200; // x position
-Dparams.topMargin =  700; // y position
-
-t.setLayoutParams(Dparams);
-
 
 
                                                                                                          
@@ -74,7 +57,7 @@ ConstraintLayout.LayoutParams params = new ConstraintLayout.LayoutParams(
                                                                          
 TextView tv = new TextView(this);
 tv.setId(View.generateViewId());
-tv.setText("enter   ");
+  tv.setText("touch one of the box :first player is always X  ");
 tv.setTextSize(15);
 
 // Constrain to top and left only
@@ -88,95 +71,11 @@ params.topMargin =  700; // y position
 tv.setLayoutParams(params);
 
 
-                      
-                                                                 
- 
-TextView ubmitButton = new TextView(this);
-ubmitButton.setId(View.generateViewId());
-ubmitButton.setText(" O ");
-ubmitButton.setTextSize(15);
-
-
-ConstraintLayout.LayoutParams Eparams = new ConstraintLayout.LayoutParams(
-    ConstraintLayout.LayoutParams.WRAP_CONTENT,
-    ConstraintLayout.LayoutParams.WRAP_CONTENT
-);
-         // Constrain to top and left only
-Eparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
-Eparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-                                                                             
-                   Eparams.leftMargin=250;
-                 Eparams.topMargin=700;
-              ubmitButton.setLayoutParams(Eparams);
-
-               layout.addView(ubmitButton);
-
-
-     ubmitButton.setOnClickListener(new View.OnClickListener() {
-      
-    @Override
-    public void onClick(View v) {
-
-
-
-
-TextView input = new TextView(v.getContext());
-
-
-input.setId(View.generateViewId());
-input.setText("O");
-input.setTextSize(15);
-
-
-ConstraintLayout.LayoutParams Cparams = new ConstraintLayout.LayoutParams(
-    ConstraintLayout.LayoutParams.MATCH_PARENT,
-    ConstraintLayout.LayoutParams.WRAP_CONTENT
-);
-Cparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
-Cparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-    if(X==0){
-     Cparams.leftMargin=225;
-     Cparams.topMargin=242;
-  input.setLayoutParams(Cparams);
-
-layout.addView(input);
-}
-    
-     if(X==1){
-     Cparams.leftMargin=225;
-     Cparams.topMargin=325;
-  input.setLayoutParams(Cparams);
-
-layout.addView(input);
-}
-                                                                            
-if(X==2){
-     Cparams.leftMargin=225;
-     Cparams.topMargin=408;
-  input.setLayoutParams(Cparams);
-
-layout.addView(input);
-}
-  X++;
-
-if(X==3)  
-          ubmitButton.setOnClickListener(null);
-
-
-
-
-
-
-}
-
-});
-
-  
 
 TextView submitButton = new TextView(this);
 submitButton.setId(View.generateViewId());
-submitButton.setText(" X ");
-submitButton.setTextSize(15);                                   
+submitButton.setText("       ");
+submitButton.setTextSize(50);                                   
 
                                                
 ConstraintLayout.LayoutParams Bparams = new ConstraintLayout.LayoutParams(
@@ -187,8 +86,8 @@ ConstraintLayout.LayoutParams Bparams = new ConstraintLayout.LayoutParams(
 Bparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 Bparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;      
                                                                                                
-                   Bparams.leftMargin=150;
-                 Bparams.topMargin=700;
+                   Bparams.leftMargin=122;
+                 Bparams.topMargin=222;
               submitButton.setLayoutParams(Bparams);
 
                layout.addView(submitButton);
@@ -206,8 +105,13 @@ Bparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
 TextView input = new TextView(v.getContext());
 
 
+
 input.setId(View.generateViewId());
+if (X==0 || X==2 || X==4 || X==6 || X==8)
+
 input.setText("X");
+else
+input.setTexf("O");
 input.setTextSize(15);
 
 
@@ -217,73 +121,13 @@ ConstraintLayout.LayoutParams Cparams = new ConstraintLayout.LayoutParams(
 );
 Cparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 Cparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-    if(Y==0){                             
-     Cparams.leftMargin=142;
-     Cparams.topMargin=242;
+     Cparams.leftMargin=122;
+     Cparams.topMargin=222;
   input.setLayoutParams(Cparams);
                                             
 layout.addView(input);       
       
-      }
-       
-     if (Y==1){                                                                                                                                                                                             
-      Cparams.leftMargin=308;
-     Cparams.topMargin=242;
-  input.setLayoutParams(Cparams);
-
-layout.addView(input);
-
-      }             
-
-
-     if (Y==2){      
-      Cparams.leftMargin=142;
-     Cparams.topMargin=325;
-  input.setLayoutParams(Cparams);
-
-layout.addView(input);
-
-      }       
-
-   if (Y==3){           
-
-     Cparams.leftMargin=308;
-     Cparams.topMargin=325;
-  input.setLayoutParams(Cparams);
-
-layout.addView(input);
-
-      }
-
-        
-      if (Y==4){                                     
-     Cparams.leftMargin=142;
-     Cparams.topMargin=408;
-  input.setLayoutParams(Cparams);
-
-layout.addView(input);
-
-      }
-
-     if (Y==5){                          
-      Cparams.leftMargin=308;
-     Cparams.topMargin=408;
-  input.setLayoutParams(Cparams);
-
-layout.addView(input);
-
-      }
-
-       Y++;
-
-if(Y==6)
-    submitButton.setOnClickListener(null);    
-                                      
-                
- 
-          
- 
-
+      
 }
 
 });
