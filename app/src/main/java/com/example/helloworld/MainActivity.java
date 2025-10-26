@@ -111,7 +111,7 @@ if (X==0 || X==2 || X==4 || X==6 || X==8)
 
 input.setText("X");
 else
-input.setTexf("O");
+input.setText("O");
 input.setTextSize(15);
 
 
