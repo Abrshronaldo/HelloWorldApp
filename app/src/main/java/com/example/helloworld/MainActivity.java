@@ -46,7 +46,7 @@ ConstraintLayout.LayoutParams Dparams = new ConstraintLayout.LayoutParams(
 
 
 
-                                                                                                         
+                                                                                                       
        
 
 ConstraintLayout.LayoutParams params = new ConstraintLayout.LayoutParams(
@@ -152,7 +152,7 @@ ConstraintLayout.LayoutParams Bparams = new ConstraintLayout.LayoutParams(
          // Constrain to top and left only
 Bparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 Bparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-                                                                             >
+                                                                             
                    Bparams.leftMargin=203;
                  Bparams.topMargin=222;
               ubmitButton.setLayoutParams(Bparams);
@@ -214,7 +214,7 @@ ConstraintLayout.LayoutParams Bparams = new ConstraintLayout.LayoutParams(
          // Constrain to top and left only
 Bparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 Bparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-                                                                             >
+                                                                             
                    Bparams.leftMargin=286;
                  Bparams.topMargin=222;
               bmitButton.setLayoutParams(Bparams);
@@ -277,7 +277,7 @@ ConstraintLayout.LayoutParams Bparams = new ConstraintLayout.LayoutParams(
          // Constrain to top and left only
 Bparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 Bparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-                                                                             >
+                                                                             
                    Bparams.leftMargin=122;
                  Bparams.topMargin=264;
               mitButton.setLayoutParams(Bparams);
@@ -338,7 +338,7 @@ ConstraintLayout.LayoutParams Bparams = new ConstraintLayout.LayoutParams(
          // Constrain to top and left only
 Bparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 Bparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-                                                                             >
+                                                                             
                    Bparams.leftMargin=122;
                  Bparams.topMargin=264;
               itButton.setLayoutParams(Bparams);
@@ -400,7 +400,7 @@ ConstraintLayout.LayoutParams Bparams = new ConstraintLayout.LayoutParams(
          // Constrain to top and left only
 Bparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 Bparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-                                                                             >
+                                                                            
                    Bparams.leftMargin=286;
                  Bparams.topMargin=264;
                tButton.setLayoutParams(Bparams);
@@ -464,7 +464,7 @@ ConstraintLayout.LayoutParams Bparams = new ConstraintLayout.LayoutParams(
          // Constrain to top and left only
 Bparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 Bparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-                                                                             >
+                                                                             
                    Bparams.leftMargin=122;
                  Bparams.topMargin=350;
                aButton.setLayoutParams(Bparams);
@@ -527,7 +527,7 @@ ConstraintLayout.LayoutParams Bparams = new ConstraintLayout.LayoutParams(
          // Constrain to top and left only
 Bparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 Bparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-                                                                             >
+                                                                             
                    Bparams.leftMargin=203;
                  Bparams.topMargin=350;
                bButton.setLayoutParams(Bparams);
@@ -589,7 +589,7 @@ ConstraintLayout.LayoutParams Bparams = new ConstraintLayout.LayoutParams(
          // Constrain to top and left only
 Bparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 Bparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-                                                                             >
+                                                                             
                    Bparams.leftMargin=203;
                  Bparams.topMargin=350;
                cButton.setLayoutParams(Bparams);
@@ -652,7 +652,7 @@ ConstraintLayout.LayoutParams Bparams = new ConstraintLayout.LayoutParams(
          // Constrain to top and left only
 Bparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 Bparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-                                                                             >
+                                                                             
                    Bparams.leftMargin=286;
                  Bparams.topMargin=350;
                dButton.setLayoutParams(Bparams);
