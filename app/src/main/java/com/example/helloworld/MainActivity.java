@@ -369,8 +369,8 @@ input.setTextSize(15);
 
 
 ConstraintLayout.LayoutParams Lparams = new ConstraintLayout.LayoutParams(
-    LonstraintLayout.LayoutParams.MATCH_PARENT,
-    LonstraintLayout.LayoutParams.WRAP_CONTENT
+    ConstraintLayout.LayoutParams.MATCH_PARENT,
+    ConstraintLayout.LayoutParams.WRAP_CONTENT
 );
 Lparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 Lparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
