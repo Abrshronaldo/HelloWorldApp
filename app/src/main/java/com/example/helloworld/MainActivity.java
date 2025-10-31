@@ -145,17 +145,17 @@ ubmitButton.setText("       ");
 ubmitButton.setTextSize(50);
 
 
-ConstraintLayout.LayoutParams Bparams = new ConstraintLayout.LayoutParams(
+ConstraintLayout.LayoutParams Eparams = new ConstraintLayout.LayoutParams(
     ConstraintLayout.LayoutParams.WRAP_CONTENT,
     ConstraintLayout.LayoutParams.WRAP_CONTENT
 );
          // Constrain to top and left only
-Bparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
-Bparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
+Eparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
+Eparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
                                                                              
-                   Bparams.leftMargin=203;
-                 Bparams.topMargin=222;
-              ubmitButton.setLayoutParams(Bparams);
+                   Eparams.leftMargin=203;
+                 Eparams.topMargin=222;
+              ubmitButton.setLayoutParams(Eparams);
 
                layout.addView(ubmitButton);
 
@@ -182,16 +182,16 @@ input.setText("O");
 input.setTextSize(15);
 
 
-ConstraintLayout.LayoutParams Cparams = new ConstraintLayout.LayoutParams(
+ConstraintLayout.LayoutParams Fparams = new ConstraintLayout.LayoutParams(
     ConstraintLayout.LayoutParams.MATCH_PARENT,
     ConstraintLayout.LayoutParams.WRAP_CONTENT
 );
-Cparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
-Cparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
+Fparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
+Fparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
 
-Cparams.leftMargin=203;
-     Cparams.topMargin=222;
-  input.setLayoutParams(Cparams);
+Fparams.leftMargin=203;
+     Fparams.topMargin=222;
+  input.setLayoutParams(Fparams);
 
 layout.addView(input);
 X++;
@@ -207,17 +207,17 @@ bmitButton.setText("       ");
 bmitButton.setTextSize(50);
 
 
-ConstraintLayout.LayoutParams Bparams = new ConstraintLayout.LayoutParams(
+ConstraintLayout.LayoutParams Gparams = new ConstraintLayout.LayoutParams(
     ConstraintLayout.LayoutParams.WRAP_CONTENT,
     ConstraintLayout.LayoutParams.WRAP_CONTENT
 );
          // Constrain to top and left only
-Bparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
-Bparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
+Gparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
+Gparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
                                                                              
-                   Bparams.leftMargin=286;
-                 Bparams.topMargin=222;
-              bmitButton.setLayoutParams(Bparams);
+                   Gparams.leftMargin=286;
+                 Gparams.topMargin=222;
+              bmitButton.setLayoutParams(Gparams);
 
                layout.addView(bmitButton);
 
@@ -244,16 +244,16 @@ input.setText("O");
 input.setTextSize(15);
 
 
-ConstraintLayout.LayoutParams Cparams = new ConstraintLayout.LayoutParams(
+ConstraintLayout.LayoutParams Hparams = new ConstraintLayout.LayoutParams(
     ConstraintLayout.LayoutParams.MATCH_PARENT,
     ConstraintLayout.LayoutParams.WRAP_CONTENT
 );
-Cparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
-Cparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
+Hparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
+Hparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
 
-Cparams.leftMargin=286;
-     Cparams.topMargin=222;
-  input.setLayoutParams(Cparams);
+Hparams.leftMargin=286;
+     Hparams.topMargin=222;
+  input.setLayoutParams(Hparams);
 
 layout.addView(input);
 
@@ -270,17 +270,17 @@ mitButton.setText("       ");
 mitButton.setTextSize(50);
 
 
-ConstraintLayout.LayoutParams Bparams = new ConstraintLayout.LayoutParams(
+ConstraintLayout.LayoutParams Iparams = new ConstraintLayout.LayoutParams(
     ConstraintLayout.LayoutParams.WRAP_CONTENT,
     ConstraintLayout.LayoutParams.WRAP_CONTENT
 );
          // Constrain to top and left only
-Bparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
-Bparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
+Iparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
+Iparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
                                                                              
-                   Bparams.leftMargin=122;
-                 Bparams.topMargin=264;
-              mitButton.setLayoutParams(Bparams);
+                   Iparams.leftMargin=122;
+                 Iparams.topMargin=264;
+              mitButton.setLayoutParams(Iparams);
 
                layout.addView(mitButton);
 
@@ -307,16 +307,16 @@ input.setText("O");
 input.setTextSize(15);
 
 
-ConstraintLayout.LayoutParams Cparams = new ConstraintLayout.LayoutParams(
+ConstraintLayout.LayoutParams Jparams = new ConstraintLayout.LayoutParams(
     ConstraintLayout.LayoutParams.MATCH_PARENT,
     ConstraintLayout.LayoutParams.WRAP_CONTENT
 );
-Cparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
-Cparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
+Jparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
+Jparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
 
-Cparams.leftMargin=203;
-     Cparams.topMargin=264;
-  input.setLayoutParams(Cparams);
+Jparams.leftMargin=203;
+     Jparams.topMargin=264;
+  input.setLayoutParams(Jparams);
    layout.addView(input);
 X++;
 
@@ -331,17 +331,17 @@ itButton.setText("       ");
 itButton.setTextSize(50);
 
 
-ConstraintLayout.LayoutParams Bparams = new ConstraintLayout.LayoutParams(
+ConstraintLayout.LayoutParams Kparams = new ConstraintLayout.LayoutParams(
     ConstraintLayout.LayoutParams.WRAP_CONTENT,
     ConstraintLayout.LayoutParams.WRAP_CONTENT
 );
          // Constrain to top and left only
-Bparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
-Bparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
+Kparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
+Kparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
                                                                              
-                   Bparams.leftMargin=122;
-                 Bparams.topMargin=264;
-              itButton.setLayoutParams(Bparams);
+                   Kparams.leftMargin=122;
+                 Kparams.topMargin=264;
+              itButton.setLayoutParams(Kparams);
 
                layout.addView(itButton);
 
@@ -368,16 +368,16 @@ input.setText("O");
 input.setTextSize(15);
 
 
-ConstraintLayout.LayoutParams Cparams = new ConstraintLayout.LayoutParams(
-    ConstraintLayout.LayoutParams.MATCH_PARENT,
-    ConstraintLayout.LayoutParams.WRAP_CONTENT
+ConstraintLayout.LayoutParams Lparams = new ConstraintLayout.LayoutParams(
+    LonstraintLayout.LayoutParams.MATCH_PARENT,
+    LonstraintLayout.LayoutParams.WRAP_CONTENT
 );
-Cparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
-Cparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
+Lparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
+Lparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
 
-Cparams.leftMargin=203;
-     Cparams.topMargin=264;
-  input.setLayoutParams(Cparams);
+Lparams.leftMargin=203;
+     Lparams.topMargin=264;
+  input.setLayoutParams(Lparams);
 
 layout.addView(input);
 X++;
@@ -393,17 +393,17 @@ tButton.setText("       ");
 tButton.setTextSize(50);
 
 
-ConstraintLayout.LayoutParams Bparams = new ConstraintLayout.LayoutParams(
+ConstraintLayout.LayoutParams Mparams = new ConstraintLayout.LayoutParams(
     ConstraintLayout.LayoutParams.WRAP_CONTENT,
     ConstraintLayout.LayoutParams.WRAP_CONTENT
 );
          // Constrain to top and left only
-Bparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
-Bparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
+Mparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
+Mparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
                                                                             
-                   Bparams.leftMargin=286;
-                 Bparams.topMargin=264;
-               tButton.setLayoutParams(Bparams);
+                   Mparams.leftMargin=286;
+                 Mparams.topMargin=264;
+               tButton.setLayoutParams(Mparams);
 
                layout.addView(tButton);
 
@@ -430,17 +430,17 @@ input.setText("O");
 input.setTextSize(15);
 
 
-ConstraintLayout.LayoutParams Cparams = new ConstraintLayout.LayoutParams(
+ConstraintLayout.LayoutParams Nparams = new ConstraintLayout.LayoutParams(
     ConstraintLayout.LayoutParams.MATCH_PARENT,
     ConstraintLayout.LayoutParams.WRAP_CONTENT
 );
-Cparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
-Cparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
+Nparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
+Nparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
 
-Cparams.leftMargin=286;
-     Cparams.topMargin=264;     
+Nparams.leftMargin=286;
+     Nparams.topMargin=264;     
 	
- input.setLayoutParams(Cparams);
+ input.setLayoutParams(Nparams);
 
 layout.addView(input);       
 
@@ -457,17 +457,17 @@ aButton.setText("       ");
 aButton.setTextSize(50);
 
 
-ConstraintLayout.LayoutParams Bparams = new ConstraintLayout.LayoutParams(
+ConstraintLayout.LayoutParams Oparams = new ConstraintLayout.LayoutParams(
     ConstraintLayout.LayoutParams.WRAP_CONTENT,
     ConstraintLayout.LayoutParams.WRAP_CONTENT
 );
          // Constrain to top and left only
-Bparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
-Bparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
+Oparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
+Oparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
                                                                              
-                   Bparams.leftMargin=122;
-                 Bparams.topMargin=350;
-               aButton.setLayoutParams(Bparams);
+                   Oparams.leftMargin=122;
+                 Oparams.topMargin=350;
+               aButton.setLayoutParams(Oparams);
 
                layout.addView(aButton);
 
@@ -494,17 +494,17 @@ input.setText("O");
 input.setTextSize(15);
 
 
-ConstraintLayout.LayoutParams Cparams = new ConstraintLayout.LayoutParams(
+ConstraintLayout.LayoutParams Pparams = new ConstraintLayout.LayoutParams(
     ConstraintLayout.LayoutParams.MATCH_PARENT,
     ConstraintLayout.LayoutParams.WRAP_CONTENT
 );
-Cparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
-Cparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
+Pparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
+Pparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
 
-Cparams.leftMargin=122;
-     Cparams.topMargin=350;
+Pparams.leftMargin=122;
+     Pparams.topMargin=350;
 
- input.setLayoutParams(Cparams);
+ input.setLayoutParams(Pparams);
    layout.addView(input);
 
 X++;
@@ -520,17 +520,17 @@ bButton.setText("       ");
 bButton.setTextSize(50);
 
 
-ConstraintLayout.LayoutParams Bparams = new ConstraintLayout.LayoutParams(
+ConstraintLayout.LayoutParams Qparams = new ConstraintLayout.LayoutParams(
     ConstraintLayout.LayoutParams.WRAP_CONTENT,
     ConstraintLayout.LayoutParams.WRAP_CONTENT
 );
          // Constrain to top and left only
-Bparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
-Bparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
+Qparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
+Qparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
                                                                              
-                   Bparams.leftMargin=203;
-                 Bparams.topMargin=350;
-               bButton.setLayoutParams(Bparams);
+                   Qparams.leftMargin=203;
+                 Qparams.topMargin=350;
+               bButton.setLayoutParams(Qparams);
 
                layout.addView(bButton);
 
@@ -557,18 +557,18 @@ input.setText("O");
 input.setTextSize(15);
 
 
-ConstraintLayout.LayoutParams Cparams = new ConstraintLayout.LayoutParams(
+ConstraintLayout.LayoutParams Rparams = new ConstraintLayout.LayoutParams(
     ConstraintLayout.LayoutParams.MATCH_PARENT,
     ConstraintLayout.LayoutParams.WRAP_CONTENT
 );
-Cparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
-Cparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
+Rparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
+Rparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
 
-Cparams.leftMargin=203;
+Rparams.leftMargin=203;
 
-     Cparams.topMargin=350;
+     Rparams.topMargin=350;
 
- input.setLayoutParams(Cparams);
+ input.setLayoutParams(Rparams);
    layout.addView(input);
 X++;
 }
@@ -582,17 +582,17 @@ cButton.setText("       ");
 cButton.setTextSize(50);
 
 
-ConstraintLayout.LayoutParams Bparams = new ConstraintLayout.LayoutParams(
+ConstraintLayout.LayoutParams Sparams = new ConstraintLayout.LayoutParams(
     ConstraintLayout.LayoutParams.WRAP_CONTENT,
     ConstraintLayout.LayoutParams.WRAP_CONTENT
 );
          // Constrain to top and left only
-Bparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
-Bparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
+Sparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
+Sparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
                                                                              
-                   Bparams.leftMargin=203;
-                 Bparams.topMargin=350;
-               cButton.setLayoutParams(Bparams);
+                   Sparams.leftMargin=203;
+                 Sparams.topMargin=350;
+               cButton.setLayoutParams(Sparams);
 
                layout.addView(cButton);
 
@@ -619,18 +619,18 @@ input.setText("O");
 input.setTextSize(15);
 
 
-ConstraintLayout.LayoutParams Cparams = new ConstraintLayout.LayoutParams(
+ConstraintLayout.LayoutParams Tparams = new ConstraintLayout.LayoutParams(
     ConstraintLayout.LayoutParams.MATCH_PARENT,
     ConstraintLayout.LayoutParams.WRAP_CONTENT
 );
-Cparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
-Cparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
+Tparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
+Tparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
 
-Cparams.leftMargin=203;
+Tparams.leftMargin=203;
 
-     Cparams.topMargin=350;
+     Tparams.topMargin=350;
 
- input.setLayoutParams(Cparams);
+ input.setLayoutParams(Tparams);
    
 layout.addView(input);
 X++;
@@ -645,17 +645,17 @@ dButton.setText("       ");
 dButton.setTextSize(50);
 
 
-ConstraintLayout.LayoutParams Bparams = new ConstraintLayout.LayoutParams(
+ConstraintLayout.LayoutParams Uparams = new ConstraintLayout.LayoutParams(
     ConstraintLayout.LayoutParams.WRAP_CONTENT,
     ConstraintLayout.LayoutParams.WRAP_CONTENT
 );
          // Constrain to top and left only
-Bparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
-Bparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
+Uparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
+Uparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
                                                                              
-                   Bparams.leftMargin=286;
-                 Bparams.topMargin=350;
-               dButton.setLayoutParams(Bparams);
+                   Uparams.leftMargin=286;
+                 Uparams.topMargin=350;
+               dButton.setLayoutParams(Uparams);
 
               layout.addView(dButton);
 
@@ -682,18 +682,18 @@ input.setText("O");
 input.setTextSize(15);
 
 
-ConstraintLayout.LayoutParams Cparams = new ConstraintLayout.LayoutParams(
+ConstraintLayout.LayoutParams Vparams = new ConstraintLayout.LayoutParams(
     ConstraintLayout.LayoutParams.MATCH_PARENT,
     ConstraintLayout.LayoutParams.WRAP_CONTENT
 );
-Cparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
-Cparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
+Vparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
+Vparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
 
-Cparams.leftMargin=286;
+Vparams.leftMargin=286;
 
-     Cparams.topMargin=350;
+     Vparams.topMargin=350;
 
- input.setLayoutParams(Cparams);
+ input.setLayoutParams(Vparams);
 layout.addView(input);
 X++;
 }
