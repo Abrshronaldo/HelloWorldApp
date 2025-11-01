@@ -279,7 +279,7 @@ Iparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 Iparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
                                                                              
                    Iparams.leftMargin=122;
-                 Iparams.topMargin=264;
+                 Iparams.topMargin=300;
               mitButton.setLayoutParams(Iparams);
 
                layout.addView(mitButton);
@@ -315,7 +315,7 @@ Jparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 Jparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
 
 Jparams.leftMargin=203;
-     Jparams.topMargin=264;
+     Jparams.topMargin=300;
   input.setLayoutParams(Jparams);
    layout.addView(input);
 X++;
@@ -340,7 +340,7 @@ Kparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 Kparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
                                                                              
                    Kparams.leftMargin=122;
-                 Kparams.topMargin=264;
+                 Kparams.topMargin=300;
               itButton.setLayoutParams(Kparams);
 
                layout.addView(itButton);
@@ -375,8 +375,8 @@ ConstraintLayout.LayoutParams Lparams = new ConstraintLayout.LayoutParams(
 Lparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 Lparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
 
-Lparams.leftMargin=203;
-     Lparams.topMargin=264;
+ Lparams.leftMargin=122;
+     Lparams.topMargin=300;
   input.setLayoutParams(Lparams);
 
 layout.addView(input);
@@ -402,7 +402,7 @@ Mparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 Mparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
                                                                             
                    Mparams.leftMargin=286;
-                 Mparams.topMargin=264;
+                 Mparams.topMargin=300;
                tButton.setLayoutParams(Mparams);
 
                layout.addView(tButton);
@@ -438,7 +438,7 @@ Nparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 Nparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
 
 Nparams.leftMargin=286;
-     Nparams.topMargin=264;     
+     Nparams.topMargin=300;     
 	
  input.setLayoutParams(Nparams);
 
@@ -466,7 +466,7 @@ Oparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 Oparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
                                                                              
                    Oparams.leftMargin=122;
-                 Oparams.topMargin=350;
+                 Oparams.topMargin=375;
                aButton.setLayoutParams(Oparams);
 
                layout.addView(aButton);
@@ -502,7 +502,7 @@ Pparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 Pparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
 
 Pparams.leftMargin=122;
-     Pparams.topMargin=350;
+     Pparams.topMargin=375;
 
  input.setLayoutParams(Pparams);
    layout.addView(input);
@@ -529,7 +529,7 @@ Qparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 Qparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
                                                                              
                    Qparams.leftMargin=203;
-                 Qparams.topMargin=350;
+                 Qparams.topMargin=375;
                bButton.setLayoutParams(Qparams);
 
                layout.addView(bButton);
@@ -566,7 +566,7 @@ Rparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
 
 Rparams.leftMargin=203;
 
-     Rparams.topMargin=350;
+     Rparams.topMargin=375;
 
  input.setLayoutParams(Rparams);
    layout.addView(input);
@@ -591,7 +591,7 @@ Sparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 Sparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
                                                                              
                    Sparams.leftMargin=203;
-                 Sparams.topMargin=350;
+                 Sparams.topMargin=375;
                cButton.setLayoutParams(Sparams);
 
                layout.addView(cButton);
@@ -628,7 +628,7 @@ Tparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
 
 Tparams.leftMargin=203;
 
-     Tparams.topMargin=350;
+     Tparams.topMargin=375;
 
  input.setLayoutParams(Tparams);
    
@@ -654,7 +654,7 @@ Uparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 Uparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
                                                                              
                    Uparams.leftMargin=286;
-                 Uparams.topMargin=350;
+                 Uparams.topMargin=375;
                dButton.setLayoutParams(Uparams);
 
               layout.addView(dButton);
@@ -691,7 +691,7 @@ Vparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
 
 Vparams.leftMargin=286;
 
-     Vparams.topMargin=350;
+     Vparams.topMargin=375;
 
  input.setLayoutParams(Vparams);
 layout.addView(input);
