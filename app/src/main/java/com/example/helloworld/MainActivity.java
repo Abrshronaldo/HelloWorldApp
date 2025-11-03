@@ -20,8 +20,36 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.ConstraintLayout.LayoutParams;
 public class MainActivity extends Activity {
          int X=0;
-                                                                    
-    @Override
+ char[][] board = {
+        {' ', ' ', ' '},
+        {' ', ' ', ' '},
+        {' ', ' ', ' '}
+    };
+
+
+boolean hasWon(char player) {
+        for (int i = 0; i < 3; i++) {
+            if ((board[i][0] == player && board[i][1] == player && board[i][2>
+                (board[0][i] == player && board[1][i] == player && board[2][i>
+                return true;
+        }
+     
+ boolean isDraw() {
+        for (int i = 0; i < 3; i++)
+            for (int j = 0; j < 3; j++)
+                if (board[i][j] == ' ')
+                    return false;
+        return true;
+    }
+
+
+
+boolean gameEnded = false;
+
+     char currentPlayer = 'X';                                                                    
+while (!gameEnded) {   
+
+ @Override
 
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,6 +99,45 @@ params.topMargin =  700; // y position
 tv.setLayoutParams(params);
 
 
+ if (hasWon(currentPlayer)) {
+                    
+       
+
+ConstraintLayout.LayoutParams aaparams = new ConstraintLayout.LayoutParams(
+    ConstraintLayout.LayoutParams.MATCH_PARENT,
+    ConstraintLayout.LayoutParams.WRAP_CONTENT
+);
+
+
+TextView tv = new TextView(this);
+tv.setId(View.generateViewId());
+  tv.setText("player " + currentPlayer + "won");
+tv.setTextSize(15);
+
+// Constrain to top and left only
+aaparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
+aaparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
+
+// Now apply margins
+aaparams.leftMargin = 50; // x position
+aaparams.topMargin =  750; // y position
+
+tv.setLayoutParams(aaparams);
+
+
+
+
+                     gameEnded = true;
+                } 
+
+
+else if (isDraw()) {
+                    
+                    gameEnded = true;
+                } else {
+                    currentPlayer = (currentPlayer == 'X') ? 'O' : 'X';
+                }
+
 
 TextView submitButton = new TextView(this);
 submitButton.setId(View.generateViewId());
@@ -108,9 +175,10 @@ TextView input = new TextView(v.getContext());
 
 input.setId(View.generateViewId());
 if (X==0 || X==2 || X==4 || X==6 || X==8)
-
+board[0][0]='X';
 input.setText("X");
 else
+board[0][0]='O';
 input.setText("O");
 input.setTextSize(15);
 
@@ -175,9 +243,12 @@ TextView input = new TextView(v.getContext());
 
 input.setId(View.generateViewId());
 if (X==0 || X==2 || X==4 || X==6 || X==8)
+board[1][0]='X';
 
 input.setText("X");
 else
+
+board[1][0]='O';
 input.setText("O");
 input.setTextSize(15);
 
@@ -237,9 +308,11 @@ TextView input = new TextView(v.getContext());
 
 input.setId(View.generateViewId());
 if (X==0 || X==2 || X==4 || X==6 || X==8)
+board[2][0]='X';
 
 input.setText("X");
 else
+board[2][0]='X';
 input.setText("O");
 input.setTextSize(15);
 
@@ -300,9 +373,12 @@ TextView input = new TextView(v.getContext());
 
 input.setId(View.generateViewId());
 if (X==0 || X==2 || X==4 || X==6 || X==8)
-
+board[0][1]='X';
 input.setText("X");
 else
+
+board[0][1]='O';
+
 input.setText("O");
 input.setTextSize(15);
 
@@ -314,7 +390,7 @@ ConstraintLayout.LayoutParams Jparams = new ConstraintLayout.LayoutParams(
 Jparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 Jparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
 
-Jparams.leftMargin=203;
+Jparams.leftMargin=122;
      Jparams.topMargin=300;
   input.setLayoutParams(Jparams);
    layout.addView(input);
@@ -339,7 +415,7 @@ ConstraintLayout.LayoutParams Kparams = new ConstraintLayout.LayoutParams(
 Kparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 Kparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
                                                                              
-                   Kparams.leftMargin=122;
+                   Kparams.leftMargin=203;
                  Kparams.topMargin=300;
               itButton.setLayoutParams(Kparams);
 
@@ -361,9 +437,10 @@ TextView input = new TextView(v.getContext());
 
 input.setId(View.generateViewId());
 if (X==0 || X==2 || X==4 || X==6 || X==8)
-
+board[1][1]='X';
 input.setText("X");
 else
+board[1][1]='O';
 input.setText("O");
 input.setTextSize(15);
 
@@ -375,7 +452,7 @@ ConstraintLayout.LayoutParams Lparams = new ConstraintLayout.LayoutParams(
 Lparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 Lparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
 
- Lparams.leftMargin=122;
+ Lparams.leftMargin=203;
      Lparams.topMargin=300;
   input.setLayoutParams(Lparams);
 
@@ -423,9 +500,10 @@ TextView input = new TextView(v.getContext());
 
 input.setId(View.generateViewId());
 if (X==0 || X==2 || X==4 || X==6 || X==8)
-
+board[2][1]='X';
 input.setText("X");
 else
+board[2][1]='O';
 input.setText("O");
 input.setTextSize(15);
 
@@ -487,9 +565,10 @@ TextView input = new TextView(v.getContext());
 
 input.setId(View.generateViewId());
 if (X==0 || X==2 || X==4 || X==6 || X==8)
-
+board[0][2]='X':
 input.setText("X");
 else
+board[0][2]='O';
 input.setText("O");
 input.setTextSize(15);
 
@@ -550,9 +629,10 @@ TextView input = new TextView(v.getContext());
 
 input.setId(View.generateViewId());
 if (X==0 || X==2 || X==4 || X==6 || X==8)
-
+board[1][2]='X';
 input.setText("X");
 else
+board[1][2]='O';
 input.setText("O");
 input.setTextSize(15);
 
@@ -612,9 +692,11 @@ TextView input = new TextView(v.getContext());
 
 input.setId(View.generateViewId());
 if (X==0 || X==2 || X==4 || X==6 || X==8)
+board[1][2]='X';
 
 input.setText("X");
 else
+board[1][2]='O';
 input.setText("O");
 input.setTextSize(15);
 
@@ -675,9 +757,10 @@ TextView input = new TextView(v.getContext());
 
 input.setId(View.generateViewId());
 if (X==0 || X==2 || X==4 || X==6 || X==8)
-
+board[2][2]='X';
 input.setText("X");
 else
+board[2][2]='O';
 input.setText("O");
 input.setTextSize(15);
 
@@ -715,5 +798,6 @@ X++;
   
         
     }
+}
 }
 
