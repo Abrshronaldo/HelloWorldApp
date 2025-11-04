@@ -176,14 +176,15 @@ TextView input = new TextView(v.getContext());
 
 
 input.setId(View.generateViewId());
-if (X==0 || X==2 || X==4 || X==6 || X==8)
+if (X==0 || X==2 || X==4 || X==6 || X==8){
 board[0][0]='X';
 input.setText("X");
-else
+}
+else{
 board[0][0]='O';
 input.setText("O");
 input.setTextSize(15);
-
+}
 
 ConstraintLayout.LayoutParams Cparams = new ConstraintLayout.LayoutParams(
     ConstraintLayout.LayoutParams.MATCH_PARENT,
@@ -244,16 +245,17 @@ TextView input = new TextView(v.getContext());
 
 
 input.setId(View.generateViewId());
-if (X==0 || X==2 || X==4 || X==6 || X==8)
+if (X==0 || X==2 || X==4 || X==6 || X==8){
 board[1][0]='X';
 
 input.setText("X");
-else
+}
+else {
 
 board[1][0]='O';
 input.setText("O");
 input.setTextSize(15);
-
+}
 
 ConstraintLayout.LayoutParams Fparams = new ConstraintLayout.LayoutParams(
     ConstraintLayout.LayoutParams.MATCH_PARENT,
@@ -309,16 +311,18 @@ TextView input = new TextView(v.getContext());
 
 
 input.setId(View.generateViewId());
-if (X==0 || X==2 || X==4 || X==6 || X==8)
+if (X==0 || X==2 || X==4 || X==6 || X==8){
 board[2][0]='X';
 
 input.setText("X");
-else
+
+}
+else{
 board[2][0]='X';
 input.setText("O");
 input.setTextSize(15);
 
-
+}
 ConstraintLayout.LayoutParams Hparams = new ConstraintLayout.LayoutParams(
     ConstraintLayout.LayoutParams.MATCH_PARENT,
     ConstraintLayout.LayoutParams.WRAP_CONTENT
@@ -374,17 +378,19 @@ TextView input = new TextView(v.getContext());
 
 
 input.setId(View.generateViewId());
-if (X==0 || X==2 || X==4 || X==6 || X==8)
+if (X==0 || X==2 || X==4 || X==6 || X==8){
 board[0][1]='X';
 input.setText("X");
-else
+}
+
+else{
 
 board[0][1]='O';
 
 input.setText("O");
 input.setTextSize(15);
 
-
+}
 ConstraintLayout.LayoutParams Jparams = new ConstraintLayout.LayoutParams(
     ConstraintLayout.LayoutParams.MATCH_PARENT,
     ConstraintLayout.LayoutParams.WRAP_CONTENT
@@ -438,15 +444,17 @@ TextView input = new TextView(v.getContext());
 
 
 input.setId(View.generateViewId());
-if (X==0 || X==2 || X==4 || X==6 || X==8)
+if (X==0 || X==2 || X==4 || X==6 || X==8){
 board[1][1]='X';
 input.setText("X");
-else
+
+}
+else{
 board[1][1]='O';
 input.setText("O");
 input.setTextSize(15);
 
-
+}
 ConstraintLayout.LayoutParams Lparams = new ConstraintLayout.LayoutParams(
     ConstraintLayout.LayoutParams.MATCH_PARENT,
     ConstraintLayout.LayoutParams.WRAP_CONTENT
@@ -501,15 +509,17 @@ TextView input = new TextView(v.getContext());
 
 
 input.setId(View.generateViewId());
-if (X==0 || X==2 || X==4 || X==6 || X==8)
+if (X==0 || X==2 || X==4 || X==6 || X==8){
 board[2][1]='X';
 input.setText("X");
-else
+
+}
+else{
 board[2][1]='O';
 input.setText("O");
 input.setTextSize(15);
 
-
+}
 ConstraintLayout.LayoutParams Nparams = new ConstraintLayout.LayoutParams(
     ConstraintLayout.LayoutParams.MATCH_PARENT,
     ConstraintLayout.LayoutParams.WRAP_CONTENT
@@ -566,14 +576,15 @@ TextView input = new TextView(v.getContext());
 
 
 input.setId(View.generateViewId());
-if (X==0 || X==2 || X==4 || X==6 || X==8)
-board[0][2]='X':
+if (X==0 || X==2 || X==4 || X==6 || X==8){
+board[0][2]='X';
 input.setText("X");
-else
+}
+else{
 board[0][2]='O';
 input.setText("O");
 input.setTextSize(15);
-
+}
 
 ConstraintLayout.LayoutParams Pparams = new ConstraintLayout.LayoutParams(
     ConstraintLayout.LayoutParams.MATCH_PARENT,
@@ -630,14 +641,16 @@ TextView input = new TextView(v.getContext());
 
 
 input.setId(View.generateViewId());
-if (X==0 || X==2 || X==4 || X==6 || X==8)
+if (X==0 || X==2 || X==4 || X==6 || X==8){
 board[1][2]='X';
 input.setText("X");
-else
+}
+
+else{
 board[1][2]='O';
 input.setText("O");
 input.setTextSize(15);
-
+}
 
 ConstraintLayout.LayoutParams Rparams = new ConstraintLayout.LayoutParams(
     ConstraintLayout.LayoutParams.MATCH_PARENT,
@@ -693,16 +706,18 @@ TextView input = new TextView(v.getContext());
 
 
 input.setId(View.generateViewId());
-if (X==0 || X==2 || X==4 || X==6 || X==8)
+if (X==0 || X==2 || X==4 || X==6 || X==8){
 board[1][2]='X';
 
 input.setText("X");
-else
+
+}
+else{
 board[1][2]='O';
 input.setText("O");
 input.setTextSize(15);
 
-
+}
 ConstraintLayout.LayoutParams Tparams = new ConstraintLayout.LayoutParams(
     ConstraintLayout.LayoutParams.MATCH_PARENT,
     ConstraintLayout.LayoutParams.WRAP_CONTENT
@@ -758,14 +773,15 @@ TextView input = new TextView(v.getContext());
 
 
 input.setId(View.generateViewId());
-if (X==0 || X==2 || X==4 || X==6 || X==8)
+if (X==0 || X==2 || X==4 || X==6 || X==8){
 board[2][2]='X';
 input.setText("X");
-else
+}
+else {
 board[2][2]='O';
 input.setText("O");
 input.setTextSize(15);
-
+}
 
 ConstraintLayout.LayoutParams Vparams = new ConstraintLayout.LayoutParams(
     ConstraintLayout.LayoutParams.MATCH_PARENT,
