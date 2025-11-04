@@ -26,13 +26,15 @@ public class MainActivity extends Activity {
         {' ', ' ', ' '}
     };
 
-
-boolean hasWon(char player) {
+ boolean hasWon(char player) {
         for (int i = 0; i < 3; i++) {
-            if ((board[i][0] == player && board[i][1] == player && board[i][2>
-                (board[0][i] == player && board[1][i] == player && board[2][i>
+if ((board[i][0] == player && board[i][1] == player && board[i][2] == player) ||
+  (board[0][i] == player && board[1][i] == player && board[2][i] == player))
                 return true;
         }
+return (board[0][0]== player && board[1][1] == player && board[2][2] == player) ||
+  (board[0][2] == player && board[1][1] == player && board[2][0] == player);
+    }
      
  boolean isDraw() {
         for (int i = 0; i < 3; i++)
@@ -109,10 +111,10 @@ ConstraintLayout.LayoutParams aaparams = new ConstraintLayout.LayoutParams(
 );
 
 
-TextView tv = new TextView(this);
-tv.setId(View.generateViewId());
-  tv.setText("player " + currentPlayer + "won");
-tv.setTextSize(15);
+TextView atv = new TextView(this);
+atv.setId(View.generateViewId());
+  atv.setText("player " + currentPlayer + "won");
+atv.setTextSize(15);
 
 // Constrain to top and left only
 aaparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
@@ -122,7 +124,7 @@ aaparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
 aaparams.leftMargin = 50; // x position
 aaparams.topMargin =  750; // y position
 
-tv.setLayoutParams(aaparams);
+atv.setLayoutParams(aaparams);
 
 
 
@@ -790,7 +792,7 @@ X++;
          layout.addView(lineView); 
 
     layout.addView(tv);
-       
+    layout.addView(atv);   
                                      
         // Set layout as content view
         setContentView(layout);
