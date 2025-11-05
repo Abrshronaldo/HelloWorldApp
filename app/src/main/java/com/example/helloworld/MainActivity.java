@@ -49,7 +49,6 @@ return (board[0][0]== player && board[1][1] == player && board[2][2] == player) 
 boolean gameEnded = false;
 
      char currentPlayer = 'X';                                                                    
-while (!gameEnded) {   
 
  @Override
 
@@ -101,46 +100,13 @@ params.topMargin =  700; // y position
 tv.setLayoutParams(params);
 
 
- if (hasWon(currentPlayer)) {
-                    
-       
+if (hasWon()) {
+    gameEnded = true;
+    Toast.makeText(this, "Game Over! Player X wins!", 
+Toast.LENGTH_SHORT).show();
+}
 
-ConstraintLayout.LayoutParams aaparams = new ConstraintLayout.LayoutParams(
-    ConstraintLayout.LayoutParams.MATCH_PARENT,
-    ConstraintLayout.LayoutParams.WRAP_CONTENT
-);
-
-
-TextView atv = new TextView(this);
-atv.setId(View.generateViewId());
-  atv.setText("player " + currentPlayer + "won");
-atv.setTextSize(15);
-
-// Constrain to top and left only
-aaparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
-aaparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-
-// Now apply margins
-aaparams.leftMargin = 50; // x position
-aaparams.topMargin =  750; // y position
-
-atv.setLayoutParams(aaparams);
-
-
-
-
-                     gameEnded = true;
-                } 
-
-
-else if (isDraw()) {
-                    
-                    gameEnded = true;
-                } else {
-                    currentPlayer = (currentPlayer == 'X') ? 'O' : 'X';
-                }
-
-
+ 
 TextView submitButton = new TextView(this);
 submitButton.setId(View.generateViewId());
 submitButton.setText("       ");
@@ -808,8 +774,7 @@ X++;
          layout.addView(lineView); 
 
     layout.addView(tv);
-    layout.addView(atv);   
-                                     
+                                         
         // Set layout as content view
         setContentView(layout);
 
