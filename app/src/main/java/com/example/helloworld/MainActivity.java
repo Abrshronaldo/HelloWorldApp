@@ -100,7 +100,7 @@ params.topMargin =  700; // y position
 tv.setLayoutParams(params);
 
 
-if (hasWon( currentPlayer ) {
+if (hasWon( currentPlayer) ) {
     gameEnded = true;
     Toast.makeText(this, "Game Over! Player X wins!", 
 Toast.LENGTH_SHORT).show();
