@@ -100,12 +100,6 @@ params.topMargin =  700; // y position
 tv.setLayoutParams(params);
 
 
-if (hasWon( currentPlayer) ) {
-    gameEnded = true;
-    Toast.makeText(this, "Game Over! Player X wins!", 
-Toast.LENGTH_SHORT).show();
-}
-
  
 TextView submitButton = new TextView(this);
 submitButton.setId(View.generateViewId());
@@ -733,6 +727,11 @@ Uparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
 
 
 
+if (hasWon( currentPlayer) ) {
+    gameEnded = true;
+    Toast.makeText(this, "Game Over! Player X wins!",
+Toast.LENGTH_SHORT).show();
+}
 
 TextView input = new TextView(v.getContext());
 
