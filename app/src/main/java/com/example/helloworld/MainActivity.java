@@ -729,8 +729,12 @@ Uparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
 
 if (hasWon( currentPlayer) ) {
     gameEnded = true;
-    Toast.makeText(this, "Game Over! Player X wins!",
-Toast.LENGTH_SHORT).show();
+    
+
+Toast.makeText(v.getContext(), "Game Over! Player X wins!", Toast.LENGTH_SHORT).show();
+
+
+
 }
 
 TextView input = new TextView(v.getContext());
