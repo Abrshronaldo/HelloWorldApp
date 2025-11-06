@@ -733,7 +733,7 @@ if (hasWon( currentPlayer) ) {
 
 Toast.makeText(v.getContext(), "Game Over! Player X wins!", Toast.LENGTH_SHORT).show();
 
-
+return;
 
 }
 
