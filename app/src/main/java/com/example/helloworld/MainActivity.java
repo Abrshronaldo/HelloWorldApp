@@ -2,6 +2,7 @@ package com.example.helloworld;
 
 import android.view.Window;
 import androidx.core.content.ContextCompat;
+import android.view.WindowManager;
 
 
 import java.lang.reflect.Field;
@@ -33,7 +34,6 @@ public class MainActivity extends Activity {
 //yes
   
                                                                       
-Systsm.out.println("xo");                                                                           
 
 ConstraintLayout layout = new ConstraintLayout(this);
 
