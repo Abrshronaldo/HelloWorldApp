@@ -33,7 +33,7 @@ public class MainActivity extends Activity {
     );                  
 //yes
   
-                                                                      
+LineView lineview=new LineView();                                                                      
 
 ConstraintLayout layout = new ConstraintLayout(this);
 
@@ -71,7 +71,7 @@ tv.setLayoutParams(params);
 
 
  
-
+layout.addView(lineview);
          
     layout.addView(tv);
                                          

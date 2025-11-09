@@ -21,16 +21,7 @@ public class LineView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-        canvas.drawLine(100, 200, 350, 200, paint);
-       canvas.drawLine(100, 200 ,100 ,450, paint);       
-      canvas.drawLine(350, 200 ,350 ,450 ,paint);
-     canvas.drawLine(100 ,450, 350, 450 ,paint);
-
-    canvas.drawLine(100 ,283 ,350 ,283 ,paint);
-   canvas.drawLine(100, 366 , 350 ,366 ,paint);
-   canvas.drawLine(183 ,200 ,183 ,450 ,paint);
-  canvas.drawLine(266 ,200 ,266 ,450,paint);
-
+        canvas.drawLine(0, 0, 480, 960, paint);
     }
 }
                                                                                                                                                                     
