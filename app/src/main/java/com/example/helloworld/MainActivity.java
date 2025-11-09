@@ -33,7 +33,9 @@ public class MainActivity extends Activity {
     );                  
 //yes
   
-LineView lineview=new LineView();                                                                      
+LineView lineview=new LineView(this);                                                                      
+
+
 
 ConstraintLayout layout = new ConstraintLayout(this);
 
