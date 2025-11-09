@@ -26,14 +26,14 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
                                               
-          LineView lineView = new LineView(this);
-         Window window = getWindow();
-window.setStatusBarColor(ContextCompat.getColor(this, android.R.color.white));
-                  
+            getWindow().setFlags(
+        WindowManager.LayoutParams.FLAG_FULLSCREEN,
+        WindowManager.LayoutParams.FLAG_FULLSCREEN
+    );                  
 //yes
   
                                                                       
-                                                                           
+Systsm.out.println("xo");                                                                           
 
 ConstraintLayout layout = new ConstraintLayout(this);
 
@@ -72,8 +72,7 @@ tv.setLayoutParams(params);
 
  
 
-         layout.addView(lineView); 
-
+         
     layout.addView(tv);
                                          
         // Set layout as content view
