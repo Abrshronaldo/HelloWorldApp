@@ -25,7 +25,7 @@ public class LineView extends View {
         // Blue transparent paint
         bpaint = new Paint();
         bpaint.setColor(Color.BLUE);
-        bpaint.setAlpha(0); // Fully transparent
+        bpaint.setAlpha(128); // Fully transparent
             }
 
     @Override
