@@ -26,8 +26,7 @@ public class LineView extends View {
         bpaint = new Paint();
         bpaint.setColor(Color.BLUE);
         bpaint.setAlpha(0); // Fully transparent
-        bpaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.CLEAR)); // Clears pixels
-    }
+            }
 
     @Override
     protected void onDraw(Canvas canvas) {
@@ -37,7 +36,7 @@ public class LineView extends View {
         canvas.drawRect(0, 0, getWidth(), getHeight(), paint);
 
         // Clear blue area (transparent effect)
-        canvas.drawRect(100, 100, 380, 860, bpaint); // Adjust position/size as needed
+        canvas.drawRect(0, 0, 480, 960, bpaint); // Adjust position/size as needed
     }
 }
 
