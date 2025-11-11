@@ -15,7 +15,7 @@ public class LineView extends View {
         paint = new Paint();
         paint.setColor(Color.RED);
         paint.setStrokeWidth(4);
-    bpaint =new paint();
+    bpaint =new Paint();
     bpaint.setColor(Color.BLUE);
          
 }
