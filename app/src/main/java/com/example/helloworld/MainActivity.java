@@ -4,6 +4,7 @@ import android.view.Window;
 import androidx.core.content.ContextCompat;
 import android.view.WindowManager;
 
+import android.widget.ImageView;
 
 import java.lang.reflect.Field;
 import android.widget.Button;
@@ -46,6 +47,25 @@ ConstraintLayout.LayoutParams Dparams = new ConstraintLayout.LayoutParams(
 
 
 
+ // Create an ImageView
+ImageView imageView = new ImageView(this);
+imageView.setId(View.generateViewId());
+
+// Load image from drawable
+imageView.setImageResource(R.drawable.myimage);
+
+// Set layout parameters
+ConstraintLayout.LayoutParams imgParams = new ConstraintLayout.LayoutParams(
+    ConstraintLayout.LayoutParams.WRAP_CONTENT,
+    ConstraintLayout.LayoutParams.WRAP_CONTENT
+);
+
+// Position it (example: top-left corner with margins)
+imgParams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
+imgParams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
+imgParams.leftMargin = 50;
+imgParams.topMargin = 100;
+imageView.setImageResource(R.drawable.myimage);
 
                                                                                                        
        
@@ -74,7 +94,8 @@ tv.setLayoutParams(params);
 
  
 layout.addView(lineview);
-         
+
+layout.addView(imageView);         
     layout.addView(tv);
                                          
         // Set layout as content view

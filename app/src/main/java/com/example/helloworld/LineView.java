@@ -17,24 +17,22 @@ public class LineView extends View {
     public LineView(Context context) {
         super(context);
 
-        // Red background paint
-        paint = new Paint();
-        paint.setColor(Color.RED);
-        paint.setStyle(Paint.Style.FILL);
-
+        
         // Blue transparent paint
         bpaint = new Paint();
-        bpaint.setColor(Color.BLUE);
-        bpaint.setAlpha(128); // Fully transparent
-            }
+       // Semi-transparent red (alpha = 128 out of 255)
+bpaint.setColor(new Color(0, 90, 60, 240));
+       
+
+
+         }
 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
         // Draw red background
-        canvas.drawRect(0, 0, getWidth(), getHeight(), paint);
-
+        
         // Clear blue area (transparent effect)
         canvas.drawRect(0, 0, 480, 960, bpaint); // Adjust position/size as needed
     }
