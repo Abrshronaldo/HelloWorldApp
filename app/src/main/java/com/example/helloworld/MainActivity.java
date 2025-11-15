@@ -64,7 +64,7 @@ imgParams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 imgParams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
 imgParams.leftMargin = 50;
 imgParams.topMargin = 100;
-imageView.setImageResource(R.drawable.myimage);
+imageView.setImageResource(R.drawable.abrsh.png);
 
                                                                                                        
        
