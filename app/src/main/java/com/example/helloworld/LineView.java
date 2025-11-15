@@ -21,7 +21,7 @@ public class LineView extends View {
         // Blue transparent paint
         bpaint = new Paint();
        // Semi-transparent red (alpha = 128 out of 255)
-bpaint.setColor(new Color(0, 90, 60, 240));
+bpaint.setColor(new Color(0, 90, 80, 240));
        
 
 

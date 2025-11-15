@@ -52,7 +52,6 @@ ImageView imageView = new ImageView(this);
 imageView.setId(View.generateViewId());
 
 // Load image from drawable
-imageView.setImageResource(R.drawable.abrsh.png);
 
 // Set layout parameters
 ConstraintLayout.LayoutParams imgParams = new ConstraintLayout.LayoutParams(
