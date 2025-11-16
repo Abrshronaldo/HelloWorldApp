@@ -62,8 +62,8 @@ ConstraintLayout.LayoutParams imgParams = new ConstraintLayout.LayoutParams(
 // Position it (example: top-left corner with margins)
 imgParams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 imgParams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-imgParams.leftMargin = 50;
-imgParams.topMargin = 100;
+imgParams.leftMargin = 0;
+imgParams.topMargin = 0;
 imageView.setImageResource(R.drawable.abrsh);
 
                                                                                                        
