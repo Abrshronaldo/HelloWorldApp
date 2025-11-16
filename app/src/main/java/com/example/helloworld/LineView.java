@@ -11,8 +11,7 @@ import android.graphics.PorterDuffXfermode;
 import android.view.View;
 
 public class LineView extends View {
-    private Paint paint;
-    private Paint bpaint;
+       private Paint bpaint;
 
     public LineView(Context context) {
         super(context);
@@ -21,7 +20,7 @@ public class LineView extends View {
         // Blue transparent paint
         bpaint = new Paint();
        // Semi-transparent red (alpha = 128 out of 255)
-bpaint.setColor(Color(0, 90, 80, 240));
+bpaint.setColor(Color.argb(240,0, 90, 80));
        
 
 
