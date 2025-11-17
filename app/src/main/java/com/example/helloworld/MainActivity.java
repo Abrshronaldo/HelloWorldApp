@@ -64,6 +64,10 @@ imgParams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 imgParams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
 imgParams.leftMargin = 0;
 imgParams.topMargin = 0;
+
+imageView.setPadding(0, 0, 0, 0);
+imageView.setAdjustViewBounds(true);
+
 imageView.setImageResource(R.drawable.abrsh);
 
                                                                                                        
