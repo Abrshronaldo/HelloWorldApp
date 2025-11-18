@@ -66,7 +66,9 @@ imgParams.leftMargin = 0;
 imgParams.topMargin = 0;
 
 imageView.setPadding(0, 0, 0, 0);
-imageView.setAdjustViewBounds(true);
+
+imageView.setScaleType(ImageView.ScaleType.FIT_XY);
+
 
 imageView.setImageResource(R.drawable.abrsh);
 
@@ -96,7 +98,7 @@ tv.setLayoutParams(params);
 
 
  
-layout.addView(lineview);
+//layout.addView(lineview);
 
 layout.addView(imageView);         
     layout.addView(tv);
