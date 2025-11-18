@@ -101,6 +101,8 @@ tv.setLayoutParams(params);
 //layout.addView(lineview);
 
 layout.addView(imageView);         
+layout.addView(lineview);
+
     layout.addView(tv);
                                          
         // Set layout as content view
