@@ -92,7 +92,7 @@ params.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
                             
 // Now apply margins
 params.leftMargin = 50; // x position
-params.topMargin =  700; // y position
+params.topMargin =  680; // y position
                                                                          
 tv.setLayoutParams(params);
 
