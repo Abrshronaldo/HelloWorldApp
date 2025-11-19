@@ -6,6 +6,8 @@ import android.view.WindowManager;
 
 import android.widget.ImageView;
 
+import android.graphics.Color;
+
 import java.lang.reflect.Field;
 import android.widget.Button;
 import android.view.View;
