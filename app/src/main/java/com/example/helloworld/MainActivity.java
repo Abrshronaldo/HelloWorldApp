@@ -89,7 +89,7 @@ tv.setId(View.generateViewId());
 tv.setTextSize(15);
 
 
-tv.setBackgroundColor(Color.argb(255, 255, 255, 255));
+//tv.setBackgroundColor(Color.argb(255, 255, 255, 255));
 
 // Constrain to top and left only
 params.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
@@ -102,12 +102,29 @@ params.topMargin =  680; // y position
 tv.setLayoutParams(params);
 
 
+
+
+TextView t = new TextView(this);
+t.setId(View.generateViewId());
+  
+
+t.setBackgroundColor(Color.argb(255, 255, 255, 255));
+
+// Constrain to top and left only
+params.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
+params.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
+
+// Now apply margins
+
+t.setLayoutParams(params);
+
  
 //layout.addView(lineview);
 
 layout.addView(imageView);         
 layout.addView(lineview);
 
+layout.addView(t);
     layout.addView(tv);
                                          
         // Set layout as content view
