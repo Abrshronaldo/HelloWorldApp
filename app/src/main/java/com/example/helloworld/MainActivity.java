@@ -102,13 +102,13 @@ params.topMargin =  680; // y position
 tv.setLayoutParams(params);
 
 
-                                                                             >
-
+                                                                 
 
 ConstraintLayout.LayoutParams zparams = new ConstraintLayout.LayoutParams(
     ConstraintLayout.LayoutParams.MATCH_PARENT,
     ConstraintLayout.LayoutParams.WRAP_CONTENT
 
+);
 TextView t = new TextView(this);
 t.setId(View.generateViewId());
   
