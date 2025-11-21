@@ -79,7 +79,7 @@ imageView.setImageResource(R.drawable.abrsh);
 
 ConstraintLayout.LayoutParams params = new ConstraintLayout.LayoutParams(
     ConstraintLayout.LayoutParams.MATCH_PARENT,
-    ConstraintLayout.LayoutParams.MATCH.PARENT
+    ConstraintLayout.LayoutParams.MATCH_PARENT
 );
 
                                                                          
