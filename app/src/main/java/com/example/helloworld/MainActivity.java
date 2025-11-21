@@ -87,17 +87,17 @@ TextView tv = new TextView(this);
 tv.setId(View.generateViewId());
   tv.setText("touch one of the box :first player is always X  ");
 tv.setTextSize(15);
+tv.setGravity(Gravity.CENTER);   // centers text inside the TextView
+// Other options: Gravity.LEFT, Gravity.RIGHT, Gravity.TOP, Gravity.BOTTOM
 
 
-//tv.setBackgroundColor(Color.argb(255, 255, 255, 255));
+tv.setBackgroundColor(Color.argb(255, 255, 255, 255));
 
 // Constrain to top and left only
 params.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 params.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
                             
 // Now apply margins
-params.leftMargin = 50; // x position
-params.topMargin =  680; // y position
                                                                          
 tv.setLayoutParams(params);
 
