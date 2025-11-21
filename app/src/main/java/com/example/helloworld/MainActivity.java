@@ -4,6 +4,8 @@ import android.view.Window;
 import androidx.core.content.ContextCompat;
 import android.view.WindowManager;
 
+
+import android.view.Gravity;
 import android.widget.ImageView;
 
 import android.graphics.Color;
