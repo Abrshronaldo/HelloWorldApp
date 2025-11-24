@@ -79,12 +79,6 @@ imageView.setImageResource(R.drawable.abrsh);
                                                                                                        
        
 
-ConstraintLayout.LayoutParams params = new ConstraintLayout.LayoutParams(
-240,
-240    
-
-
-);
 
                                                                          
 TextView tv = new TextView(this);
@@ -98,13 +92,13 @@ tv.setGravity(Gravity.CENTER);   // centers text inside the TextView
 tv.setBackgroundColor(Color.argb(255, 255, 255, 255));
 
 // Constrain to top and left only
-//params.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
-//params.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-                            
+params.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
+params.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
+parans.topMargin=240;                            
 // Now apply margins
-                                                                         
+params.leftMargin=0;                                                                        
 tv.setLayoutParams(params);
-
+ 
 
                                                                  
 
