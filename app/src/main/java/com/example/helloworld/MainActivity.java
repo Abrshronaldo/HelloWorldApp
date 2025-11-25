@@ -77,7 +77,12 @@ imageView.setScaleType(ImageView.ScaleType.FIT_XY);
 imageView.setImageResource(R.drawable.abrsh);
 
                                                                                                        
-       
+
+ConstraintLayout.LayoutParams params = new ConstraintLayout.LayoutParams(
+    240,
+    240
+
+);       
 
 
                                                                          
@@ -94,7 +99,8 @@ tv.setBackgroundColor(Color.argb(255, 255, 255, 255));
 // Constrain to top and left only
 params.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 params.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-parans.topMargin=240;                            
+params.topMargin=240;                            
+params.leftMargin=240; 
 // Now apply margins
 params.leftMargin=0;                                                                        
 tv.setLayoutParams(params);
@@ -102,32 +108,12 @@ tv.setLayoutParams(params);
 
                                                                  
 
-ConstraintLayout.LayoutParams zparams = new ConstraintLayout.LayoutParams(
-    ConstraintLayout.LayoutParams.MATCH_PARENT,
-    ConstraintLayout.LayoutParams.WRAP_CONTENT
-
-);
-TextView t = new TextView(this);
-t.setId(View.generateViewId());
-  
-
-t.setBackgroundColor(Color.argb(255, 255, 255, 255));
-
-// Constrain to top and left only
-zparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
-zparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-
-// Now apply margins
-
-t.setLayoutParams(zparams);
-
  
 //layout.addView(lineview);
 
 layout.addView(imageView);         
 layout.addView(lineview);
 
-layout.addView(t);
     layout.addView(tv);
                                          
         // Set layout as content view
