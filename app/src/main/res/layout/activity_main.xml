@@ -11,7 +11,7 @@
         android:layout_height="240dp"
         android:text="Your Text Here"
         android:textSize="30sp"
-        android:background="@android:color/white"
+        
         android:lineSpacingExtra="0dp"
         android:includeFontPadding="false"
         android:padding="5dp"
