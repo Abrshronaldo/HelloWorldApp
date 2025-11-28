@@ -3,6 +3,8 @@ package com.example.helloworld;
 import android.view.Window;
 import androidx.core.content.ContextCompat;
 import android.view.WindowManager;
+import android.graphics.drawable.Drawable;
+import androidx.core.content.ContextCompat;
 
 
 import android.view.Gravity;
@@ -95,7 +97,7 @@ tv.setGravity(Gravity.CENTER);   // centers text inside the TextView
 
 Drawable bg = ContextCompat.getDrawable(this, R.drawable.rounded_background);
 // example tint
-tv.setBackground(bg       );
+tv.setBackground(bg);
 //tv.setBackgroundColor(Color.argb(255, 255, 255, 255));
 
 // Constrain to top and left only
