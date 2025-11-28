@@ -94,7 +94,7 @@ tv.setGravity(Gravity.CENTER);   // centers text inside the TextView
 // Other options: Gravity.LEFT, Gravity.RIGHT, Gravity.TOP, Gravity.BOTTOM
 
 
-tv.setBackgroundColor(Color.argb(255, 255, 255, 255));
+//tv.setBackgroundColor(Color.argb(255, 255, 255, 255));
 
 // Constrain to top and left only
 params.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
