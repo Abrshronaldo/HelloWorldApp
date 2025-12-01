@@ -95,7 +95,7 @@ tv.setTextSize(15);
 tv.setGravity(Gravity.CENTER);   // centers text inside the TextView
 // Other options: Gravity.LEFT, Gravity.RIGHT, Gravity.TOP, Gravity.BOTTOM
 
-Drawable bg = ContextCompat.getDrawable(this, R.drawable.rounded_background);
+Drawable bg = ContextCompat.getDrawable(this, R.drawable.rounded_bg;
 // example tint
 tv.setBackground(bg);
 //tv.setBackgroundColor(Color.argb(255, 255, 255, 255));
