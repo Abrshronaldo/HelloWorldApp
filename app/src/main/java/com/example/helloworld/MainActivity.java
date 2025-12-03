@@ -82,7 +82,7 @@ imageView.setImageResource(R.drawable.abrsh);
 
 ConstraintLayout.LayoutParams params = new ConstraintLayout.LayoutParams(
     470,
-    480
+    450
 );       
 
 
@@ -102,10 +102,10 @@ tv.setBackground(bg);
 // Constrain to top and left only
 params.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 params.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-params.topMargin=480;
+params.topMargin=485;
 // Now apply margins
 params.leftMargin=5;                                                                        
-
+params.bottomMargin=5;
 
 
 params.rightMargin=5;
