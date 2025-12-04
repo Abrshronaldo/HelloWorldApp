@@ -104,11 +104,11 @@ params.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 params.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
 params.topMargin=485;
 // Now apply margins
-params.leftMargin=0;                   
+params.leftMargin=5;  
 params.bottomMargin=5;
 
 
-params.rightMargin=0;
+params.rightMargin=5;
 tv.setLayoutParams(params); 
 
                                                                  
