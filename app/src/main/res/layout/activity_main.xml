@@ -16,7 +16,7 @@
         android:includeFontPadding="false"
         android:padding="5dp"
     android:layout_marginLeft="0dp"
-     android:background="@drawable/rounded_bg"             
+     android:background="@drawable/rounded_layer"             
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" 
