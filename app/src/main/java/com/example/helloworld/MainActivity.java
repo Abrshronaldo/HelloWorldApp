@@ -82,7 +82,7 @@ imageView.setImageResource(R.drawable.abrsh);
 
 ConstraintLayout.LayoutParams params = new ConstraintLayout.LayoutParams(
     474,
-    430
+    420
 );       
 
 
