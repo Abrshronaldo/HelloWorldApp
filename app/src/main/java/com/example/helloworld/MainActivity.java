@@ -107,9 +107,7 @@ params.bottomMargin=3;
 params.rightMargin=3;
 tv.setLayoutParams(params); 
 
-                                                                 
-                                                                         >
-
+                          
 ConstraintLayout.LayoutParams Fparams = new ConstraintLayout.LayoutParams(
    
   ConstraintLayout.LayoutParams.WRAP_CONTENT,
