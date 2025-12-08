@@ -89,11 +89,7 @@ ConstraintLayout.LayoutParams params = new ConstraintLayout.LayoutParams(
                                                                          
 TextView tv = new TextView(this);
 tv.setId(View.generateViewId());
-  tv.setText("touch one of the box :first player is always X  ");
-tv.setTextSize(15);
-tv.setGravity(Gravity.CENTER);   // centers text inside the TextView
-// Other options: Gravity.LEFT, Gravity.RIGHT, Gravity.TOP, Gravity.BOTTOM
-
+  
 Drawable bg = ContextCompat.getDrawable(this, R.drawable.rounded_layer);
 // example tint
 tv.setBackground(bg);
@@ -112,13 +108,41 @@ params.rightMargin=3;
 tv.setLayoutParams(params); 
 
                                                                  
+                                                                         >
 
+ConstraintLayout.LayoutParams Fparams = new ConstraintLayout.LayoutParams(
+   
+  ConstraintLayout.LayoutParams.WRAP_CONTENT,
+    ConstraintLayout.LayoutParams.WRAP_CONTENT
+);
+
+
+
+TextView t = new TextView(this);
+t.setId(View.generateViewId());
+  t.setText("touch one of the box :first player is always X  ");
+t.setTextSize(10);
+t.setTextColor(Color.argb(60, 60,60));
+
+// Constrain to top and left only
+Fparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
+Farams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
+Farams.topMargin=500;
+// Now apply margins
+Farams.leftMargin=10;
+Farams.bottomMargin=3;
+
+
+Farams.rightMargin=3;
+t.setLayoutParams(Farams);
  
 //layout.addView(lineview);
 
 layout.addView(imageView);         
 layout.addView(lineview);
 
+
+layout.addView(t);
     layout.addView(tv);
                                          
         // Set layout as content view
