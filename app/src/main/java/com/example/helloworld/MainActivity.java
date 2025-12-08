@@ -120,7 +120,7 @@ ConstraintLayout.LayoutParams Fparams = new ConstraintLayout.LayoutParams(
 
 TextView t = new TextView(this);
 t.setId(View.generateViewId());
-  t.setText("touch one of the box :first player is always X  ");
+  t.setText("Complete");
 t.setTextSize(10);
 t.setTextColor(Color.argb(60, 60,60));
 
