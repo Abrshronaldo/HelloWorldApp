@@ -140,9 +140,10 @@ layout.addView(imageView);
 layout.addView(lineview);
 
 
-layout.addView(t);
     layout.addView(tv);
-                                         
+
+
+layout.addView(t);                                         
         // Set layout as content view
         setContentView(layout);
 
