@@ -119,15 +119,15 @@ ConstraintLayout.LayoutParams Fparams = new ConstraintLayout.LayoutParams(
 TextView t = new TextView(this);
 t.setId(View.generateViewId());
   t.setText("Complete");
-t.setTextSize(12);
+t.setTextSize(14);
 t.setTextColor(Color.rgb(60, 60,60));
 
 // Constrain to top and left only
 Fparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 Fparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-Fparams.topMargin=550;
+Fparams.topMargin=540;
 // Now apply margins
-Fparams.leftMargin=25;
+Fparams.leftMargin=29;
 Fparams.bottomMargin=3;
 
 
