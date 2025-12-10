@@ -125,9 +125,9 @@ t.setTextColor(Color.rgb(60, 60,60));
 // Constrain to top and left only
 Fparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 Fparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-Fparams.topMargin=540;
+Fparams.topMargin=518;
 // Now apply margins
-Fparams.leftMargin=29;
+Fparams.leftMargin=32;
 Fparams.bottomMargin=3;
 
 
