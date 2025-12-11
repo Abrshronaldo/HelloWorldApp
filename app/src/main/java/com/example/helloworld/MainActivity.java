@@ -120,14 +120,14 @@ TextView t = new TextView(this);
 t.setId(View.generateViewId());
   t.setText("Complete");
 t.setTextSize(14);
-t.setTextColor(Color.rgb(65, 65,65));
+t.setTextColor(Color.rgb(70, 70,70));
 
 // Constrain to top and left only
 Fparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 Fparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-Fparams.topMargin=522;
+Fparams.topMargin=524;
 // Now apply margins
-Fparams.leftMargin=34;
+Fparams.leftMargin=33;
 Fparams.bottomMargin=3;
 
 
