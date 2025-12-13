@@ -53,10 +53,47 @@ ConstraintLayout.LayoutParams Dparams = new ConstraintLayout.LayoutParams(
 
 
 
- // Create an ImageView
+
+ConstraintLayout.LayoutParams jparams = new ConstraintLayout.LayoutParams(
+
+  ConstraintLayout.LayoutParams.WRAP_CONTENT,
+    ConstraintLayout.LayoutParams.WRAP_CONTENT
+);
+
+   
+
+TextView te = new TextView(this);
+te.setId(View.generateViewId());
+  te.setText("something wrong");
+te.setTextSize(14);
+te.setTextColor(Color.rgb(70, 70,70));
+te.setPadding(0,10,0,10);
+
+
+
+
+ 
+te.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+// Constrain to top and left only
+jparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
+jparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
+jparams.topMargin=50;
+// Now apply margins
+jparams.leftMargin=100;
+jparams.bottomMargin=3;
+
+
+jparams.rightMargin=3;
+te.setLayoutParams(jparams);
+ 
+layout.addView(te);
+
+// Create an ImageView
 ImageView imageView = new ImageView(this);
 imageView.setId(View.generateViewId());
-
+ 
 // Load image from drawable
 
 // Set layout parameters
@@ -148,7 +185,8 @@ layout.addView(t);
         setContentView(layout);
 
   
-        
+  }
+});      
 
 }
 }
