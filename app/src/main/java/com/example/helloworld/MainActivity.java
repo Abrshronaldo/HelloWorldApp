@@ -169,22 +169,18 @@ t.setLayoutParams(Fparams);
  
 //layout.addView(lineview);
 
-layout.addView(imageView);         
+te.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+
+layout.addView(imageView);
 layout.addView(lineview);
 
 
     layout.addView(tv);
 
 
-layout.addView(t);                                         
-        // Set layout as content view
-
-te.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View v) {
-
-setContentView(layout);
-       
+layout.addView(t);       
   
   }
 });      
