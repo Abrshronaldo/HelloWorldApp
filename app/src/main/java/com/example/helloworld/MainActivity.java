@@ -63,18 +63,6 @@ ConstraintLayout.LayoutParams jparams = new ConstraintLayout.LayoutParams(
 
    
 
-TextView te = new TextView(this);
-te.setId(View.generateViewId());
-  te.setText("something wrong");
-te.setTextSize(14);
-te.setTextColor(Color.rgb(70, 70,70));
-te.setPadding(0,10,0,10);
-te.setLayoutParams(jparams);
-
-layout.addView(te);
-setContentView(layout);
-
-
 // Constrain to top and left only
 jparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 jparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
@@ -185,6 +173,20 @@ t.setLayoutParams(Fparams);
         if (Math.abs(diffX)
  > SWIPE_THRESHOLD && Math.abs(velocityX) > SWIPE_VELOCITY_THRESHOLD) {
             if (diffX < 0) {
+
+
+
+
+TextView te = new TextView(this);
+te.setId(View.generateViewId());
+  te.setText("something wrong");
+te.setTextSize(14);
+te.setTextColor(Color.rgb(70, 70,70));
+te.setPadding(0,10,0,10);
+te.setLayoutParams(jparams);
+
+layout.addView(te);
+setContentView(layout);
 te.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
