@@ -68,7 +68,9 @@ te.setId(View.generateViewId());
 te.setTextSize(14);
 te.setTextColor(Color.rgb(70, 70,70));
 te.setPadding(0,10,0,10);
+te.setLayoutParams(jparams);
 
+layout.addView(te);
 
 
 
@@ -86,9 +88,7 @@ jparams.bottomMargin=3;
 
 
 jparams.rightMargin=3;
-te.setLayoutParams(jparams);
- 
-layout.addView(te);
+
 
 // Create an ImageView
 ImageView imageView = new ImageView(this);
