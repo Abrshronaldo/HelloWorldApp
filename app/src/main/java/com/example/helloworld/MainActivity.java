@@ -74,10 +74,6 @@ layout.addView(te);
 setContentView(layout);
 
 
- 
-te.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View v) {
 // Constrain to top and left only
 jparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 jparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
@@ -182,6 +178,12 @@ layout.addView(lineview);
 
 layout.addView(t);                                         
         // Set layout as content view
+
+te.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+
+setContentView(layout);
        
   
   }
