@@ -71,7 +71,7 @@ te.setPadding(0,10,0,10);
 te.setLayoutParams(jparams);
 
 layout.addView(te);
-
+setContentView(layout);
 
 
  
@@ -182,8 +182,7 @@ layout.addView(lineview);
 
 layout.addView(t);                                         
         // Set layout as content view
-        setContentView(layout);
-
+       
   
   }
 });      
