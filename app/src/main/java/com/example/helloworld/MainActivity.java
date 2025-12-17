@@ -172,14 +172,18 @@ t.setLayoutParams(Fparams);
 
 
  
-  GestureDetector gestureDetector = new GestureDetector(context, new GestureDetector.SimpleOnGestureListener() {
+  GestureDetector gestureDetector
+ = new GestureDetector(this,
+ new GestureDetector.SimpleOnGestureListener() {
     private static final int SWIPE_THRESHOLD = 100;
     private static final int SWIPE_VELOCITY_THRESHOLD = 100;
 
     @Override
-    public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
+    public boolean onFling(MotionEvent e1,
+ MotionEvent e2, float velocityX, float velocityY) {
         float diffX = e2.getX() - e1.getX();
-        if (Math.abs(diffX) > SWIPE_THRESHOLD && Math.abs(velocityX) > SWIPE_VELOCITY_THRESHOLD) {
+        if (Math.abs(diffX)
+ > SWIPE_THRESHOLD && Math.abs(velocityX) > SWIPE_VELOCITY_THRESHOLD) {
             if (diffX < 0) {
 te.setOnClickListener(new View.OnClickListener() {
     @Override
