@@ -212,5 +212,9 @@ layout.addView(t);
 });
 
 
+public boolean onTouchEvent(MotionEvent event) {
+    return gestureDetector.onTouchEvent(event) || super.onTouchEvent(event);
+}
+
 }
 }
