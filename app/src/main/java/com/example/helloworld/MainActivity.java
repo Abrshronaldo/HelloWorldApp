@@ -75,6 +75,19 @@ jparams.bottomMargin=3;
 jparams.rightMargin=3;
 
 
+
+TextView te = new TextView(this);
+te.setId(View.generateViewId());
+  te.setText("something wrong");
+te.setTextSize(14);
+te.setTextColor(Color.rgb(70, 70,70));
+te.setPadding(0,10,0,10);
+te.setLayoutParams(jparams);
+
+layout.addView(te);
+setContentView(layout);
+
+
 // Create an ImageView
 ImageView imageView = new ImageView(this);
 imageView.setId(View.generateViewId());
@@ -176,17 +189,6 @@ t.setLayoutParams(Fparams);
 
 
 
-
-TextView te = new TextView(this);
-te.setId(View.generateViewId());
-  te.setText("something wrong");
-te.setTextSize(14);
-te.setTextColor(Color.rgb(70, 70,70));
-te.setPadding(0,10,0,10);
-te.setLayoutParams(jparams);
-
-layout.addView(te);
-setContentView(layout);
 te.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
