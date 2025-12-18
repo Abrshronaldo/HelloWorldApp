@@ -210,11 +210,10 @@ layout.addView(t);
         return false;
     }
 });
-
+}
 
 public boolean onTouchEvent(MotionEvent event) {
     return gestureDetector.onTouchEvent(event) || super.onTouchEvent(event);
 }
 
-}
 }
