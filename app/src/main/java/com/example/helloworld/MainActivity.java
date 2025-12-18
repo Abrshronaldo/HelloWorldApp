@@ -85,7 +85,6 @@ te.setPadding(0,10,0,10);
 te.setLayoutParams(jparams);
 
 layout.addView(te);
-setContentView(layout);
 
 
 // Create an ImageView
@@ -187,7 +186,7 @@ t.setLayoutParams(Fparams);
  > SWIPE_THRESHOLD && Math.abs(velocityX) > SWIPE_VELOCITY_THRESHOLD) {
             if (diffX < 0) {
 
-
+setContentView(layout);
 
 te.setOnClickListener(new View.OnClickListener() {
     @Override
