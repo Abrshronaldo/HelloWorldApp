@@ -52,11 +52,6 @@ LineView lineview=new LineView(this);
 
 ConstraintLayout layout = new ConstraintLayout(this);
 
-ConstraintLayout.LayoutParams Dparams = new ConstraintLayout.LayoutParams(
-    ConstraintLayout.LayoutParams.MATCH_PARENT,
-    ConstraintLayout.LayoutParams.WRAP_CONTENT
-);
-
 
 
 
@@ -89,7 +84,6 @@ te.setTextColor(Color.rgb(70, 70,70));
 te.setPadding(0,10,0,10);
 te.setLayoutParams(jparams);
 
-layout.addView(te);
 
 
 // Create an ImageView
@@ -177,7 +171,7 @@ t.setLayoutParams(Fparams);
 
 
  
-  GestureDetector gestureDetector
+   gestureDetector
  = new GestureDetector(this,
  new GestureDetector.SimpleOnGestureListener() {
     private static final int SWIPE_THRESHOLD = 100;
