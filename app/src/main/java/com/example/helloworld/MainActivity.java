@@ -95,7 +95,7 @@ imageView.setId(View.generateViewId());
 
 // Set layout parameters
 ConstraintLayout.LayoutParams imgParams = new ConstraintLayout.LayoutParams(
-    ConstraintLayout.LayoutParams.MATCH_PARENT,
+    ConstraintLayousetContentView(layout);setContentView(layout);t.LayoutParams.MATCH_PARENT,
     ConstraintLayout.LayoutParams.WRAP_CONTENT
 );
 
@@ -147,7 +147,7 @@ ConstraintLayout.LayoutParams Fparams = new ConstraintLayout.LayoutParams(
   ConstraintLayout.LayoutParams.WRAP_CONTENT,
     ConstraintLayout.LayoutParams.WRAP_CONTENT
 );
-
+setContentView(layout);
 
 
 TextView t = new TextView(this);
@@ -186,8 +186,8 @@ t.setLayoutParams(Fparams);
  > SWIPE_THRESHOLD && Math.abs(velocityX) > SWIPE_VELOCITY_THRESHOLD) {
             if (diffX < 0) {
 
-setContentView(layout);
 
+layout.addView(te);
 te.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
