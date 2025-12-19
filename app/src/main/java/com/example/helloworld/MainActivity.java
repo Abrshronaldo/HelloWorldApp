@@ -28,7 +28,12 @@ import android.content.Context;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.ConstraintLayout.LayoutParams;
 public class MainActivity extends Activity {
-       
+
+
+
+
+
+public GestureDetector gestureDetector;       
  @Override
 
 
