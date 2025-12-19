@@ -95,8 +95,8 @@ imageView.setId(View.generateViewId());
 
 // Set layout parameters
 ConstraintLayout.LayoutParams imgParams = new ConstraintLayout.LayoutParams(
-    ConstraintLayousetContentView(layout);setContentView(layout);t.LayoutParams.MATCH_PARENT,
-    ConstraintLayout.LayoutParams.WRAP_CONTENT
+    ConstraintLayout.LayoutParams.MATCH_PARENT,
+    ConstraintLayout.LayoutParams.WRAP_CONTENT               
 );
 
 // Position it (example: top-left corner with margins)
