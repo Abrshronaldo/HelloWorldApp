@@ -151,7 +151,7 @@ setContentView(layout);
 
 TextView t = new TextView(this);
 t.setId(View.generateViewId());
-  t.setText("Complete\nETB 30.00 debited");
+  t.setText("Complete\nETB 30.00 debited from ABREHAM H/MICHAEL H/GIORGIS for ABRHAM\n NANJALO HAYILANA-ETB-2133 on/n21-Dec-2025 with ... Press any key except 1/nand 2 for more");
 t.setTextSize(14);
 t.setTextColor(Color.rgb(70, 70,70));
 
