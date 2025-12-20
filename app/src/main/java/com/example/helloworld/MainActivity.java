@@ -151,10 +151,11 @@ setContentView(layout);
 
 TextView t = new TextView(this);
 t.setId(View.generateViewId());
-  t.setText("Complete");
+  t.setText("Complete/nETB 30.00 debited");
 t.setTextSize(14);
 t.setTextColor(Color.rgb(70, 70,70));
 
+t.setPadding(0, 1, 0, 0); 
 // Constrain to top and left only
 Fparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 Fparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
@@ -163,6 +164,7 @@ Fparams.topMargin=524;
 Fparams.leftMargin=33;
 Fparams.bottomMargin=3;
 
+Fparams.rightToRight = ConstraintLayout.LayoutParams.PARENT_ID;
 
 Fparams.rightMargin=3;
 t.setLayoutParams(Fparams);
