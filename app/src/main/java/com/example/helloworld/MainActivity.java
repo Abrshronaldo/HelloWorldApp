@@ -143,7 +143,7 @@ tv.setLayoutParams(params);
                           
 ConstraintLayout.LayoutParams Fparams = new ConstraintLayout.LayoutParams(
    
-  ConstraintLayout.LayoutParams.WRAP_CONTENT,
+  0, //  ConstraintLayout.LayoutParams.WRAP_CONTENT,
     ConstraintLayout.LayoutParams.WRAP_CONTENT
 );
 setContentView(layout);
@@ -151,7 +151,7 @@ setContentView(layout);
 
 TextView t = new TextView(this);
 t.setId(View.generateViewId());
-  t.setText("Complete/nETB 30.00 debited");
+  t.setText("Complete\nETB 30.00 debited");
 t.setTextSize(14);
 t.setTextColor(Color.rgb(70, 70,70));
 
