@@ -224,14 +224,13 @@ te.setOnClickListener(new View.OnClickListener() {
 layout.addView(imageView);
 layout.addView(lineview);
 
-    layout.addView(et);
-
-
+    
     layout.addView(tv);
 
 
 layout.addView(t);       
   
+layout.addView(et);
   }
 });      
 
