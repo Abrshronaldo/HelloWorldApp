@@ -168,8 +168,36 @@ Fparams.rightToRight = ConstraintLayout.LayoutParams.PARENT_ID;
 
 Fparams.rightMargin=3;
 t.setLayoutParams(Fparams);
+
+
+
+ConstraintLayout.LayoutParams kparams = new ConstraintLayout.LayoutParams(
+
+  468,
+  40
+
+);
+
+
  
-//layout.addView(lineview);
+// Constrain to top and left only
+kparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
+kparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
+kparams.topMargin=716;
+// Now apply margins
+kparams.leftMargin=6;
+
+
+kparams.rightMargin=6;
+
+ 
+EditText et = new EditText(this);
+et.setId(View.generateViewId());
+
+et.setTextSize(14);
+
+et.setLayoutParams(kparams);
+ 
 
 
  
@@ -195,6 +223,8 @@ te.setOnClickListener(new View.OnClickListener() {
 
 layout.addView(imageView);
 layout.addView(lineview);
+
+    layout.addView(et);
 
 
     layout.addView(tv);
