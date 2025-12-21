@@ -8,6 +8,8 @@ import androidx.core.content.ContextCompat;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 
+import android.util.TypedValue;
+
 import android.view.Gravity;
 import android.widget.ImageView;
 
