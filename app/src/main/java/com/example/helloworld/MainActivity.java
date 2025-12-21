@@ -176,8 +176,7 @@ t.setLayoutParams(Fparams);
 ConstraintLayout.LayoutParams kparams = new ConstraintLayout.LayoutParams(
 
   468,
-  40
-
+  80
 );
 
 
