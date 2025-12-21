@@ -187,15 +187,14 @@ kparams.topMargin=716;
 // Now apply margins
 kparams.leftMargin=6;
 
-
+kparams.rightToRight = ConstraintLayout.LayoutParams.PARENT_ID;
 kparams.rightMargin=6;
-
+ 
  
 EditText et = new EditText(this);
 et.setId(View.generateViewId());
 
-et.setTextSize(14);
-
+et.setTextSize(TypedValue.COMPLEX_UNIT_SP, 14);
 et.setLayoutParams(kparams);
  
 
