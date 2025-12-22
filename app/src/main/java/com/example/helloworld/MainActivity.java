@@ -198,6 +198,7 @@ et.setId(View.generateViewId());
 et.setTextSize(TypedValue.COMPLEX_UNIT_SP, 14);
 et.setLayoutParams(kparams);
  
+et.setBackgroundResource(R.drawable.edittext_bg);
 
 
  

@@ -30,8 +30,8 @@
         android:textCursorDrawable="@drawable/custom_cursor"
         app:layout_constraintTop_toBottomOf="@id/textView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
+        app:layout_constraintEnd_toEndOf="parent" 
+         android:background="@drawable/edittext_bg"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
