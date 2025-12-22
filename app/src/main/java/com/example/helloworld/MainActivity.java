@@ -175,8 +175,8 @@ t.setLayoutParams(Fparams);
 
 ConstraintLayout.LayoutParams kparams = new ConstraintLayout.LayoutParams(
 
-  231,
-  50
+  468,
+  45
 );
 
 
@@ -199,7 +199,7 @@ et.setTextSize(TypedValue.COMPLEX_UNIT_SP, 14);
 et.setLayoutParams(kparams);
  
 et.setBackgroundResource(R.drawable.edittext_bg);
-
+editText.setPadding(0, 0, 0, 0);
 
  
    gestureDetector
