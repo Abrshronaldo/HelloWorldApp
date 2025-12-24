@@ -175,7 +175,7 @@ t.setLayoutParams(Fparams);
 
 ConstraintLayout.LayoutParams kparams = new ConstraintLayout.LayoutParams(
 
-  458,
+  448,
   45
 );
 
@@ -201,6 +201,7 @@ et.setLayoutParams(kparams);
 et.setBackgroundResource(R.drawable.edittext_bg);
 et.setPadding(0, 0, 0, 0);
 
+et.setTextCursorDrawable(R.drawable.custom_cursor);
 
 
 ConstraintLayout.LayoutParams lparams = new ConstraintLayout.LayoutParams(
@@ -252,11 +253,11 @@ te.setOnClickListener(new View.OnClickListener() {
 
 layout.addView(imageView);
 layout.addView(lineview);
-layout.addView(yo);
+
     
     layout.addView(tv);
 
-
+layout.addView(yo);
 layout.addView(t);       
   
 layout.addView(et);
