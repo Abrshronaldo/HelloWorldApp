@@ -175,7 +175,7 @@ t.setLayoutParams(Fparams);
 
 ConstraintLayout.LayoutParams kparams = new ConstraintLayout.LayoutParams(
 
-  468,
+  458,
   45
 );
 
@@ -186,10 +186,10 @@ kparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 kparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
 kparams.topMargin=716;
 // Now apply margins
-kparams.leftMargin=3;
+kparams.leftMargin=8;
 
 kparams.rightToRight = ConstraintLayout.LayoutParams.PARENT_ID;
-kparams.rightMargin=3;
+kparams.rightMargin=8;
  
  
 EditText et = new EditText(this);
@@ -201,6 +201,34 @@ et.setLayoutParams(kparams);
 et.setBackgroundResource(R.drawable.edittext_bg);
 et.setPadding(0, 0, 0, 0);
 
+
+
+ConstraintLayout.LayoutParams lparams = new ConstraintLayout.LayoutParams(
+
+  0, //  ConstraintLayout.LayoutParams.WRAP_CONTENT,
+    ConstraintLayout.LayoutParams.WRAP_CONTENT
+);
+setContentView(layout);
+
+TextView yo = new TextView(this);
+yo.setId(View.generateViewId());
+yo.setText("CANCEL         SEND");
+yo.setTextSize(10); 
+yo.setTextColor(Color.rgb(0, 110,255));
+
+yo.setPadding(0, 0, 0, 0);
+// Constrain to top and left only
+lparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
+lparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
+lparams.topMargin=820;
+// Now apply margins
+lparams.leftMargin=11;
+lparams.bottomMargin=3;
+lparams.rightToRight = ConstraintLayout.LayoutParams.PARENT_ID;
+
+lparams.rightMargin=237;
+yo.setLayoutParams(lparams);
+ 
  
    gestureDetector
  = new GestureDetector(this,
@@ -224,7 +252,7 @@ te.setOnClickListener(new View.OnClickListener() {
 
 layout.addView(imageView);
 layout.addView(lineview);
-
+layout.addView(yo);
     
     layout.addView(tv);
 
