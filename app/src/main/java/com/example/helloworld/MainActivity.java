@@ -175,7 +175,7 @@ t.setLayoutParams(Fparams);
 
 ConstraintLayout.LayoutParams kparams = new ConstraintLayout.LayoutParams(
 
-  448,
+  438,
   45
 );
 
@@ -226,7 +226,7 @@ lparams.leftMargin=11;
 lparams.bottomMargin=3;
 lparams.rightToRight = ConstraintLayout.LayoutParams.PARENT_ID;
 
-lparams.rightMargin=237;
+lparams.rightMargin=100;
 yo.setLayoutParams(lparams);
  
  
