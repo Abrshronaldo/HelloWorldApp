@@ -201,7 +201,6 @@ et.setLayoutParams(kparams);
 et.setBackgroundResource(R.drawable.edittext_bg);
 et.setPadding(0, 0, 0, 0);
 
-et.setTextCursorDrawable(R.drawable.custom_cursor);
 
 
 ConstraintLayout.LayoutParams lparams = new ConstraintLayout.LayoutParams(
