@@ -205,7 +205,7 @@ et.setPadding(0, 0, 0, 0);
 
 ConstraintLayout.LayoutParams lparams = new ConstraintLayout.LayoutParams(
 
-  0, //  ConstraintLayout.LayoutParams.WRAP_CONTENT,
+     ConstraintLayout.LayoutParams.WRAP_CONTENT,
     ConstraintLayout.LayoutParams.WRAP_CONTENT
 );
 setContentView(layout);
@@ -226,7 +226,7 @@ lparams.leftMargin=11;
 lparams.bottomMargin=3;
 lparams.rightToRight = ConstraintLayout.LayoutParams.PARENT_ID;
 
-lparams.rightMargin=10;
+lparams.rightMargin=3;
 yo.setLayoutParams(lparams);
  
  
