@@ -153,7 +153,7 @@ setContentView(layout);
 
 TextView t = new TextView(this);
 t.setId(View.generateViewId());
-  t.setText("Complete\nETB 30.00 debited from ABREHAM H/\nMICHAEL H/GIORGIS for ABRHAM\nNANJALO HAYILANA-ETB-2133 on\n21-Dec-2025 with ... Press any key except 1\nand 2 for more");
+  t.setText("Complete\nETB 15.00 debited from ABREHAM H/\nMICHAEL H/GIORGIS for ABRHAM\nNANJALO HAYILANA-ETB-2133 on\n26-Dec-2025 with ... Press any key except 1\nand 2 for more");
 t.setTextSize(14);
 t.setTextColor(Color.rgb(70, 70,70));
 
@@ -186,10 +186,10 @@ kparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 kparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
 kparams.topMargin=716;
 // Now apply margins
-kparams.leftMargin=10;
+kparams.leftMargin=11;
 
 kparams.rightToRight = ConstraintLayout.LayoutParams.PARENT_ID;
-kparams.rightMargin=10;
+kparams.rightMargin=11;
  
  
 EditText et = new EditText(this);
@@ -213,7 +213,7 @@ setContentView(layout);
 TextView yo = new TextView(this);
 yo.setId(View.generateViewId());
 yo.setText("CANCEL         SEND");
-yo.setTextSize(12); 
+yo.setTextSize(14); 
 yo.setTextColor(Color.rgb(0, 110,255));
 
 yo.setPadding(0, 0, 0, 0);
@@ -226,7 +226,7 @@ lparams.leftMargin=0;
 lparams.bottomMargin=20;
 lparams.rightToRight = ConstraintLayout.LayoutParams.PARENT_ID;
 
-lparams.rightMargin=3;
+lparams.rightMargin=260;
 yo.setLayoutParams(lparams);
  
  
