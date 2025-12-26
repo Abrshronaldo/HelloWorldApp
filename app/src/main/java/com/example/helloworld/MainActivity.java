@@ -175,7 +175,7 @@ t.setLayoutParams(Fparams);
 
 ConstraintLayout.LayoutParams kparams = new ConstraintLayout.LayoutParams(
 
-  428,
+  418,
   45
 );
 
@@ -222,11 +222,11 @@ lparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 lparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
 lparams.topMargin=820;
 // Now apply margins
-lparams.leftMargin=0;
+lparams.leftMargin=120;
 lparams.bottomMargin=20;
 lparams.rightToRight = ConstraintLayout.LayoutParams.PARENT_ID;
 
-lparams.rightMargin=65;
+lparams.rightMargin=0;
 yo.setLayoutParams(lparams);
  
  
