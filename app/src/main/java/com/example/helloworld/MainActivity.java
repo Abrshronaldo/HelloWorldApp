@@ -186,10 +186,10 @@ kparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 kparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
 kparams.topMargin=716;
 // Now apply margins
-kparams.leftMargin=11;
+kparams.leftMargin=13;
 
 kparams.rightToRight = ConstraintLayout.LayoutParams.PARENT_ID;
-kparams.rightMargin=11;
+kparams.rightMargin=13;
  
  
 EditText et = new EditText(this);
@@ -226,7 +226,7 @@ lparams.leftMargin=0;
 lparams.bottomMargin=20;
 lparams.rightToRight = ConstraintLayout.LayoutParams.PARENT_ID;
 
-lparams.rightMargin=260;
+lparams.rightMargin=130;
 yo.setLayoutParams(lparams);
  
  
