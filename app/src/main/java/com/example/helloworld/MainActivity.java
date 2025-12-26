@@ -216,15 +216,15 @@ yo.setText("CANCEL         SEND");
 yo.setTextSize(14); 
 
 
-yo.setTextColor(Color.argb(220, 0, 100, 255)); 
+yo.setTextColor(Color.argb(220, 0, 80, 255)); 
 
 yo.setPadding(0, 0, 0, 0);
 // Constrain to top and left only
 lparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 lparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-lparams.topMargin=830;
+lparams.topMargin=827;
 // Now apply margins
-lparams.leftMargin=140;
+lparams.leftMargin=143;
 lparams.bottomMargin=20;
 lparams.rightToRight = ConstraintLayout.LayoutParams.PARENT_ID;
 
