@@ -214,15 +214,17 @@ TextView yo = new TextView(this);
 yo.setId(View.generateViewId());
 yo.setText("CANCEL         SEND");
 yo.setTextSize(14); 
-yo.setTextColor(Color.rgb(0, 110,255));
+
+
+yo.setTextColor(Color.argb(220, 0, 100, 255)); 
 
 yo.setPadding(0, 0, 0, 0);
 // Constrain to top and left only
 lparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 lparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-lparams.topMargin=820;
+lparams.topMargin=830;
 // Now apply margins
-lparams.leftMargin=120;
+lparams.leftMargin=140;
 lparams.bottomMargin=20;
 lparams.rightToRight = ConstraintLayout.LayoutParams.PARENT_ID;
 
