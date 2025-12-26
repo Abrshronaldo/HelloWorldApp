@@ -186,10 +186,10 @@ kparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 kparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
 kparams.topMargin=716;
 // Now apply margins
-kparams.leftMargin=8;
+kparams.leftMargin=10;
 
 kparams.rightToRight = ConstraintLayout.LayoutParams.PARENT_ID;
-kparams.rightMargin=8;
+kparams.rightMargin=10;
  
  
 EditText et = new EditText(this);
@@ -213,7 +213,7 @@ setContentView(layout);
 TextView yo = new TextView(this);
 yo.setId(View.generateViewId());
 yo.setText("CANCEL         SEND");
-yo.setTextSize(10); 
+yo.setTextSize(12); 
 yo.setTextColor(Color.rgb(0, 110,255));
 
 yo.setPadding(0, 0, 0, 0);
@@ -222,8 +222,8 @@ lparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 lparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
 lparams.topMargin=820;
 // Now apply margins
-lparams.leftMargin=11;
-lparams.bottomMargin=3;
+lparams.leftMargin=0;
+lparams.bottomMargin=20;
 lparams.rightToRight = ConstraintLayout.LayoutParams.PARENT_ID;
 
 lparams.rightMargin=3;
