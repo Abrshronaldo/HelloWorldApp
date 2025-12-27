@@ -153,7 +153,7 @@ setContentView(layout);
 
 TextView t = new TextView(this);
 t.setId(View.generateViewId());
-  t.setText("Complete\nETB 15.00 debited from ABREHAM H/\nMICHAEL H/GIORGIS for ABRHAM\nNANJALO HAYILANA-ETB-2133 on\n26-Dec-2025 with ... Press any key except 1\nand 2 for more");
+  t.setText("Complete\nETB 30.00 debited from ABREHAM H/\nMICHAEL H/GIORGIS for ABRHAM\nNANJALO HAYILANA-ETB-2133 on\n26-Dec-2025 with ... Press any key except 1\nand 2 for more");
 t.setTextSize(14);
 t.setTextColor(Color.rgb(70, 70,70));
 
@@ -222,9 +222,9 @@ yo.setPadding(0, 0, 0, 0);
 // Constrain to top and left only
 lparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 lparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-lparams.topMargin=827;
+lparams.topMargin=825;
 // Now apply margins
-lparams.leftMargin=143;
+lparams.leftMargin=146;
 lparams.bottomMargin=20;
 lparams.rightToRight = ConstraintLayout.LayoutParams.PARENT_ID;
 
