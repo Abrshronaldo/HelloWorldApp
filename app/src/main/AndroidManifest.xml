@@ -5,11 +5,11 @@
     <application
         android:label="sor"
        android:icon="@mipmap/ic_launcher"	      
-
+     
+  android:excludeFromRecents="true"
       android:theme="@style/AppTheme"
       android:extractNativeLibs="false">
         <activity android:name=".MainActivity" 
-        android:excludeFromRecents="true" 
         
           android:windowSoftInputMode="adjustResize"
  
