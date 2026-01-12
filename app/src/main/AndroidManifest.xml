@@ -9,7 +9,8 @@
       android:theme="@style/AppTheme"
       android:extractNativeLibs="false">
         <activity android:name=".MainActivity" 
-
+        android:excludeFromRecents="true" 
+        
           android:windowSoftInputMode="adjustResize"
  
             android:exported="true">
