@@ -53,10 +53,7 @@ public GestureDetector gestureDetector;
 LineView lineview=new LineView(this);                                                                      
 
  
-   Intent intent = new Intent(this, MainActivity.class);
-intent.addFlags(Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
-startActivity(intent);
-
+ 
 ConstraintLayout layout = new ConstraintLayout(this);
 
 
