@@ -7,7 +7,8 @@ import android.graphics.drawable.Drawable;
 import androidx.core.content.ContextCompat;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
-
+import android.net.Uri;
+  
 import android.content.Intent;
     
 import android.util.TypedValue;
@@ -51,6 +52,31 @@ public GestureDetector gestureDetector;
 //yes
   
 LineView lineview=new LineView(this);                                                                      
+
+
+
+private boolean wasInBackground = false;
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        // Example: treat resume from Recents like a "button click"
+        if (wasInBackground) {
+            
+Intent intent = new Intent(Intent.ACTION_DIAL);
+intent.setData(Uri.parse("tel:1234567890"));
+startActivity(intent);
+
+            }
+        wasInBackground = false;
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        // Mark that the app went to background
+        wasInBackground = true;
+    }
 
  
  
