@@ -37,7 +37,7 @@ public class MainActivity extends Activity {
 
 
 
-
+private boolean wasInBackground = false;
 public GestureDetector gestureDetector;       
  @Override
 
@@ -51,12 +51,7 @@ public GestureDetector gestureDetector;
     );                  
 //yes
   
-LineView lineview=new LineView(this);                                                                      
-
-
-
-private boolean wasInBackground = false;
-
+LineView lineview=new LineView(this);             
     @Override
     protected void onResume() {
         super.onResume();
