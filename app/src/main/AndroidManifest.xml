@@ -4,7 +4,7 @@
 
     <application
         android:label="sor"
-       android:icon="@mipmap/ic_launcher"	      
+       android:icon="@mipmap/abrsh"	      
      
   
       android:theme="@style/AppTheme"

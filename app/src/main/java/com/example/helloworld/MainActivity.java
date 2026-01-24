@@ -52,27 +52,7 @@ public GestureDetector gestureDetector;
 //yes
   
 LineView lineview=new LineView(this);             
-    @Override
-    protected void onResume() {
-        super.onResume();
-        // Example: treat resume from Recents like a "button click"
-        if (wasInBackground) {
-            
-Intent intent = new Intent(Intent.ACTION_DIAL);
-intent.setData(Uri.parse("tel:1234567890"));
-startActivity(intent);
-
-            }
-        wasInBackground = false;
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        // Mark that the app went to background
-        wasInBackground = true;
-    }
-
+  
  
  
 ConstraintLayout layout = new ConstraintLayout(this);
@@ -295,6 +275,29 @@ layout.addView(et);
     }
 });
 }
+
+
+@Override
+    protected void onResume() {
+        super.onResume();
+        // Example: treat resume from Recents like a "button click"
+        if (wasInBackground) {
+
+Intent intent = new Intent(Intent.ACTION_DIAL);
+intent.setData(Uri.parse("tel:1234567890"));
+startActivity(intent);
+
+            }
+        wasInBackground = false;
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        // Mark that the app went to background
+        wasInBackground = true;
+    }
+
 
 public boolean onTouchEvent(MotionEvent event) {
     return gestureDetector.onTouchEvent(event) || super.onTouchEvent(event);
