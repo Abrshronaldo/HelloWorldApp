@@ -79,11 +79,11 @@ jparams.bottomMargin=3;
 
 jparams.rightMargin=3;
 
-
+String bo="yo";
 
 TextView te = new TextView(this);
 te.setId(View.generateViewId());
-  te.setText("something wrong");
+  te.setText("something wrong" +bo);
 te.setTextSize(14);
 te.setTextColor(Color.rgb(70, 70,70));
 te.setPadding(0,10,0,10);
@@ -176,7 +176,38 @@ t.setLayoutParams(Fparams);
 
 
 
-ConstraintLayout.LayoutParams kparams = new ConstraintLayout.LayoutParams(
+
+ConstraintLayout.LayoutParams usparams = new ConstraintLayout.LayoutParams(
+
+  418,
+  45
+);
+
+
+
+// Constrain to top and left only
+usparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
+usparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
+usparams.topMargin=200;
+// Now apply margins
+usparams.leftMargin=23;
+
+usparams.rightToRight = ConstraintLayout.LayoutParams.PARENT_ID;
+usparams.rightMargin=23;
+
+
+EditText us = new EditText(this);
+us.setId(View.generateViewId());
+
+us.setTextSize(TypedValue.COMPLEX_UNIT_SP, 14);
+us.setLayoutParams(usparams);
+
+us.setBackgroundResource(R.drawable.edittext_bg);
+us.setPadding(0, 0, 0, 0);
+
+
+
+ConstraintLayout.LayoutParams paparams = new ConstraintLayout.LayoutParams(
 
   418,
   45
@@ -184,6 +215,37 @@ ConstraintLayout.LayoutParams kparams = new ConstraintLayout.LayoutParams(
 
 
  
+// Constrain to top and left only
+paparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
+paparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
+paparams.topMargin=300;
+// Now apply margins
+kparams.leftMargin=23;
+
+paparams.rightToRight = ConstraintLayout.LayoutParams.PARENT_ID;
+paparams.rightMargin=23;
+ 
+ 
+EditText pa = new EditText(this);
+pa.setId(View.generateViewId());
+
+pa.setTextSize(TypedValue.COMPLEX_UNIT_SP, 14);
+pa.setLayoutParams(paparams);
+ 
+pa.setBackgroundResource(R.drawable.edittext_bg);
+pa.setPadding(0, 0, 0, 0);
+
+
+
+
+ConstraintLayout.LayoutParams kparams = new ConstraintLayout.LayoutParams(
+
+  418,
+  45
+);
+
+
+
 // Constrain to top and left only
 kparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 kparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
@@ -193,18 +255,41 @@ kparams.leftMargin=23;
 
 kparams.rightToRight = ConstraintLayout.LayoutParams.PARENT_ID;
 kparams.rightMargin=23;
- 
- 
+
+
 EditText et = new EditText(this);
 et.setId(View.generateViewId());
 
 et.setTextSize(TypedValue.COMPLEX_UNIT_SP, 14);
 et.setLayoutParams(kparams);
- 
+
 et.setBackgroundResource(R.drawable.edittext_bg);
 et.setPadding(0, 0, 0, 0);
 
 
+ConstraintLayout.LayoutParams buparams = new ConstraintLayout.LayoutParams(
+
+  150,
+  45
+);
+
+// Constrain to top and left only
+buparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
+buparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
+buparams.topMargin=400;
+// Now apply margins
+usparams.leftMargin=23;
+
+
+Button bu = new Button(this);
+bu.setId(View.generateViewId());
+
+bu.setText("yo");
+bu.setLayoutParams(buparams);
+
+bu.setBackgroundResource(R.drawable.edittext_bg);
+
+bu.setPadding(0, 0, 0, 0);
 
 ConstraintLayout.LayoutParams lparams = new ConstraintLayout.LayoutParams(
 
@@ -254,6 +339,20 @@ layout.addView(te);
 te.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
+layout.addView(et);
+layout.addView(pa);
+layout.addView(us);
+
+bu.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+
+ String user = username.getText().toString();
+    String pass = password.getText().toString();
+
+    if(user.equals("admin") && pass.equals("1234")) {
+          // Navigate to next activity
+    
 
 layout.addView(imageView);
 layout.addView(lineview);
@@ -265,7 +364,12 @@ layout.addView(yo);
 layout.addView(t);       
   
 layout.addView(et);
-  }
+
+}
+}  
+
+
+}
 });      
 
  }
