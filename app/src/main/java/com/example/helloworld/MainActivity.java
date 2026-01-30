@@ -339,7 +339,6 @@ layout.addView(te);
 te.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
-layout.addView(et);
 layout.addView(pa);
 layout.addView(us);
 
@@ -366,7 +365,7 @@ layout.addView(t);
 layout.addView(et);
 
 }
-}  
+});  
 
 
 }
