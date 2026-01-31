@@ -346,8 +346,8 @@ bu.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
 
- String us = username.getText().toString();
-    String pa = password.getText().toString();
+ String user = us.getText().toString();
+    String pass = pa.getText().toString();
 
     if(user.equals("admin") && pass.equals("1234")) {
           // Navigate to next activity
