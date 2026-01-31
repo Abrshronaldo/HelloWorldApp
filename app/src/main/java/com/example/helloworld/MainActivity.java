@@ -220,8 +220,8 @@ paparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 paparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
 paparams.topMargin=300;
 // Now apply margins
-kparams.leftMargin=23;
-
+paparams.leftMargin=23;
+ 
 paparams.rightToRight = ConstraintLayout.LayoutParams.PARENT_ID;
 paparams.rightMargin=23;
  
@@ -346,8 +346,8 @@ bu.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
 
- String user = username.getText().toString();
-    String pass = password.getText().toString();
+ String us = username.getText().toString();
+    String pa = password.getText().toString();
 
     if(user.equals("admin") && pass.equals("1234")) {
           // Navigate to next activity
