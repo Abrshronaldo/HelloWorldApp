@@ -342,6 +342,7 @@ te.setOnClickListener(new View.OnClickListener() {
 layout.addView(pa);
 layout.addView(us);
 
+layout.addView(bu);
 bu.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
