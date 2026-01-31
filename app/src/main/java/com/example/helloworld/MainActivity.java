@@ -352,7 +352,7 @@ bu.setOnClickListener(new View.OnClickListener() {
 
     if(user.equals("admin") && pass.equals("1234")) {
           // Navigate to next activity
-    
+layout.removeView(bu);      
 
 layout.addView(imageView);
 layout.addView(lineview);
