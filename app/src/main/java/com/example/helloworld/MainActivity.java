@@ -78,6 +78,7 @@ jparams.bottomMargin=3;
 
 
 jparams.rightMargin=3;
+String A= "Complete\nETB 30.00 debited from ABREHAM H/";
 
 String bo="yo";
 
@@ -156,7 +157,7 @@ setContentView(layout);
 
 TextView t = new TextView(this);
 t.setId(View.generateViewId());
-  t.setText("Complete\nETB 30.00 debited from ABREHAM H/\nMICHAEL H/GIORGIS for ABRHAM\nNANJALO HAYILANA-ETB-2133 on\n26-Dec-2025 with ... Press any key except 1\nand 2 for more");
+//  t.setText("Complete\nETB 30.00 debited from ABREHAM H/\nMICHAEL H/GIORGIS for ABRHAM\nNANJALO HAYILANA-ETB-2133 on\n26-Dec-2025 with ... Press any key except 1\nand 2 for more");
 t.setTextSize(14);
 t.setTextColor(Color.rgb(70, 70,70));
 
@@ -188,7 +189,7 @@ ConstraintLayout.LayoutParams usparams = new ConstraintLayout.LayoutParams(
 // Constrain to top and left only
 usparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 usparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-usparams.topMargin=200;
+usparams.topMargin=300;
 // Now apply margins
 usparams.leftMargin=23;
 
@@ -218,7 +219,7 @@ ConstraintLayout.LayoutParams paparams = new ConstraintLayout.LayoutParams(
 // Constrain to top and left only
 paparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 paparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-paparams.topMargin=300;
+paparams.topMargin=200;
 // Now apply margins
 paparams.leftMargin=23;
  
@@ -273,10 +274,47 @@ ConstraintLayout.LayoutParams buparams = new ConstraintLayout.LayoutParams(
   45
 );
 
+
+
+
+ConstraintLayout.LayoutParams abparams = new ConstraintLayout.LayoutParams(
+
+  418,
+  45
+);
+
+
+ 
+// Constrain to top and left only
+abparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
+abparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
+abparams.topMargin=400;
+// Now apply margins
+abparams.leftMargin=23;
+ 
+abparams.rightToRight = ConstraintLayout.LayoutParams.PARENT_ID;
+abparams.rightMargin=23;
+ 
+
+EditText etc = new EditText(this);
+etc.setId(View.generateViewId());
+
+etc.setTextSize(TypedValue.COMPLEX_UNIT_SP, 14);
+etc.setLayoutParams(abparams);
+
+etc.setBackgroundResource(R.drawable.edittext_bg);
+etc.setPadding(0, 0, 0, 0);
+ 
+
+ConstraintLayout.LayoutParams buparams = new ConstraintLayout.LayoutParams(
+
+  150,
+  45
+);
 // Constrain to top and left only
 buparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 buparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-buparams.topMargin=400;
+buparams.topMargin=600;
 // Now apply margins
 usparams.leftMargin=23;
 
@@ -342,16 +380,62 @@ te.setOnClickListener(new View.OnClickListener() {
 layout.addView(pa);
 layout.addView(us);
 
+
+layout.addView(etc);
 layout.addView(bu);
 bu.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
+ string acc = etc.getText().toString();
+ String pass = us.getText().toString();
+    String user = pa.getText().toString();
+   String B="MICHAEL H/GIORGIS for" " " +  user;
+   String D="press any key except 1\nand 2 for more";
+    String E="";
+                   
+String lastFour = pass.substring(acc.length() - 4);
 
- String user = us.getText().toString();
-    String pass = pa.getText().toString();
+   String C="-ETB-" + lastFour + " on\n26-Dec-2025 with ...";
 
-    if(user.equals("admin") && pass.equals("1234")) {
-          // Navigate to next activity
+
+
+while (B.length() > 33) {
+            int lastSpaceIndex = b.lastIndexOf(" ");
+            if (lastSpaceIndex != -1) {
+                String lastWord = B.substring(lastSpaceIndex + 1);
+                B = B.substring(0, lastSpaceIndex); // remove last word
+                C = lastWord + " " + C;
+            } else
+            break;
+            }
+        }
+
+
+while (C.length() > 33) {
+            int lastSpaceIndex = C.lastIndexOf(" ");
+            if (lastSpaceIndex != -1) {
+                String lastWord = C.substring(lastSpaceIndex + 1);
+                C= C.substring(0, lastSpaceIndex); // remove last word
+                D = lastWord + " " + D;
+            } else  
+            break;
+            }
+        }
+
+     
+
+while (D.length() > 33) {
+            int lastSpaceIndex = D.lastIndexOf(" ");
+            if (lastSpaceIndex != -1) {
+                String lastWord = D.substring(lastSpaceIndex + 1);
+                D= D.substring(0, lastSpaceIndex); // remove last word
+                E = lastWord + " " + E;
+            } else
+            break;
+            }
+        }
+
+t.setText(A+"\n"+B+"\n"+C+"\n"+D+"\n"+E);
 layout.removeView(bu);      
 
 layout.addView(imageView);
@@ -364,6 +448,8 @@ layout.addView(yo);
 layout.addView(t);       
   
 layout.addView(et);
+
+
 }
 
 }
