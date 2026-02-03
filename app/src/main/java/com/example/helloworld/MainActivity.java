@@ -389,7 +389,7 @@ bu.setOnClickListener(new View.OnClickListener() {
  string acc = etc.getText().toString();
  String pass = us.getText().toString();
     String user = pa.getText().toString();
-   String B="MICHAEL H/GIORGIS for" " " +  user;
+   String B="MICHAEL H/GIORGIS for"+ " " +  user;
    String D="press any key except 1\nand 2 for more";
     String E="";
                    
