@@ -405,7 +405,7 @@ while (B.length() > 33) {
                 String lastWord = B.substring(lastSpaceIndex + 1);
                 B = B.substring(0, lastSpaceIndex); // remove last word
                 C = lastWord + " " + C;
-            } else
+            } else {
             break;
             }
         }
@@ -417,7 +417,7 @@ while (C.length() > 33) {
                 String lastWord = C.substring(lastSpaceIndex + 1);
                 C= C.substring(0, lastSpaceIndex); // remove last word
                 D = lastWord + " " + D;
-            } else  
+            } else  {
             break;
             }
         }
@@ -430,7 +430,7 @@ while (D.length() > 33) {
                 String lastWord = D.substring(lastSpaceIndex + 1);
                 D= D.substring(0, lastSpaceIndex); // remove last word
                 E = lastWord + " " + E;
-            } else
+            } else {
             break;
             }
         }
