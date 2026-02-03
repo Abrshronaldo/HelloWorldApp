@@ -450,7 +450,6 @@ layout.addView(t);
 layout.addView(et);
 
 
-}
 
 }
 });  
