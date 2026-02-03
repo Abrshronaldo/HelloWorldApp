@@ -306,24 +306,24 @@ etc.setBackgroundResource(R.drawable.edittext_bg);
 etc.setPadding(0, 0, 0, 0);
  
 
-ConstraintLayout.LayoutParams buparams = new ConstraintLayout.LayoutParams(
+ConstraintLayout.LayoutParams buuparams = new ConstraintLayout.LayoutParams(
 
   150,
   45
 );
 // Constrain to top and left only
-buparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
-buparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-buparams.topMargin=600;
+buuparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
+buuparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
+buuparams.topMargin=600;
 // Now apply margins
-usparams.leftMargin=23;
-
+buusparams.leftMargin=23;
+ 
 
 Button bu = new Button(this);
 bu.setId(View.generateViewId());
 
 bu.setText("yo");
-bu.setLayoutParams(buparams);
+bu.setLayoutParams(buuparams);
 
 bu.setBackgroundResource(R.drawable.edittext_bg);
 
