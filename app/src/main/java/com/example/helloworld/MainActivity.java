@@ -387,22 +387,22 @@ bu.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
  String acc = etc.getText().toString();
- String pass = us.getText().toString();
-    String user = pa.getText().toString();
+ String pass = pa.getText().toString();
+    String user = us.getText().toString();
    String B="MICHAEL H/GIORGIS for"+ " " +  user;
    String D="press any key except 1\nand 2 for more";
     String E="";
                    
 String lastFour = acc.substring(acc.length() - 4);
 
-   String C="-ETB-" + lastFour + " on\n26-Dec-2025 with ...";
+   String C="-ETB- " + lastFour + " on\n26-Dec-2025 with ...";
 
 
 
 while (B.length() > 33) {
             int lastSpaceIndex = B.lastIndexOf(" ");
             if (lastSpaceIndex != -1) {
-                String lastWord = B.substring(lastSpaceIndex + 1);
+                String lastWord =  B.substring(lastSpaceIndex + 1);
                 B = B.substring(0, lastSpaceIndex); // remove last word
                 C = lastWord + " " + C;
             } else {
@@ -419,7 +419,7 @@ while (C.length() > 33) {
                 D = lastWord + " " + D;
             } else  {
             break;
-            }
+            }	
         }
 
      
