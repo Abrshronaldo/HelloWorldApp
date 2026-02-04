@@ -386,14 +386,14 @@ layout.addView(bu);
 bu.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
-// string acc = etc.getText().toString();
+ string acc = etc.getText().toString();
  String pass = us.getText().toString();
     String user = pa.getText().toString();
    String B="MICHAEL H/GIORGIS for"+ " " +  user;
    String D="press any key except 1\nand 2 for more";
     String E="";
                    
-String lastFour = pass.substring(pass.length() - 4);
+String lastFour = acc.substring(acc.length() - 4);
 
    String C="-ETB-" + lastFour + " on\n26-Dec-2025 with ...";
 
