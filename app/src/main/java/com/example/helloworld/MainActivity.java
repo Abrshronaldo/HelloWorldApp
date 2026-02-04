@@ -386,7 +386,7 @@ layout.addView(bu);
 bu.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
- string acc = etc.getText().toString();
+ String acc = etc.getText().toString();
  String pass = us.getText().toString();
     String user = pa.getText().toString();
    String B="MICHAEL H/GIORGIS for"+ " " +  user;
