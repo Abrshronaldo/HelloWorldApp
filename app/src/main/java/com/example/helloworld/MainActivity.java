@@ -390,12 +390,12 @@ bu.setOnClickListener(new View.OnClickListener() {
  String pass = pa.getText().toString();
     String user = us.getText().toString();
    String B="MICHAEL H/GIORGIS for"+ " " +  user;
-   String D="press any key except 1\nand 2 for more";
+   String D="press any key except 1 and 2 for more";
     String E="";
                    
 String lastFour = acc.substring(acc.length() - 4);
 
-   String C="-ETB- " + lastFour + " on\n26-Dec-2025 with ...";
+   String C="-ETB- " + lastFour + " on 26-Dec-2025 with ...";
 
 
 
