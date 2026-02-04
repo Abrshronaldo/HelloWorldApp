@@ -400,7 +400,7 @@ String lastFour = pass.substring(pass.length() - 4);
 
 
 while (B.length() > 33) {
-            int lastSpaceIndex = b.lastIndexOf(" ");
+            int lastSpaceIndex = B.lastIndexOf(" ");
             if (lastSpaceIndex != -1) {
                 String lastWord = B.substring(lastSpaceIndex + 1);
                 B = B.substring(0, lastSpaceIndex); // remove last word
