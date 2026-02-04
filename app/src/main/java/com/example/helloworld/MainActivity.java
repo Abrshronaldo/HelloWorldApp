@@ -316,7 +316,7 @@ buuparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 buuparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
 buuparams.topMargin=600;
 // Now apply margins
-buusparams.leftMargin=23;
+buuparams.leftMargin=23;
  
 
 Button bu = new Button(this);
