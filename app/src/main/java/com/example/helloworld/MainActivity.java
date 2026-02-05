@@ -395,11 +395,11 @@ bu.setOnClickListener(new View.OnClickListener() {
                    
 String lastFour = acc.substring(acc.length() - 4);
 
-   String C="-ETB- " + lastFour + " on 26-Dec-2025 with ...";
+   String C="-ETC- " + lastFour + " on 26-Dec-2025 with ...";
 
 
 
-while (B.length() > 35) {
+while (B.length() > 38) {
             int lastSpaceIndex = B.lastIndexOf(" ");
             if (lastSpaceIndex != -1) {
                 String lastWord =  B.substring(lastSpaceIndex + 1);
@@ -411,7 +411,7 @@ while (B.length() > 35) {
         }
 
 
-while (C.length() > 35) {
+while (C.length() > 38) {
             int lastSpaceIndex = C.lastIndexOf(" ");
             if (lastSpaceIndex != -1) {
                 String lastWord = C.substring(lastSpaceIndex + 1);
