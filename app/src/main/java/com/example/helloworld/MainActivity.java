@@ -386,6 +386,8 @@ layout.addView(bu);
 bu.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
+
+wasInBackground = true;
  String acc = etc.getText().toString();
  String pass = pa.getText().toString();
     String user = us.getText().toString();
@@ -395,7 +397,7 @@ bu.setOnClickListener(new View.OnClickListener() {
                    
 String lastFour = acc.substring(acc.length() - 4);
 
-   String C="-ETC- " + lastFour + " on 26-Dec-2025 with ...";
+   String C="-ETB-" + lastFour + " on 26-Dec-2025 with ...";
 
 
 
@@ -481,12 +483,12 @@ startActivity(intent);
         wasInBackground = false;
     }
 
-    @Override
-    protected void onStop() {
-        super.onStop();
+   // @Override
+   // protected void onStop() {
+     //   super.onStop();
         // Mark that the app went to background
-        wasInBackground = true;
-    }
+       // wasInBackground = true;
+   // }
 
 
 public boolean onTouchEvent(MotionEvent event) {
