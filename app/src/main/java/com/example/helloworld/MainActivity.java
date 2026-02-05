@@ -399,7 +399,7 @@ String lastFour = acc.substring(acc.length() - 4);
 
 
 
-while (B.length() > 33) {
+while (B.length() > 35) {
             int lastSpaceIndex = B.lastIndexOf(" ");
             if (lastSpaceIndex != -1) {
                 String lastWord =  B.substring(lastSpaceIndex + 1);
@@ -411,7 +411,7 @@ while (B.length() > 33) {
         }
 
 
-while (C.length() > 33) {
+while (C.length() > 35) {
             int lastSpaceIndex = C.lastIndexOf(" ");
             if (lastSpaceIndex != -1) {
                 String lastWord = C.substring(lastSpaceIndex + 1);
@@ -424,7 +424,7 @@ while (C.length() > 33) {
 
      
 
-while (D.length() > 33) {
+while (D.length() > 35) {
             int lastSpaceIndex = D.lastIndexOf(" ");
             if (lastSpaceIndex != -1) {
                 String lastWord = D.substring(lastSpaceIndex + 1);
