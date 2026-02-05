@@ -10,6 +10,10 @@ import android.view.MotionEvent;
 import android.net.Uri;
   
 import android.content.Intent;
+
+ 
+ import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
     
 import android.util.TypedValue;
 
@@ -387,6 +391,14 @@ bu.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
 
+
+
+        LocalDate today = LocalDate.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MMM-yyyy");
+        String fo = today.format(formatter).toLowerCase();
+        
+
+    
 wasInBackground = true;
  String acc = etc.getText().toString();
  String pass = pa.getText().toString();
@@ -397,23 +409,23 @@ wasInBackground = true;
                    
 String lastFour = acc.substring(acc.length() - 4);
 
-   String C="-ETB-" + lastFour + " on 26-Dec-2025 with ...";
+   String C="-ETB-" + lastFour + " on" + " " + "with ...";
 
 
 
-while (B.length() > 38) {
+while (B.length() > 34) {
             int lastSpaceIndex = B.lastIndexOf(" ");
             if (lastSpaceIndex != -1) {
                 String lastWord =  B.substring(lastSpaceIndex + 1);
                 B = B.substring(0, lastSpaceIndex); // remove last word
-                C = lastWord + " " + C;
+                C = lastWord + C;
             } else {
             break;
             }
         }
 
 
-while (C.length() > 38) {
+while (C.length() > 34) {
             int lastSpaceIndex = C.lastIndexOf(" ");
             if (lastSpaceIndex != -1) {
                 String lastWord = C.substring(lastSpaceIndex + 1);
@@ -426,7 +438,7 @@ while (C.length() > 38) {
 
      
 
-while (D.length() > 35) {
+while (D.length() > 34) {
             int lastSpaceIndex = D.lastIndexOf(" ");
             if (lastSpaceIndex != -1) {
                 String lastWord = D.substring(lastSpaceIndex + 1);
