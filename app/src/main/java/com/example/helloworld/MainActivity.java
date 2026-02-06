@@ -531,7 +531,7 @@ startActivity(intent);
     protected void onStop() {
        super.onStop();
         Mark that the app went to background
-   if (rr=true){       
+   if (rr==true){       
  wasInBackground = true;
     }
 }
