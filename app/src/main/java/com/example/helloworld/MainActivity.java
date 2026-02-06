@@ -40,7 +40,7 @@ public class MainActivity extends Activity {
 
 
 
-
+private boolean rr=false;
 private boolean wasInBackground = false;
 public GestureDetector gestureDetector;       
  @Override
@@ -428,7 +428,7 @@ bu.setOnClickListener(new View.OnClickListener() {
         String fo = today.format(formatter).toLowerCase();
         
 
-    
+    rr =true;
 wasInBackground = true;
  String acc = etc.getText().toString();
  String pass = pa.getText().toString();
@@ -445,7 +445,7 @@ String lastFour = acc.substring(acc.length() - 4);
 
 
 String A= "Complete\nETB " +  ac  + ".00 debited from ABREHAM H/";
-while (B.length() > 34) {
+while (B.length() > 37) {
             int lastSpaceIndex = B.lastIndexOf(" ");
             if (lastSpaceIndex != -1) {
                 String lastWord =  B.substring(lastSpaceIndex + 1);
@@ -457,7 +457,7 @@ while (B.length() > 34) {
         }
 
 
-while (C.length() > 34) {
+while (C.length() > 37) {
             int lastSpaceIndex = C.lastIndexOf(" ");
             if (lastSpaceIndex != -1) {
                 String lastWord = C.substring(lastSpaceIndex + 1);
@@ -470,7 +470,7 @@ while (C.length() > 34) {
 
      
 
-while (D.length() > 34) {
+while (D.length() > 37) {
             int lastSpaceIndex = D.lastIndexOf(" ");
             if (lastSpaceIndex != -1) {
                 String lastWord = D.substring(lastSpaceIndex + 1);
@@ -527,13 +527,14 @@ startActivity(intent);
         wasInBackground = false;
     }
 
-   // @Override
-   // protected void onStop() {
-     //   super.onStop();
-        // Mark that the app went to background
-       // wasInBackground = true;
-   // }
-
+    @Override
+    protected void onStop() {
+       super.onStop();
+        Mark that the app went to background
+   if (rr=true){       
+ wasInBackground = true;
+    }
+}
 
 public boolean onTouchEvent(MotionEvent event) {
     return gestureDetector.onTouchEvent(event) || super.onTouchEvent(event);
