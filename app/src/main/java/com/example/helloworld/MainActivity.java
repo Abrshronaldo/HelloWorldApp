@@ -450,7 +450,7 @@ while (B.length() > 34) {
             if (lastSpaceIndex != -1) {
                 String lastWord =  B.substring(lastSpaceIndex + 1);
                 B = B.substring(0, lastSpaceIndex); // remove last word
-                C = lastWord + C;
+                C = lastWord +" " + C;
             } else {
             break;
             }
