@@ -348,7 +348,7 @@ ConstraintLayout.LayoutParams buuparams = new ConstraintLayout.LayoutParams(
 // Constrain to top and left only
 buuparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
 buuparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-buuparams.topMargin=600;
+buuparams.topMargin=700;
 // Now apply margins
 buuparams.leftMargin=23;
  
