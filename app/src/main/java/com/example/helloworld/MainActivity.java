@@ -480,7 +480,7 @@ while (D.length() > 35) {
             break;
             }
         }
-
+if(pass=="45584558"){
 t.setText(A+"\n"+B+"\n"+C+"\n"+D+"\n"+E);
 layout.removeView(bu);      
 
@@ -496,7 +496,7 @@ layout.addView(t);
 layout.addView(et);
 
 
-
+}
 }
 });  
 
