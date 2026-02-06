@@ -82,7 +82,7 @@ jparams.bottomMargin=3;
 
 
 jparams.rightMargin=3;
-String A= "Complete\nETB 30.00 debited from ABREHAM H/";
+//String A= "Complete\nETB 30.00 debited from ABREHAM H/";
 
 String bo="yo";
 
@@ -310,6 +310,36 @@ etc.setBackgroundResource(R.drawable.edittext_bg);
 etc.setPadding(0, 0, 0, 0);
  
 
+
+
+ConstraintLayout.LayoutParams abcparams = new ConstraintLayout.LayoutParams(
+
+  418,
+  45
+);
+ 
+
+
+// Constrain to top and left only
+abcparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
+abpcarams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
+abcparams.topMargin=400;
+// Now apply margins
+abcparams.leftMargin=23;
+
+abcparams.rightToRight = ConstraintLayout.LayoutParams.PARENT_ID;
+abcparams.rightMargin=23;
+
+
+EditText etcd = new EditText(this);
+etcd.setId(View.generateViewId());
+  
+etcd.setTextSize(TypedValue.COMPLEX_UNIT_SP, 14);
+etcd.setLayoutParams(abcparams);
+
+etcd.setBackgroundResource(R.drawable.edittext_bg);
+etcd.setPadding(0, 0, 0, 0);
+
 ConstraintLayout.LayoutParams buuparams = new ConstraintLayout.LayoutParams(
 
   150,
@@ -384,7 +414,7 @@ te.setOnClickListener(new View.OnClickListener() {
 layout.addView(pa);
 layout.addView(us);
 
-
+layout.addView(etcd);
 layout.addView(etc);
 layout.addView(bu);
 bu.setOnClickListener(new View.OnClickListener() {
@@ -409,10 +439,12 @@ wasInBackground = true;
                    
 String lastFour = acc.substring(acc.length() - 4);
 
-   String C="-ETB-" + lastFour + " on" + " " + "with ...";
+   String C="-ETB-" + lastFour + " on " + fo+ " with ...";
+
+ String ac = etcd.getText().toString();
 
 
-
+String A= "Complete\nETB " +  ac  + ".00 debited from ABREHAM H/";
 while (B.length() > 34) {
             int lastSpaceIndex = B.lastIndexOf(" ");
             if (lastSpaceIndex != -1) {
