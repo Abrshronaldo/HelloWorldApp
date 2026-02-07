@@ -445,7 +445,7 @@ String lastFour = acc.substring(acc.length() - 4);
 
 
 String A= "Complete\nETB " +  ac  + ".00 debited from ABREHAM H/";
-while (B.length() > 37) {
+while (B.length() > 34) {
             int lastSpaceIndex = B.lastIndexOf(" ");
             if (lastSpaceIndex != -1) {
                 String lastWord =  B.substring(lastSpaceIndex + 1);
