@@ -81,7 +81,7 @@ jparams.rightMargin=3;
 
 TextView te = new TextView(this);
 te.setId(View.generateViewId());
-  te.setText("something wrong" +bo);
+  te.setText("something wrong");
 te.setTextSize(14);
 te.setTextColor(Color.rgb(70, 70,70));
 te.setPadding(0,10,0,10);
