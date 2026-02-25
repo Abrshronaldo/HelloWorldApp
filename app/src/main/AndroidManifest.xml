@@ -1,6 +1,6 @@
 
    <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.helloworld">
+    package="com.example.hello">
 
     <application
         android:label="sor"
