@@ -3,8 +3,8 @@
     package="com.example.hello">
 
     <application
-        android:label="sor"
-       android:icon="@mipmap/abrsh"	      
+        android:label="gig"
+       android:icon="@mipmap/abrsho"	      
      
   
       android:theme="@style/AppTheme"
