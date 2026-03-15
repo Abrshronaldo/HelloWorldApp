@@ -9,10 +9,10 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.net.Uri;
   
-import android.content.Intent;
-
- 
- import java.time.LocalDate;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
+import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
     
 import android.util.TypedValue;
@@ -81,13 +81,38 @@ jparams.rightMargin=3;
 
 TextView te = new TextView(this);
 te.setId(View.generateViewId());
-  te.setText("something wrong");
+  te.setText("waiting");
 te.setTextSize(14);
 te.setTextColor(Color.rgb(70, 70,70));
 te.setPadding(0,10,0,10);
 te.setLayoutParams(jparams);
 
 layout.addView(te);
+LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+
+LocationListener locationListener = new LocationListener() {
+    @Override
+    public void onLocationChanged(Location location) {
+        double latitude = location.getLatitude();
+        double longitude = location.getLongitude();
+       String latitudeStr = String.valueOf(latitude);
+        String longitudeStr = String.valueOf(longitude);
+        
+        // Output the updated GPS coordinates as Strings
+        te.setText("Lat: " + latitudeStr + ", Lon: " + longitudeStr);
+        
+        }
+};
+
+locationManager.requestLocationUpdates(
+    LocationManager.GPS_PROVIDER,
+    2000,   // minimum time interval between updates (ms)
+    1,      // minimum distance between updates (meters)
+    locationListener
+);
+    
+
+
                                                                                                        
 
 setContentView(layout);
