@@ -8,6 +8,10 @@ import androidx.core.content.ContextCompat;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.net.Uri;
+ 
+   import android.Manifest;
+import android.content.pm.PackageManager;
+import androidx.core.app.ActivityCompat;
   
 import android.location.Location;
 import android.location.LocationListener;
