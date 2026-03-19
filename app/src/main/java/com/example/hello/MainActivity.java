@@ -88,6 +88,15 @@ te.setPadding(0,10,0,10);
 te.setLayoutParams(jparams);
 
 layout.addView(te);
+
+
+if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
+    ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+    ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
+    return;
+}
+
+
 LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 
 LocationListener locationListener = new LocationListener() {
@@ -103,6 +112,9 @@ LocationListener locationListener = new LocationListener() {
         
         }
 };
+
+
+
 
 locationManager.requestLocationUpdates(
     LocationManager.GPS_PROVIDER,
