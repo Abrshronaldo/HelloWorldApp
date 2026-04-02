@@ -145,5 +145,23 @@ te.setText("Please enable GPS in settings");
     
 
 
+
+
+
+ 
+   @Override
+protected void onResume() {
+    super.onResume();
+    if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
+        startLocationUpdates();
+    } else if (locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)) {
+        startLocationUpdates(); // fallback to network
+        te.setText("Using network provider (GPS off)");
+    } else {
+        te.setText("No location provider enabled");
+    }
+}
+    
+
 }
     
