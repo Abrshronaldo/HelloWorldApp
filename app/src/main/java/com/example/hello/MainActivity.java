@@ -111,7 +111,16 @@ public class MainActivity extends Activity {
                 locationListener
             );
         }
+    
+
+
+if (locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)) {
+        locationManager.requestLocationUpdates(
+            LocationManager.NETWORK_PROVIDER, 2000, 1, locationListener);
     }
+
+
+}
 
 
 
