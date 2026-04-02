@@ -132,8 +132,12 @@ public void onRequestPermissionsResult(int requestCode, String[] permissions, in
         if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
             startLocationUpdates();
         } else {
-            te.setText("GPS not enabled");
-        }
+              
+te.setText("Please enable GPS in settings");
+    Intent intent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
+    startActivity(intent);
+
+ }
     } else {
         te.setText("Permission denied");
     }
