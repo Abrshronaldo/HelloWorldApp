@@ -8,7 +8,12 @@ import androidx.core.content.ContextCompat;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.net.Uri;
- 
+
+
+import android.content.Intent;
+import android.provider.Settings;
+    
+     
    import android.Manifest;
 import android.content.pm.PackageManager;
 import androidx.core.app.ActivityCompat;
