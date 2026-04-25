@@ -45,10 +45,13 @@ import android.content.Context;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.ConstraintLayout.LayoutParams;
- 
-   import androidx.appcompat.app.AppCompatActivity;
 
-  public class MainActivity extends AppCompatActivity {
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+
+
+public class MainActivity extends AppCompatActivity {
 
     private TextView te;
     private LocationManager locationManager;
