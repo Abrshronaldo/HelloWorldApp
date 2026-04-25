@@ -94,7 +94,8 @@ if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOC
     != PackageManager.PERMISSION_GRANTED) {
 
     ActivityCompat.requestPermissions(this,
-        new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION}, 1);
+        new String[]{Manifest.permission.ACCESS_FINE_LOCATION,
+ Manifest.permission.ACCESS_COARSE_LOCATION}, 1);
 } else {
     startLocationUpdates();
 }
@@ -114,34 +115,32 @@ if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOC
             }
         };
 
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) 
-            == PackageManager.PERMISSION_GRANTED) {
-            locationManager.requestLocationUpdates(
-                LocationManager.GPS_PROVIDER,
-                2000,
-                1,
-                locationListener
-            );
+  
+  try {
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+            
+            // Register GPS
+            if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
+                locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 2000, 1, locationListener);
+            }
+            
+            // Register Network
+            if (locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)) {
+                locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 2000, 1, locationListener);
+            }
         }
-    
-
-
-if (locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)) {
-        locationManager.requestLocationUpdates(
-            LocationManager.NETWORK_PROVIDER, 2000, 1, locationListener);
+    } catch (Exception e) {
+        e.printStackTrace();
+        te.setText("Error: " + e.getMessage());
     }
-
-
 }
 
-
-
-
- 
     @Override
-    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        if (requestCode == 1 && grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+    public void onRequestPermissionsResult(int requestCode, String[] permissions,
+ int[] grantResults) {
+    super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+   if (requestCode == 1 && grantResults.length > 0 &&
+ grantResults[0] == PackageManager.PERMISSION_GRANTED) {
             startLocationUpdates();
         } else {
             te.setText("Permission denied");
