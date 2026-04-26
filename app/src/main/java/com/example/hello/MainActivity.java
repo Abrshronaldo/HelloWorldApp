@@ -116,8 +116,7 @@ if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOC
         };
 
   
-  try {
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
             
             // Register GPS
             if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
@@ -129,11 +128,7 @@ if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOC
                 locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 2000, 1, locationListener);
             }
         }
-    } catch (Exception e) {
-        e.printStackTrace();
-        te.setText("Error: " + e.getMessage());
-    }
-}
+    } 
 
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions,
