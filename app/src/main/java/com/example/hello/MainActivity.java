@@ -87,21 +87,20 @@ import androidx.constraintlayout.widget.ConstraintLayout.LayoutParams;
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 
        
- 
-if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) 
+
+
+if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
+    != PackageManager.PERMISSION_GRANTED &&
+    ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION)
     != PackageManager.PERMISSION_GRANTED) {
 
     ActivityCompat.requestPermissions(this,
-        new String[]{ Manifest.permission.ACCESS_COARSE_LOCATION}, 1);
+        new String[]{Manifest.permission.ACCESS_FINE_LOCATION,
+ Manifest.permission.ACCESS_COARSE_LOCATION}, 1);
 } else {
     startLocationUpdates();
 }
-
-
-    
 }
-
-
     private void startLocationUpdates() {
         LocationListener locationListener = new LocationListener() {
             @Override
@@ -113,8 +112,13 @@ if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_L
         };
 
   
-         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
             
+          
+            if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
+                locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 2000, 1, locationListener);
+            }
+
                       
             // Register Network
             if (locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)) {
