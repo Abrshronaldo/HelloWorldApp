@@ -52,6 +52,9 @@ import androidx.constraintlayout.widget.ConstraintLayout.LayoutParams;
 
     private TextView te;
     private LocationManager locationManager;
+    
+   private Location lastLocation;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -108,7 +111,18 @@ if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOC
                 double latitude = location.getLatitude();
                 double longitude = location.getLongitude();
                 te.setText("Lat: " + latitude + ", Lon: " + longitude);
+            
+  // If we have a previous location, calculate distance
+            if (lastLocation != null) {
+                float distanceInMeters = location.distanceTo(lastLocation);
+                te.append("\nMoved: " + distanceInMeters + " meters");
             }
+
+            // Update lastLocation
+            lastLocation = location;
+           
+
+}
         };
 
   
