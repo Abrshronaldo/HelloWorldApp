@@ -112,14 +112,28 @@ if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOC
                 double longitude = location.getLongitude();
                 te.setText("Lat: " + latitude + ", Lon: " + longitude);
             
-  // If we have a previous location, calculate distance
-            if (lastLocation != null) {
-                float distanceInMeters = location.distanceTo(lastLocation);
-                te.append("\nMoved: " + distanceInMeters + " meters");
-            }
+   
+     
+   if (lastLocation != null) {
+   
+    if (location.hasAccuracy() && location.getAccuracy() < 20) {
+        
+        float distanceInMeters = location.distanceTo(lastLocation);
+        
+       
+        if (distanceInMeters > 5) { 
+            te.append("\nMoved: " + distanceInMeters + " meters");
+            lastLocation = location; 
+        }
+    }
+} else {
+   
+    if (location.getAccuracy() < 20) {
+        lastLocation = location;
+    }
+}
 
-            // Update lastLocation
-            lastLocation = location;
+
            
 
 }
