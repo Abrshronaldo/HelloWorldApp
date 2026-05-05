@@ -110,9 +110,19 @@ if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOC
             public void onLocationChanged(Location location) {
                 double latitude = location.getLatitude();
                 double longitude = location.getLongitude();
-                te.setText("Lat: " + latitude + ", Lon: " + longitude);
-            
-   
+                
+
+   String result = "Lat: " + lat + "\nLon: " + lon;
+
+            // Check which provider sent the update
+            if (location.getProvider().equals(LocationManager.GPS_PROVIDER)) {
+                // Update the GPS TextView
+                te.setText("GPS Data:\n" + result);
+                 } 
+            else if (location.getProvider().equals(LocationManager.NETWORK_PROVIDER)) {
+                // Update the Network TextView
+                te.setText("Network Data:\n" + result);
+                }   
      
    if (lastLocation != null) {
    
