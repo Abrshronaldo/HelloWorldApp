@@ -108,8 +108,8 @@ if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOC
         LocationListener locationListener = new LocationListener() {
             @Override
             public void onLocationChanged(Location location) {
-                double latitude = location.getLatitude();
-                double longitude = location.getLongitude();
+                double lat = location.getLatitude();
+                double lon = location.getLongitude();
                 
 
    String result = "Lat: " + lat + "\nLon: " + lon;
