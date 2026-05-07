@@ -128,13 +128,11 @@ if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOC
         
        
             te.append("\nMoved: " + distanceInMeters + " meters");
-            lastLocation = location; 
+            lastLocation = location;
         }
      
         lastLocation = location;
-    }
-
-
+    
 
            
 
