@@ -89,8 +89,6 @@ import androidx.constraintlayout.widget.ConstraintLayout.LayoutParams;
 
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 
-       
-
 
 if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
     != PackageManager.PERMISSION_GRANTED &&
