@@ -141,7 +141,7 @@ if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOC
            }
        else if((lat-la)<=(bb*-0.009)){
            firstdla =(bb*1.2);
-           bb+;
+           bb++;
            }
 
            if ((lon -lo)>=(bc*0.009/cos(latitude*3.14/180))){
