@@ -52,8 +52,15 @@ import androidx.constraintlayout.widget.ConstraintLayout.LayoutParams;
 
     private TextView te;
     private LocationManager locationManager;
-    
+     
+          double firstdla=0;
+           double firstdlo=0;    
    private Location lastLocation;
+      int bb=1;
+       int bc=1;
+     int a=0;
+   double la=0;
+   double lo=0;    
 
 
     @Override
@@ -122,19 +129,31 @@ if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOC
                 te.setText("Network Data:\n" + result);
                 }   
      
-   if (lastLocation != null) {
-          
-        float distanceInMeters = location.distanceTo(lastLocation);
-        
-       
-            te.append("\nMoved: " + distanceInMeters + " meters");
-            lastLocation = location;
-        }
-     
-        lastLocation = location;
-    
+   if (a==0){
+            la=lat;
+           lo=lon;
+           a++;
+      }
 
-           
+        if((lat-la)>=(bb*0.009)){
+           firstdla =(bb*1.2);
+           bb++:
+           }
+       else if(lat-la)<=(bb*-0.009)){
+           firstdla =(bb*1.2);
+           bb++:
+           }
+
+           if ((lon -lo)>=(bc*0.009/cos(latitude*3.14/180))){
+         firstdlo =(bc*1.2);
+         bc++:
+         }
+           else if ((lon -lo)<=(bc* -0.009/cos(latitude*3.14/180))){
+         firstdlo =bc*1.2;
+         bc++;
+         }
+   String res="lat distance  " +firstdla +"lon distance  " +firstdlo;
+ te.append(res);
 
 }
         };
@@ -144,13 +163,13 @@ if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOC
             
           
             if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
-                locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 30000, 1, locationListener);
+                locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 10000, 1, locationListener);
             }
 
                       
             // Register Network
             if (locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)) {
-                locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 30000, 1, locationListener);
+                locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 10000, 1, locationListener);
             }
         }
     } 
