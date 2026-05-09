@@ -139,7 +139,7 @@ if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOC
            firstdla =(bb*1.2);
            bb++;
            }
-       else if(lat-la)<=(bb*-0.009)){
+       else if((lat-la)<=(bb*-0.009)){
            firstdla =(bb*1.2);
            bb+;
            }
