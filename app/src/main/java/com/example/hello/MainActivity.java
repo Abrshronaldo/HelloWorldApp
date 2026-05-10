@@ -152,7 +152,7 @@ if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOC
          firstdlo =bc*1.2;
          bc++;
          }
-   String res="lat distance  " +firstdla +"lon distance  " +firstdlo;
+   String res="lat distance  " +firstdla +" \nlon distance  " +firstdlo;
  te.append(res);
 
 }
