@@ -58,7 +58,12 @@ import androidx.constraintlayout.widget.ConstraintLayout.LayoutParams;
    private Location lastLocation;
       int bb=1;
        int bc=1;
-     int a=0;
+    int bbb=1;
+  int bcc=1;   
+  int Totallat =0;
+  int Totallon=0;  
+
+int a=0;
    double la=0;
    double lo=0;    
 
@@ -138,19 +143,35 @@ if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOC
         if((lat-la)>=(bb*0.009)){
            firstdla =(bb*1.2);
            bb++;
+  if (bbb>1){
+  bbb--;
+}       
+  Totallat +=firstdla;
            }
        else if((lat-la)<=(bb*-0.009)){
-           firstdla =(bb*1.2);
-           bb++;
+           firstdla =-(bb*1.2);
+           bbb++;
+   if(bb>1){
+  b--;
+}    
+    Totallat +=firstdla;
            }
 
            if ((lon -lo)>=(bc*0.009/Math.cos(lat*3.14/180))){
          firstdlo =(bc*1.2);
          bc++;
-         }
+   if (bcc>1){
+         bcc--;
+}  
+    Totallon +=firstdlo;
+}
            else if ((lon -lo)<=(bc* -0.009/Math.cos(lat*3.14/180))){
          firstdlo =bc*1.2;
-         bc++;
+         bcc++;
+   if (bc>1){
+ bc--
+}
+  Totallon +=firstdlo;
          }
    String res="lat distance  " +firstdla +" \nlon distance  " +firstdlo;
  te.append(res);
