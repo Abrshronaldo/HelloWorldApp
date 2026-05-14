@@ -169,11 +169,11 @@ if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOC
          firstdlo =bc*1.2;
          bcc++;
    if (bc>1){
- bc--
+ bc--;
 }
   Totallon +=firstdlo;
          }
-   String res="lat distance  " +firstdla +" \nlon distance  " +firstdlo;
+   String res="lat distance  " +Totallat +" \nlon distance  " +Totallon;
  te.append(res);
 
 }
