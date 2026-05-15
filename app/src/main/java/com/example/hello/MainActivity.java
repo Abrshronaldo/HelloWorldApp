@@ -141,37 +141,38 @@ if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOC
       }
 
         if((lat-la)>=(bb*0.009)){
-           firstdla =(bb*1.2);
+           Totallat +=1.2;
            bb++;
   if (bbb>1){
   bbb--;
 }       
-  Totallat +=firstdla;
+  
            }
-       else if((lat-la)<=(bb*-0.009)){
-           firstdla =-(bb*1.2);
+       else if((lat-la)<=(bbb*-0.009)){
+           Totallat-=1.2;
            bbb++;
+  
    if(bb>1){
   bb--;
 }    
-    Totallat +=firstdla;
+    
            }
 
            if ((lon -lo)>=(bc*0.009/Math.cos(lat*3.14/180))){
-         firstdlo =(bc*1.2);
+         Totallon+=1.2;
          bc++;
    if (bcc>1){
          bcc--;
 }  
-    Totallon +=firstdlo;
+    
 }
-           else if ((lon -lo)<=(bc* -0.009/Math.cos(lat*3.14/180))){
-         firstdlo =bc*1.2;
+           else if ((lon -lo)<=(bcc* -0.009/Math.cos(lat*3.14/180))){
+         Totallon-=1.2;
          bcc++;
    if (bc>1){
  bc--;
 }
-  Totallon +=firstdlo;
+  
          }
    String res="lat distance  " +Totallat +" \nlon distance  " +Totallon;
  te.append(res);
