@@ -152,7 +152,7 @@ if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOC
            firstdla =-(bb*1.2);
            bbb++;
    if(bb>1){
-  b--;
+  bb--;
 }    
     Totallat +=firstdla;
            }
