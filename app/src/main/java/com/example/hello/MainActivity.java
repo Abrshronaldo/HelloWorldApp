@@ -144,38 +144,44 @@ if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOC
 double distancea = haversineDistance(la, lo, lat, lon); // Latitude change
 double distancec = haversineDistance(fixedla, fixedlo, lat, lon);   // To
 
-if (distancec >= NOISE_THRESHOLD_KM || a==1) {
+      //if (distancec >= NOISE_THRESHOLD_KM || a==1) {
  st.setLength(0);
-     if ((lat -fixedla) >=0.5){
+  //   if ((lat -fixedla) >=0.5){
         st.append("NORTH");
-    } else if ((lat -fixedla) <=-0.5){
+//    } 
+
+   //else if ((lat -fixedla) <=-0.5){
         st.append("SOUTH");  
-    }
+    //}
     
-    if ((lon - fixedlo)>=0.5){
+   // if ((lon - fixedlo)>=0.5){
         st.append("EAST");
-    } else if( (lon -fixedlo)<= -0.5){
+   // } 
+
+   //  else if( (lon -fixedlo)<= -0.5){
         st.append("WEST");
-    }
+    //}
     
     te.append("\ndevice moved " + st + " " + distancec + " km " +" totally ");
     a=1;
-}
+     //}
 
 
-if (distancea >= NOISE_THRESHOLD_KM ) {
+  //if (distancea >= NOISE_THRESHOLD_KM ) {
  st.setLength(0);
-     if ((lat -la)>=0.5) {
+    // if ((lat -la)>=0.5) {
         st.append("NORTH");
-    } else if( (lat-la) <= -0.5){
+  //  } 
+   // else if( (lat-la) <= -0.5){
         st.append("SOUTH");  
-    }
+    //}
     
-    if ((lon - lo) >=0.5){
+    //if ((lon - lo) >=0.5){
         st.append("EAST");
-    } else if ( (lon -lo) <= -0.5) {
+    //} 
+    //else if ( (lon -lo) <= -0.5) {
         st.append("WEST");
-    }
+    //}
     
     te.append("\ndevice moved " + st + " " + distancea + " km " +" totally ");
     la=lat;
@@ -183,7 +189,7 @@ if (distancea >= NOISE_THRESHOLD_KM ) {
 }
   
          
-}
+  //}
         };
 
   
