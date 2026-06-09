@@ -141,8 +141,12 @@ if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOC
 }      
 
 
-double distancea = haversineDistance(la, lo, lat, lon); // Latitude change
-double distancec = haversineDistance(fixedla, fixedlo, lat, lon);   // To
+double distanceaa = haversineDistance(la, lo, lat, lon); // Latitude change
+double distancecc = haversineDistance(fixedla, fixedlo, lat, lon);   // To
+
+String distancea = String.format("%.3f", distanceaa);
+String distancec= String.format("%.3f", distancecc);
+
 
       if (distancec >= NOISE_THRESHOLD_KM || a==1) {
  st.setLength(0);
