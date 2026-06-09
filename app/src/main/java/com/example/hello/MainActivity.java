@@ -144,7 +144,7 @@ if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOC
 double distancea = haversineDistance(la, lo, lat, lon); // Latitude change
 double distancec = haversineDistance(fixedla, fixedlo, lat, lon);   // To
 
-String distancea = String.format("%.3f", distancea);
+String distanceaa = String.format("%.3f", distanceaa);
 String distancecc= String.format("%.3f", distancec);
   
 
