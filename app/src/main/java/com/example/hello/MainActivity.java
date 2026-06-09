@@ -141,12 +141,12 @@ if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOC
 }      
 
 
-double distanceaa = haversineDistance(la, lo, lat, lon); // Latitude change
-double distancecc = haversineDistance(fixedla, fixedlo, lat, lon);   // To
+double distancea = haversineDistance(la, lo, lat, lon); // Latitude change
+double distancec = haversineDistance(fixedla, fixedlo, lat, lon);   // To
 
-String distancea = String.format("%.3f", distanceaa);
-String distancec= String.format("%.3f", distancecc);
-
+String distancea = String.format("%.3f", distancea);
+String distancecc= String.format("%.3f", distancec);
+  
 
       if (distancec >= NOISE_THRESHOLD_KM || a==1) {
  st.setLength(0);
@@ -166,7 +166,7 @@ String distancec= String.format("%.3f", distancecc);
         st.append("WEST");
     }
     
-    te.append("\ndevice moved " + st + " " + distancec + " km " +" totally ");
+    te.append("\ndevice moved " + st + " " + distancecc + " km " +" totally ");
     a=1;
      }
 
@@ -183,11 +183,11 @@ String distancec= String.format("%.3f", distancecc);
     if ((lon - lo) >=0.5){
         st.append("EAST");
     } 
-    else if ( (lon -lo) <= -0.5) {
+    else if ( (lon -lo) <= -0.5) {                     
         st.append("WEST");
     }
     
-    te.append("\ndevice moving " + st + " " + distancea + " km " +" at this point");
+    te.append("\ndevice moving " + st + " " + distanceaa + " km " +" at this point");
     la=lat;
     lo=lon;
 }
