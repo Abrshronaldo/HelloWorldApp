@@ -199,8 +199,7 @@ String distancecc= String.format("%.3f", distancec);
   
          if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
             
-          
-            if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
+                      if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
                 locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 10000, 1, locationListener);
             }
 
