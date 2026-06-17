@@ -49,7 +49,9 @@ import androidx.constraintlayout.widget.ConstraintLayout.LayoutParams;
    import androidx.appcompat.app.AppCompatActivity;
 
   public class MainActivity extends AppCompatActivity {
-
+    
+private TextView ue;
+ private TextView ve;
     private TextView te;
     private LocationManager locationManager;
    
