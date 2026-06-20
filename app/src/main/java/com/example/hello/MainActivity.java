@@ -107,9 +107,10 @@ StringBuilder st = new StringBuilder();
         hparams.topMargin = 60;
         hparams.leftMargin = 100;
 
+     kparams.bottomMargin = 50;
         ue = new TextView(this);
         ue.setId(View.generateViewId());
-        ue.setText("waiting");
+        
         ue.setTextSize(14);
         ue.setTextColor(Color.rgb(70, 70, 70));
         ue.setPadding(0, 10, 0, 10);
@@ -126,9 +127,10 @@ StringBuilder st = new StringBuilder();
         kparams.topMargin = 50;
         kparams.leftMargin = 100;
 
+     kparams.bottomMargin = 50;
         ve = new TextView(this);
         ve.setId(View.generateViewId());
-        ve.setText("waiting");
+        
         ve.setTextSize(14);
         ve.setTextColor(Color.rgb(70, 70, 70));
         ve.setPadding(0, 10, 0, 10);
@@ -207,7 +209,7 @@ String distancecc= String.format("%.3f", distancec);
         st.append("WEST");
     }
     
-    ue.append("\ndevice moved " + st + " " + distancecc + " km " +" totally ");
+    ue.setText("\ndevice moved " + st + " " + distancecc + " km " +" totally ");
     a=1;
      }
 
@@ -228,7 +230,7 @@ String distancecc= String.format("%.3f", distancec);
         st.append("WEST");
     }
     
-    ve.append("\ndevice moving " + st + " " + distanceaa + " km " +" at this point");
+    ve.setText("\ndevice moving " + st + " " + distanceaa + " km " +" at this point");
     la=lat;
     lo=lon;
 }
