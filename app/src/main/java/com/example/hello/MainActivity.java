@@ -107,7 +107,7 @@ StringBuilder st = new StringBuilder();
         hparams.topMargin = 60;
         hparams.leftMargin = 100;
 
-     kparams.bottomMargin = 50;
+     hparams.bottomMargin = 50;
         ue = new TextView(this);
         ue.setId(View.generateViewId());
         
