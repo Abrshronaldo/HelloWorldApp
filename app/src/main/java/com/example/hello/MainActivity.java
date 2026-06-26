@@ -104,7 +104,7 @@ StringBuilder st = new StringBuilder();
         );
         hparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
         hparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-        hparams.topMargin = 60;
+        hparams.topMargin = 100;
         hparams.leftMargin = 100;
 
      hparams.bottomMargin = 50;
@@ -124,7 +124,7 @@ StringBuilder st = new StringBuilder();
         );
         kparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
         kparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-        kparams.topMargin = 50;
+        kparams.topMargin = 80;
         kparams.leftMargin = 100;
 
      kparams.bottomMargin = 50;
