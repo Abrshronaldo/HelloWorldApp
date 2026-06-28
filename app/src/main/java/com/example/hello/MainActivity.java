@@ -104,7 +104,7 @@ StringBuilder st = new StringBuilder();
         );
         hparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
         hparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-        hparams.topMargin = 100;
+        hparams.topMargin = 110;
         hparams.leftMargin = 100;
 
      hparams.bottomMargin = 50;
@@ -124,7 +124,7 @@ StringBuilder st = new StringBuilder();
         );
         kparams.leftToLeft = ConstraintLayout.LayoutParams.PARENT_ID;
         kparams.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
-        kparams.topMargin = 80;
+        kparams.topMargin = 90;
         kparams.leftMargin = 100;
 
      kparams.bottomMargin = 50;
@@ -209,7 +209,7 @@ String distancecc= String.format("%.3f", distancec);
         st.append("WEST");
     }
     
-    ue.setText("\ndevice moved " + st + " " + distancecc + " km " +" totally ");
+    ue.setText("\ndevice moved " + st + "\n" + distancecc + " km " +" totally ");
     a=1;
      }
 
@@ -230,7 +230,7 @@ String distancecc= String.format("%.3f", distancec);
         st.append("WEST");
     }
     
-    ve.setText("\ndevice moving " + st + " " + distanceaa + " km " +" at this point");
+    ve.setText("\ndevice moving " + st + "\n" + distanceaa + " km " +" at this point");
     la=lat;
     lo=lon;
 }
